@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="15" passed="15" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-02-02T11:08:26 IST" name="Default suite" finished-at="2023-02-02T11:08:26 IST" duration-ms="349">
+    <groups>
+    </groups>
+    <test started-at="2023-02-02T11:08:26 IST" name="Default test" finished-at="2023-02-02T11:08:26 IST" duration-ms="349">
+      <class name="pack1.LifeInsuranceTest">
+        <test-method signature="LifeMobileInsuranceWebLogin()[pri:-2, instance:pack1.LifeInsuranceTest@dd8ba08]" started-at="2023-02-02T11:08:26 IST" name="LifeMobileInsuranceWebLogin" finished-at="2023-02-02T11:08:26 IST" duration-ms="14" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LifeMobileInsuranceWebLogin -->
+        <test-method signature="LifeMobileInsuranceWebLogout()[pri:1, instance:pack1.LifeInsuranceTest@dd8ba08]" started-at="2023-02-02T11:08:26 IST" name="LifeMobileInsuranceWebLogout" finished-at="2023-02-02T11:08:26 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LifeMobileInsuranceWebLogout -->
+        <test-method signature="LifeInsuranceWebLogout()[pri:2, instance:pack1.LifeInsuranceTest@dd8ba08]" started-at="2023-02-02T11:08:26 IST" name="LifeInsuranceWebLogout" finished-at="2023-02-02T11:08:26 IST" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LifeInsuranceWebLogout -->
+        <test-method signature="LifeInsuranceWebLogin()[pri:3, instance:pack1.LifeInsuranceTest@dd8ba08]" started-at="2023-02-02T11:08:26 IST" name="LifeInsuranceWebLogin" finished-at="2023-02-02T11:08:26 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LifeInsuranceWebLogin -->
+      </class> <!-- pack1.LifeInsuranceTest -->
+      <class name="pack1.DogInsuranceTest">
+        <test-method signature="DogMobileInsuranceWebLogin()[pri:-2, instance:pack1.DogInsuranceTest@399f45b1]" started-at="2023-02-02T11:08:26 IST" name="DogMobileInsuranceWebLogin" finished-at="2023-02-02T11:08:26 IST" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DogMobileInsuranceWebLogin -->
+        <test-method signature="DogMobileInsuranceWebLogout()[pri:1, instance:pack1.DogInsuranceTest@399f45b1]" started-at="2023-02-02T11:08:26 IST" name="DogMobileInsuranceWebLogout" finished-at="2023-02-02T11:08:26 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DogMobileInsuranceWebLogout -->
+        <test-method signature="DogInsuranceWebLogout()[pri:2, instance:pack1.DogInsuranceTest@399f45b1]" started-at="2023-02-02T11:08:26 IST" name="DogInsuranceWebLogout" finished-at="2023-02-02T11:08:26 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DogInsuranceWebLogout -->
+      </class> <!-- pack1.DogInsuranceTest -->
+      <class name="pack1.HomeInsuranceTest">
+        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:pack1.HomeInsuranceTest@7d8995e]" started-at="2023-02-02T11:08:26 IST" name="OpenBrowser" finished-at="2023-02-02T11:08:26 IST" duration-ms="23" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenBrowser -->
+        <test-method is-config="true" signature="BeforeMethod()[pri:0, instance:pack1.HomeInsuranceTest@7d8995e]" started-at="2023-02-02T11:08:26 IST" name="BeforeMethod" finished-at="2023-02-02T11:08:26 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="MobileInsuranceWebLogin()[pri:-2, instance:pack1.HomeInsuranceTest@7d8995e]" started-at="2023-02-02T11:08:26 IST" name="MobileInsuranceWebLogin" finished-at="2023-02-02T11:08:26 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MobileInsuranceWebLogin -->
+        <test-method is-config="true" signature="AfterMethod()[pri:0, instance:pack1.HomeInsuranceTest@7d8995e]" started-at="2023-02-02T11:08:26 IST" name="AfterMethod" finished-at="2023-02-02T11:08:26 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method signature="MobileInsuranceWebLogout()[pri:1, instance:pack1.HomeInsuranceTest@7d8995e]" started-at="2023-02-02T11:08:26 IST" name="MobileInsuranceWebLogout" finished-at="2023-02-02T11:08:26 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MobileInsuranceWebLogout -->
+        <test-method is-config="true" signature="BeforeMethod()[pri:0, instance:pack1.HomeInsuranceTest@7d8995e]" started-at="2023-02-02T11:08:26 IST" name="BeforeMethod" finished-at="2023-02-02T11:08:26 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method is-config="true" signature="AfterMethod()[pri:0, instance:pack1.HomeInsuranceTest@7d8995e]" started-at="2023-02-02T11:08:26 IST" name="AfterMethod" finished-at="2023-02-02T11:08:26 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method is-config="true" signature="BeforeMethod()[pri:0, instance:pack1.HomeInsuranceTest@7d8995e]" started-at="2023-02-02T11:08:26 IST" name="BeforeMethod" finished-at="2023-02-02T11:08:26 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="HomeInsuranceWebLogout()[pri:2, instance:pack1.HomeInsuranceTest@7d8995e]" started-at="2023-02-02T11:08:26 IST" name="HomeInsuranceWebLogout" finished-at="2023-02-02T11:08:26 IST" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HomeInsuranceWebLogout -->
+        <test-method is-config="true" signature="AfterMethod()[pri:0, instance:pack1.HomeInsuranceTest@7d8995e]" started-at="2023-02-02T11:08:26 IST" name="AfterMethod" finished-at="2023-02-02T11:08:26 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method is-config="true" signature="BeforeMethod()[pri:0, instance:pack1.HomeInsuranceTest@7d8995e]" started-at="2023-02-02T11:08:26 IST" name="BeforeMethod" finished-at="2023-02-02T11:08:26 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="HomeInsuranceWebLogin()[pri:3, instance:pack1.HomeInsuranceTest@7d8995e]" started-at="2023-02-02T11:08:26 IST" name="HomeInsuranceWebLogin" finished-at="2023-02-02T11:08:26 IST" duration-ms="9" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HomeInsuranceWebLogin -->
+        <test-method is-config="true" signature="AfterMethod()[pri:0, instance:pack1.HomeInsuranceTest@7d8995e]" started-at="2023-02-02T11:08:26 IST" name="AfterMethod" finished-at="2023-02-02T11:08:26 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:pack1.HomeInsuranceTest@7d8995e]" started-at="2023-02-02T11:08:26 IST" name="CloseBrowser" finished-at="2023-02-02T11:08:26 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+      </class> <!-- pack1.HomeInsuranceTest -->
+      <class name="pack1.VehicleInsuranceTest">
+        <test-method signature="VehicleMobileInsuranceWebLogin()[pri:-2, instance:pack1.VehicleInsuranceTest@130d63be]" started-at="2023-02-02T11:08:26 IST" name="VehicleMobileInsuranceWebLogin" finished-at="2023-02-02T11:08:26 IST" duration-ms="24" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VehicleMobileInsuranceWebLogin -->
+        <test-method signature="VehicleMobileInsuranceWebLogout()[pri:1, instance:pack1.VehicleInsuranceTest@130d63be]" started-at="2023-02-02T11:08:26 IST" name="VehicleMobileInsuranceWebLogout" finished-at="2023-02-02T11:08:26 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VehicleMobileInsuranceWebLogout -->
+        <test-method signature="VehicleInsuranceWebLogout()[pri:2, instance:pack1.VehicleInsuranceTest@130d63be]" started-at="2023-02-02T11:08:26 IST" name="VehicleInsuranceWebLogout" finished-at="2023-02-02T11:08:26 IST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VehicleInsuranceWebLogout -->
+        <test-method signature="VehicleInsuranceWebLogin()[pri:3, instance:pack1.VehicleInsuranceTest@130d63be]" started-at="2023-02-02T11:08:26 IST" name="VehicleInsuranceWebLogin" finished-at="2023-02-02T11:08:26 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VehicleInsuranceWebLogin -->
+      </class> <!-- pack1.VehicleInsuranceTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
