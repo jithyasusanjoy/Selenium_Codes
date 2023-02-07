@@ -3,12 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="samplepack.OperationsTest">
+      <class name="samplepack.DownloadFile">
         <methods>
-          <include name="TextboxTwoInput"/>
-          <include name="IntialSetup"/>
+          <include name="browserload"/>
         </methods>
-      </class> <!-- samplepack.OperationsTest -->
+      </class> <!-- samplepack.DownloadFile -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
