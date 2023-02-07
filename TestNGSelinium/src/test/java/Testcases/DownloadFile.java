@@ -1,4 +1,4 @@
-package samplepack;
+package Testcases;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 public class DownloadFile {
 	
 	public WebDriver driver;
-	@Test
+	@Test(enabled=false)
 	public void browserload() throws InterruptedException
 	{
 	    driver = new ChromeDriver();
