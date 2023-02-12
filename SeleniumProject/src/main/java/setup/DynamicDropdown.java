@@ -14,15 +14,15 @@ public class DynamicDropdown {
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://selenium.obsqurazone.com/jquery-select.php");
-		/*
-		 * // Dropdown with select
-		 * 
-		 * driver.findElement(By.className("select2-selection__rendered")).click();
-		 * driver.findElement(By.cssSelector("input[role='searchbox']")).sendKeys("W");
-		 * String str = "iowa"; List<WebElement> l =
-		 * driver.findElements(By.cssSelector("li[role='option']")); for (WebElement i :
-		 * l) { if (i.getText().equalsIgnoreCase(str)) { i.click(); } }
-		 */
+		
+		  // Dropdown with select
+		  
+		  driver.findElement(By.className("select2-selection__rendered")).click();
+		  driver.findElement(By.cssSelector("input[role='searchbox']")).sendKeys("W");
+		  String str = "iowa"; List<WebElement> l =
+		  driver.findElements(By.cssSelector("li[role='option']")); for (WebElement i :
+		  l) { if (i.getText().equalsIgnoreCase(str)) { i.click(); } }
+		 
 
 		// Dropdown with multiple values
 

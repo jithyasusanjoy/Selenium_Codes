@@ -8,6 +8,7 @@ import org.testng.annotations.Test;
 
 public class DownloadFile {
 	
+	private static final String FileUtil = null;
 	public WebDriver driver;
 	@Test(enabled=false)
 	public void browserload() throws InterruptedException
@@ -20,7 +21,7 @@ public class DownloadFile {
 		System.out.println("site loaded");	
 		driver.findElement(By.cssSelector("a[href='/samples/document/csv/sample4.csv'] "));
 		Thread.sleep(1000);
-//		Assert.assertEquals(true,driver.findElement(By.xpath("//embed[@type='application/pdf']")).);
+//		Assert.assertTrue(FileUtil.isFileDownloaded("sample", "csv", 5000));
 //		System.out.println("File Downloaded");
 	
 	}

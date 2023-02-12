@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
+<parameter name="URL" value="https://www.saucedemo.com/"></parameter>
+<parameter name="Username" value="standard_user"></parameter>
+<parameter name="Password" value="secret_sauce"></parameter>
   <test thread-count="5" name="Test">
     <classes>
-      <class name="pack1.VehicleInsuranceTest"/>
-      <class name="samplepack.OperationsTest"/>
-      <class name="pack1.LifeInsuranceTest"/>
-      <class name="pack1.HomeInsuranceTest"/>
-      <class name="pack1.DogInsuranceTest"/>
+      <class name="Testcases.ParametersInTestng"/>
+     
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
