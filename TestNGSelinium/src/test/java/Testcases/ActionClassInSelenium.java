@@ -1,12 +1,9 @@
 package Testcases;
 
-import java.time.Duration;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
@@ -22,7 +19,7 @@ public class ActionClassInSelenium {
 		driver.manage().window().maximize();
 	}
 
-	@Test(enabled=false)
+	@Test(enabled = false)
 	public void mouseclick() throws InterruptedException {
 		driver.get("https://www.saucedemo.com/");
 		WebElement username = driver.findElement(By.id("user-name"));
@@ -32,7 +29,7 @@ public class ActionClassInSelenium {
 		Thread.sleep(3000);
 	}
 
-	@Test(enabled=false)
+	@Test(enabled = false)
 	public void mousedoubleclick() throws InterruptedException {
 
 		driver.get("https://seleniumbase.io/w3schools/double_click");
@@ -42,28 +39,31 @@ public class ActionClassInSelenium {
 		WebElement element = driver.findElement(By.xpath("//p[contains(text(),'Double')]"));
 		Actions act = new Actions(driver);
 		act.doubleClick(element).perform();
+
+	}
+
+	@Test(enabled = true)
+	public void draganddrop() throws InterruptedException {
+
 		
+		driver.get("https://demo.guru99.com/test/drag_drop.html");	
+		WebElement iframe=driver.findElement(By.id("gdpr-consent-notice"));
+		driver.switchTo().frame(iframe);
+		
+		driver.findElement(By.xpath("//span[text()='Accept All']")).click(); 
+		WebElement fromElement =driver.findElement(By.xpath("(//li[@id='fourth'])[1]"));
+		WebElement toElement =driver.findElement(By.xpath("//ol[@id='amt7']"));
+		Thread.sleep(3000);
+		
+		Actions act = new Actions(driver);
+		act.dragAndDrop(fromElement,toElement).perform();
+		Thread.sleep(3000);
+		
+		Assert.assertEquals(true, driver.findElement(By.xpath("//td[contains(text(),'Debit')]")).isDisplayed());
+		System.out.println("Drag and drop done");	
 	}
 
 	@Test(enabled=false)
-	public void draganddrop() throws InterruptedException {
-		
-		driver.get("https://selenium.obsqurazone.com/drag-drop.php");
-		Thread.sleep(5000);
-		
-		WebElement fromElement = driver.findElement(By.xpath("//span[text()='Draggable n°2']"));
-		WebElement toElement = driver.findElement(By.xpath("//div[@id='mydropzone']"));
-
-		Actions act = new Actions(driver);
-	//	act.clickAndHold(fromElement).moveToElement(toElement).release().build().perform();
-		Thread.sleep(5000);
-		act.dragAndDrop(fromElement, toElement).build().perform();
-		Assert.assertEquals(true, driver.findElement(By.xpath("//div[@id='mylist'])")).isDisplayed());
-		System.out.println("Drag and drop done");	
-	}
-	
-	
-	@Test
 	public void mousehover() throws InterruptedException
 	{
 		driver.get("https://www.flipkart.com/");
@@ -72,7 +72,7 @@ public class ActionClassInSelenium {
 		Actions actions = new Actions(driver);
 		
 		driver.findElement(By.xpath("//button[text()='✕']")).click();
-		Thread.sleep(3000);
+		
 		
 		WebElement menuOption1 = driver.findElement(By.xpath("//div[text()='Electronics']"));
 		actions.moveToElement(menuOption1).perform();
@@ -88,6 +88,7 @@ public class ActionClassInSelenium {
 		
 		menuOption3.click();
 		Thread.sleep(2000);
+		
 		Assert.assertEquals(true, driver.findElement(By.xpath("//h1[text()='DSLR & Mirrorless']")).isDisplayed());
 		System.out.println("Success");
    	
@@ -96,7 +97,7 @@ public class ActionClassInSelenium {
 
 	@AfterTest
 	public void browserclose() {
-		 driver.quit();
+	// driver.quit();
 	}
 
 }

@@ -6,7 +6,7 @@
       <class name="Testcases.ActionClassInSelenium">
         <methods>
           <include name="IntialSetup"/>
-          <include name="mousehover"/>
+          <include name="draganddrop"/>
           <include name="browserclose"/>
         </methods>
       </class> <!-- Testcases.ActionClassInSelenium -->
