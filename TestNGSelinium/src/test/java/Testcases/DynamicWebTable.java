@@ -1,5 +1,6 @@
 package Testcases;
 
+import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -24,6 +25,7 @@ public class DynamicWebTable {
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("file:///C:/Users/jithya%20susan/Documents/dynamic.html");
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	}
 	
 	@Test

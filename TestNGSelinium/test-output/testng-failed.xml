@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Testcases.ActionClassInSelenium">
+      <class name="Testcases.ScrollInSelenium">
         <methods>
-          <include name="IntialSetup"/>
-          <include name="draganddrop"/>
           <include name="browserclose"/>
+          <include name="actionclasspageScroll"/>
+          <include name="IntialSetup"/>
         </methods>
-      </class> <!-- Testcases.ActionClassInSelenium -->
+      </class> <!-- Testcases.ScrollInSelenium -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

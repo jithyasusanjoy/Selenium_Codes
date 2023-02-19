@@ -1,5 +1,6 @@
 package setup;
 
+import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -13,6 +14,7 @@ public class DynamicDropdown {
 	public static void main(String[] args) throws InterruptedException {
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.get("https://selenium.obsqurazone.com/jquery-select.php");
 		
 		  // Dropdown with select
@@ -35,7 +37,7 @@ public class DynamicDropdown {
 		{
 			driver.findElement(By.cssSelector("span[class ='select2-selection select2-selection--multiple']")).click();
 			driver.findElement(By.cssSelector("span[class ='select2-selection select2-selection--multiple']")).sendKeys("W");
-			Thread.sleep(2000);
+		
 
 			list1 = driver.findElements(By.cssSelector("li[class='select2-results__option select2-results__option--selectable']"));
 
@@ -48,13 +50,13 @@ public class DynamicDropdown {
 				}
 			}
 		}
-		Thread.sleep(5000);
+		
 		//deselection
 		for (int i = list2.size(); i >0 ; i--) 
 		{
 			driver.findElement(By.cssSelector("span[class ='select2-selection select2-selection--multiple']")).click();
 			List<WebElement> list3 =driver.findElements(By.cssSelector("ul[class='select2-selection__rendered']"));
-			Thread.sleep(2000);
+			
 			for (WebElement k : list3)
 			{
 				k.findElement(By.cssSelector("button[class='select2-selection__choice__remove']")).click();

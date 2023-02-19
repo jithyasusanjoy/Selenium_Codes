@@ -1,5 +1,6 @@
 package Testcases;
 
+import java.time.Duration;
 import java.util.Iterator;
 import java.util.Set;
 
@@ -19,6 +20,7 @@ public class AlertInSelenium {
 	{
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	}
 	
 	@Test(enabled=false)
@@ -50,10 +52,7 @@ public class AlertInSelenium {
 		}
 		driver.switchTo().window(defaultwindow);
 		Assert.assertEquals(true, driver.findElement(By.linkText("Page One")).isDisplayed());
-		System.out.println(driver.switchTo().window(defaultwindow).getTitle());
-		
-		
-	
+		System.out.println(driver.switchTo().window(defaultwindow).getTitle());	
 	}
 	
 }

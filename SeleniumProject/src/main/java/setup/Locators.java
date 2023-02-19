@@ -1,5 +1,7 @@
 package setup;
 
+import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -9,6 +11,7 @@ public class Locators {
 	public static void main(String[] args) throws InterruptedException {
 		WebDriver driver=new ChromeDriver();
 		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.get("https://www.saucedemo.com/");
 		
 		//css selector
@@ -21,7 +24,7 @@ public class Locators {
 		driver.findElement(By.name("login-button")).submit();     //submit method used
 		
 		driver.findElement(By.id("react-burger-menu-btn")).click();
-		Thread.sleep(3000);
+		
 		driver.findElement(By.linkText("Reset App State")).click();
 		
 		

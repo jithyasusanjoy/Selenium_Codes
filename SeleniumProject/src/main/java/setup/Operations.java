@@ -1,5 +1,7 @@
 package setup;
 
+import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -11,6 +13,7 @@ public class Operations {
 	public static void main(String[] args) throws InterruptedException {
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.get("https://selenium.obsqurazone.com/simple-form-demo.php");
 
 		
@@ -19,9 +22,9 @@ public class Operations {
 		  driver.findElement(By.cssSelector("input[id='single-input-field']")).click();
 		  driver.findElement(By.cssSelector("input[id='single-input-field']")). sendKeys("Automation using Selenium"); //
 		  driver.findElement(By.cssSelector("button[id='button-one']")).click();
-		  Thread.sleep(2000); 
+		
 		  driver.findElement(By.cssSelector("input[id='single-input-field']")).clear();//clear the input 
-		  Thread.sleep(3000); 
+	
 		  
 		  //Two input 
 		  driver.findElement(By.cssSelector("input[id='single-input-field']")).click();
@@ -30,7 +33,7 @@ public class Operations {
 		  driver.findElement(By.cssSelector("input[id='value-b']")).sendKeys("2"); 
 		  driver.findElement(By.cssSelector("input[id='value-b']")).click(); 
 		  driver.findElement(By.cssSelector("button[id='button-two']")).click(); 
-		  Thread.sleep(3000);
+	
 		  
 		  //Radio button 
 		  driver.findElement(By.linkText("Radio Buttons Demo")).click(); 
@@ -42,46 +45,46 @@ public class Operations {
 		  System.out.println(radio.isSelected()); 
 		  System.out.println(radio.getAttribute("value")); 
 		  driver.findElement(By.xpath("(//button)[2]")).click(); 
-		  Thread.sleep(3000);
+		  
 		  
 		  //Radio button Group 
 		  driver.findElement(By.cssSelector("input[id='inlineRadio21']")).click(); 
 		  driver.findElement(By.cssSelector("input[id='inlineRadio23']")).click(); 
 		  driver.findElement(By.cssSelector("button[id='button-two']")).click(); 
-		  Thread.sleep(3000); 
+	
 		  
 		  //Check box 
 		  driver.findElement(By.partialLinkText("Checkbox")).click(); 
 		  driver.findElement(By.id("gridCheck")).click(); 
-		  Thread.sleep(3000); 
+		  
 		  
 		  //Multiple Check box 
 		  driver.findElement(By.cssSelector("input[id='check-box-one']")).click(); 
 		  driver.findElement(By.cssSelector("input[id='check-box-three']")).click(); 
-		  Thread.sleep(3000); 
+		 
 		  driver.findElement(By.cssSelector("input[id='button-two']")).click(); 
-		  Thread.sleep(3000); 
+	 
 		  driver.findElement(By.cssSelector("input[id='button-two']")).click(); 
-		  Thread.sleep(3000); 
+		  
 		  
 		  // Select drop down
 		  driver.findElement(By.partialLinkText("Select")).click(); 
 		  WebElement select = driver.findElement(By.id("single-input-field")); 
 		  select.click();
-		  Thread.sleep(2000); 
+		 
 		  
 		  //select class for static dropdown 
 		  Select s = new Select(select);
 		  s.selectByIndex(1);
-		  Thread.sleep(2000); 
+		 
 		  select.click(); 
-		  Thread.sleep(2000);
+		  
 		  s.selectByValue("Yellow"); 
-		  Thread.sleep(2000); 
+		 
 		  s.selectByVisibleText("Green");
-		  Thread.sleep(3000);
+		  
 		  select.click(); 
-		  Thread.sleep(3000);
+		  
 		   
 			  
 			// Multi select drop down
@@ -90,13 +93,13 @@ public class Operations {
 			  s1.selectByIndex(1); 
 			  s1.selectByValue("Red");
 			  s1.selectByVisibleText("Green");		 
-			  Thread.sleep(2000);
+			 
 			  //deselect
 			  s1.deselectByVisibleText("Green");
 			  s1.deselectByIndex(1);
 			  s1.deselectByValue("Red");
 			  s1.deselectAll();
-			  Thread.sleep(2000);
+			 
 			  driver.findElement(By.cssSelector("button[id='button-all']")).click();
 		  
 	}

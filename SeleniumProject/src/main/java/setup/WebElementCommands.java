@@ -1,5 +1,6 @@
 package setup;
 
+import java.time.Duration;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -15,6 +16,7 @@ public class WebElementCommands {
 		WebDriver driver=new ChromeDriver();
 		
 		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.navigate().to("https://www.obsqurazone.com/software-testing-courses-kerala/");
 		
 		//webElements

@@ -1,5 +1,7 @@
 package Testcases;
 
+import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -17,6 +19,7 @@ public class ActionClassInSelenium {
 	public void IntialSetup() {
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	}
 
 	@Test(enabled = false)
@@ -26,7 +29,7 @@ public class ActionClassInSelenium {
 		Actions act = new Actions(driver);
 		act.contextClick(username).perform();
 		act.click(username);
-		Thread.sleep(3000);
+	
 	}
 
 	@Test(enabled = false)
@@ -35,7 +38,7 @@ public class ActionClassInSelenium {
 		driver.get("https://seleniumbase.io/w3schools/double_click");
 		WebElement ifram = driver.findElement(By.id("iframeResult"));
 		driver.switchTo().frame(ifram);
-		Thread.sleep(3000);
+		
 		WebElement element = driver.findElement(By.xpath("//p[contains(text(),'Double')]"));
 		Actions act = new Actions(driver);
 		act.doubleClick(element).perform();
@@ -53,11 +56,11 @@ public class ActionClassInSelenium {
 		driver.findElement(By.xpath("//span[text()='Accept All']")).click(); 
 		WebElement fromElement =driver.findElement(By.xpath("(//li[@id='fourth'])[1]"));
 		WebElement toElement =driver.findElement(By.xpath("//ol[@id='amt7']"));
-		Thread.sleep(3000);
+		
 		
 		Actions act = new Actions(driver);
 		act.dragAndDrop(fromElement,toElement).perform();
-		Thread.sleep(3000);
+		
 		
 		Assert.assertEquals(true, driver.findElement(By.xpath("//td[contains(text(),'Debit')]")).isDisplayed());
 		System.out.println("Drag and drop done");	
@@ -67,7 +70,7 @@ public class ActionClassInSelenium {
 	public void mousehover() throws InterruptedException
 	{
 		driver.get("https://www.flipkart.com/");
-		Thread.sleep(2000);
+	
 		
 		Actions actions = new Actions(driver);
 		
@@ -76,18 +79,18 @@ public class ActionClassInSelenium {
 		
 		WebElement menuOption1 = driver.findElement(By.xpath("//div[text()='Electronics']"));
 		actions.moveToElement(menuOption1).perform();
-		Thread.sleep(2000);
+		
 		
 		WebElement menuOption2 = driver.findElement(By.xpath("//a[text()='Cameras & Accessories']"));
 		actions.moveToElement(menuOption2).perform();
-		Thread.sleep(2000);
+		
 		
 		WebElement menuOption3 = driver.findElement(By.xpath("//a[text()='DSLR & Mirrorless']"));
 		actions.moveToElement(menuOption3).perform();
-		Thread.sleep(2000);
+	
 		
 		menuOption3.click();
-		Thread.sleep(2000);
+		
 		
 		Assert.assertEquals(true, driver.findElement(By.xpath("//h1[text()='DSLR & Mirrorless']")).isDisplayed());
 		System.out.println("Success");
@@ -97,7 +100,7 @@ public class ActionClassInSelenium {
 
 	@AfterTest
 	public void browserclose() {
-	// driver.quit();
+	 driver.quit();
 	}
 
 }

@@ -1,5 +1,7 @@
 package Testcases;
 
+import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -18,6 +20,7 @@ public class OperationsTest {
     driver = new ChromeDriver();
 	driver.manage().window().maximize();
 	driver.get("https://selenium.obsqurazone.com/simple-form-demo.php");
+	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	}
 	
 	@Test(priority=1)
@@ -27,11 +30,11 @@ public class OperationsTest {
 	  driver.findElement(By.cssSelector("input[id='single-input-field']")).click();
 	  driver.findElement(By.cssSelector("input[id='single-input-field']")). sendKeys("Automation using Selenium"); //
 	  driver.findElement(By.cssSelector("button[id='button-one']")).click();
-	  Thread.sleep(2000); 
+	  
 	  boolean s=driver.findElement(By.cssSelector("div[id='message-one']")).isDisplayed();
 	  Assert.assertEquals(true, s);
 	  driver.findElement(By.cssSelector("input[id='single-input-field']")).clear();//clear the input 
-	  Thread.sleep(3000); 
+	  
 	}
 	
 	 @Test(priority=2)
@@ -46,7 +49,7 @@ public class OperationsTest {
 	  SoftAssert assertt= new SoftAssert();
 	  assertt.assertEquals(10, 12, "Test pass");
 	  System.out.println("Soft assertion Checking");
-	  Thread.sleep(3000);
+	 
 	  assertt.assertAll();
 	  driver.close();
 	  

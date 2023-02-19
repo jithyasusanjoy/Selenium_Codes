@@ -1,5 +1,7 @@
 package setup;
 
+import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WindowType;
@@ -10,6 +12,7 @@ public class QuitClose {
 	public static void main(String[] args) throws InterruptedException {
 		WebDriver driver=new ChromeDriver();
 		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.get("https://www.hyrtutorials.com/p/window-handles-practice.html");
 		driver.switchTo().newWindow(WindowType.TAB);
 		driver.get("https://www.obsqurazone.com/software-testing-courses-kerala/");
