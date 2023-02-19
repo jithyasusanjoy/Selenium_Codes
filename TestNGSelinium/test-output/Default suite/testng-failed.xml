@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Testcases.ScrollInSelenium">
+      <class name="Testcases.ExplicitFluentWait">
         <methods>
-          <include name="browserclose"/>
-          <include name="actionclasspageScroll"/>
           <include name="IntialSetup"/>
+          <include name="waitfluent"/>
         </methods>
-      </class> <!-- Testcases.ScrollInSelenium -->
+      </class> <!-- Testcases.ExplicitFluentWait -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
