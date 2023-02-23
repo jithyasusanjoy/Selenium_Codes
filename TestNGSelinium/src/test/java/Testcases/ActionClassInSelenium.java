@@ -22,7 +22,7 @@ public class ActionClassInSelenium {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	}
 
-	@Test(enabled = false)
+	@Test
 	public void mouseclick() throws InterruptedException {
 		driver.get("https://www.saucedemo.com/");
 		WebElement username = driver.findElement(By.id("user-name"));
@@ -32,7 +32,7 @@ public class ActionClassInSelenium {
 	
 	}
 
-	@Test(enabled = false)
+	@Test
 	public void mousedoubleclick() throws InterruptedException {
 
 		driver.get("https://seleniumbase.io/w3schools/double_click");
@@ -45,7 +45,7 @@ public class ActionClassInSelenium {
 
 	}
 
-	@Test(enabled = true)
+	@Test
 	public void draganddrop() throws InterruptedException {
 
 		
@@ -66,7 +66,7 @@ public class ActionClassInSelenium {
 		System.out.println("Drag and drop done");	
 	}
 
-	@Test(enabled=false)
+	@Test
 	public void mousehover() throws InterruptedException
 	{
 		driver.get("https://www.flipkart.com/");

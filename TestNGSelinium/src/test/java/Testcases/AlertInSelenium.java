@@ -23,7 +23,7 @@ public class AlertInSelenium {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	}
 	
-	@Test(enabled=false)
+	@Test
 	public void handlingalert()
 	{
 		driver.get("https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_alert");

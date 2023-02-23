@@ -4,6 +4,7 @@ import java.time.Duration;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
@@ -46,8 +47,9 @@ public class OperationsTest {
 	  driver.findElement(By.cssSelector("input[id='value-b']")).sendKeys("2"); 
 	  driver.findElement(By.cssSelector("input[id='value-b']")).click(); 
 	  driver.findElement(By.cssSelector("button[id='button-two']")).click(); 
+	  WebElement s=driver.findElement(By.cssSelector("div[id='message-two']"));
 	  SoftAssert assertt= new SoftAssert();
-	  assertt.assertEquals(10, 12, "Test pass");
+	  assertt.assertEquals("Total A + B : 12", s.getText(), "Test pass");
 	  System.out.println("Soft assertion Checking");
 	 
 	  assertt.assertAll();

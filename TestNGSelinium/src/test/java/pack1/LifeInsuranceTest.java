@@ -1,8 +1,49 @@
 package pack1;
 
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
 public class LifeInsuranceTest {
+	@BeforeSuite
+	public void beforesuite()
+	{
+		System.out.println("-------ExecuteBeforeSuite---------------");
+	}
+	@AfterSuite
+	public void aftersuite()
+	{
+		System.out.println("-------ExecuteAfterSuite---------------");
+	}
+	
+	@BeforeMethod
+	public void beforemethod()
+	{
+		System.out.println("-------BeforeMethod---------------");
+	}
+	
+	@AfterMethod
+	public void aftermethod()
+	{
+		System.out.println("-------AfterMethod---------------");
+	}
+	
+	@BeforeClass
+	public void beforeclass()
+	{
+		System.out.println("-------ExecuteBeforeClass---------------");
+	}
+	@AfterClass
+	public void afterclass()
+	{
+		System.out.println("-------ExecuteAfterClass---------------");
+	}
+	
+	
 	@Test(priority=3)
 	public void LifeInsuranceWebLogin()
 	{

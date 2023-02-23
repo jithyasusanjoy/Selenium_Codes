@@ -39,15 +39,15 @@ public class UploadFileRobot {
 		  StringSelection str = new StringSelection("C:\\Users\\jithya susan\\Downloads\\Timeline_page1.pdf");
 		 
 		  Toolkit.getDefaultToolkit().getSystemClipboard().setContents(str, null);
+		  Thread.sleep(3000);
 		  rb.keyPress(KeyEvent.VK_CONTROL);
 		  rb.keyPress(KeyEvent.VK_V);
-		 
 		  rb.keyRelease(KeyEvent.VK_CONTROL);
 		  rb.keyRelease(KeyEvent.VK_V);
-		 
+		  
 		  rb.keyPress(KeyEvent.VK_ENTER);
 		  rb.keyRelease(KeyEvent.VK_ENTER);
-		 
+	
 		  Assert.assertEquals(true,driver.findElement(By.xpath("//a[text()='Remove']")).isDisplayed());
 		  System.out.println("File uploaded successfully");
 		 

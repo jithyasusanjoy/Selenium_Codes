@@ -1,26 +1,60 @@
 package pack1;
 
+import org.testng.annotations.AfterGroups;
+import org.testng.annotations.BeforeGroups;
 import org.testng.annotations.Test;
 
 public class VehicleInsuranceTest {
-	@Test(priority=3)
-	public void VehicleInsuranceWebLogin()
+	
+	/*
+	 * @BeforeGroups("United India Assurance") public void before_it() {
+	 * System.out.println("--------Before group----------"); }
+	 * 
+	 * 
+	 * @Test public void three_wheeler() { System.out.println("Auto Insurance"); }
+	 * 
+	 * 
+	 * 
+	 * @Test(groups= {"United India Assurance"}) public void four_wheeler() {
+	 * System.out.println("Car Insurance"); }
+	 * 
+	 * @Test(groups= {"United India Assurance"}) public void two_wheeler() {
+	 * System.out.println("Bike Insurance"); }
+	 * 
+	 * 
+	 * 
+	 * 
+	 * 
+	 * 
+	 * @AfterGroups("United India Assurance") public void after_it() {
+	 * System.out.println("--------After group----------"); }
+	 */
+	
+	@BeforeGroups("United India Assurance")  
+	public void before_it()  
+	{  
+	System.out.println("--------Before group----------");  
+	}  
+	@AfterGroups("United India Assurance") 
+	public void after_it() 
 	{
-		System.out.println("VehicleInsuranceWebLogin");
+	System.out.println("--------After group----------");
 	}
-	@Test(priority=2)
-	public void VehicleInsuranceWebLogout()
-	{
-		System.out.println("VehicleInsuranceWebLogout");
-	}
-	@Test(priority=-2)
-	public void VehicleMobileInsuranceWebLogin()
-	{
-		System.out.println("VehicleMobileInsuranceWebLogin");
-	}
-	@Test(priority=1)
-	public void VehicleMobileInsuranceWebLogout()
-	{
-		System.out.println("VehicleMobileInsuranceWebLogout");
-	}
+	
+	@Test  
+	public void three_wheeler()  
+	{  
+	System.out.println("Auto Insurance");  
+	}  
+	 @Test(groups= {"United India Assurance"})  
+	public void four_wheeler() 
+	{  
+	System.out.println("Car Insurance");  
+	}  
+	@Test(groups= {"United India Assurance"})  
+	public void two_wheeler()  
+	{  
+	System.out.println("Bike Insurance");  
+	}  
+	
 }

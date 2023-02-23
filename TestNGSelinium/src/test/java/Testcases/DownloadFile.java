@@ -10,22 +10,20 @@ import org.testng.annotations.Test;
 
 public class DownloadFile {
 	
-	private static final String FileUtil = null;
+
 	public WebDriver driver;
-	@Test
+	@Test(invocationCount =3)
 	public void browserload() throws InterruptedException
 	{
 	    driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://filesamples.com/formats/csv");
+		driver.findElement(By.cssSelector("button[id='ez-accept-all']")).click();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		Assert.assertEquals(true,driver.findElement(By.xpath("//h1[text()='Sample CSV Files Download']")).isDisplayed());
 		System.out.println("site loaded");	
-		driver.findElement(By.cssSelector("a[href='/samples/document/csv/sample4.csv'] "));
+		driver.findElement(By.cssSelector("a[href='/samples/document/csv/sample4.csv'] ")).click();
 		
-//		Assert.assertTrue(FileUtil.isFileDownloaded("sample", "csv", 5000));
-//		System.out.println("File Downloaded");
-	
 	}
 	
 	
