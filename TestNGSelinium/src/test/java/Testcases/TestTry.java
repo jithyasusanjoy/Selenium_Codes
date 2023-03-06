@@ -10,8 +10,6 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-import pack2.RetryAnalyzer;
-
 @Listeners(pack2.ListenerTest.class)
 public class TestTry {
 	WebDriver driver;

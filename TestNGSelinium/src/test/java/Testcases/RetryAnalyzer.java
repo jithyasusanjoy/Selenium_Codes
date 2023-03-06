@@ -1,4 +1,4 @@
-package pack2;
+package Testcases;
 
 
 import org.testng.IRetryAnalyzer;
