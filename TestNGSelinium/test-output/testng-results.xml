@@ -2,98 +2,98 @@
 <testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-02-24T02:10:21 IST" name="Suite" finished-at="2023-02-24T02:10:21 IST" duration-ms="116">
+  <suite started-at="2023-03-06T11:05:32 IST" name="Suite" finished-at="2023-03-06T11:05:32 IST" duration-ms="297">
     <groups>
       <group name="United India Assurance">
         <method signature="VehicleInsuranceTest.four_wheeler()[pri:0, instance:pack1.VehicleInsuranceTest@222545dc]" name="four_wheeler" class="pack1.VehicleInsuranceTest"/>
         <method signature="VehicleInsuranceTest.two_wheeler()[pri:0, instance:pack1.VehicleInsuranceTest@222545dc]" name="two_wheeler" class="pack1.VehicleInsuranceTest"/>
       </group> <!-- United India Assurance -->
     </groups>
-    <test started-at="2023-02-24T02:10:21 IST" name="United India Assurance" finished-at="2023-02-24T02:10:21 IST" duration-ms="116">
+    <test started-at="2023-03-06T11:05:32 IST" name="United India Assurance" finished-at="2023-03-06T11:05:32 IST" duration-ms="297">
       <class name="pack1.LifeInsuranceTest">
-        <test-method is-config="true" signature="beforesuite()[pri:0, instance:pack1.LifeInsuranceTest@1283bb96]" started-at="2023-02-24T02:10:21 IST" name="beforesuite" finished-at="2023-02-24T02:10:21 IST" duration-ms="12" status="PASS">
+        <test-method is-config="true" signature="beforesuite()[pri:0, instance:pack1.LifeInsuranceTest@1283bb96]" started-at="2023-03-06T11:05:32 IST" name="beforesuite" finished-at="2023-03-06T11:05:32 IST" duration-ms="23" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforesuite -->
-        <test-method is-config="true" signature="beforeclass()[pri:0, instance:pack1.LifeInsuranceTest@1283bb96]" started-at="2023-02-24T02:10:21 IST" name="beforeclass" finished-at="2023-02-24T02:10:21 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="beforeclass()[pri:0, instance:pack1.LifeInsuranceTest@1283bb96]" started-at="2023-03-06T11:05:32 IST" name="beforeclass" finished-at="2023-03-06T11:05:32 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeclass -->
-        <test-method is-config="true" signature="beforemethod()[pri:0, instance:pack1.LifeInsuranceTest@1283bb96]" started-at="2023-02-24T02:10:21 IST" name="beforemethod" finished-at="2023-02-24T02:10:21 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="beforemethod()[pri:0, instance:pack1.LifeInsuranceTest@1283bb96]" started-at="2023-03-06T11:05:32 IST" name="beforemethod" finished-at="2023-03-06T11:05:32 IST" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforemethod -->
-        <test-method signature="LifeMobileInsuranceWebLogin()[pri:-2, instance:pack1.LifeInsuranceTest@1283bb96]" started-at="2023-02-24T02:10:21 IST" name="LifeMobileInsuranceWebLogin" finished-at="2023-02-24T02:10:21 IST" duration-ms="2" status="PASS">
+        <test-method signature="LifeMobileInsuranceWebLogin()[pri:-2, instance:pack1.LifeInsuranceTest@1283bb96]" started-at="2023-03-06T11:05:32 IST" name="LifeMobileInsuranceWebLogin" finished-at="2023-03-06T11:05:32 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LifeMobileInsuranceWebLogin -->
-        <test-method is-config="true" signature="aftermethod()[pri:0, instance:pack1.LifeInsuranceTest@1283bb96]" started-at="2023-02-24T02:10:21 IST" name="aftermethod" finished-at="2023-02-24T02:10:21 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="aftermethod()[pri:0, instance:pack1.LifeInsuranceTest@1283bb96]" started-at="2023-03-06T11:05:32 IST" name="aftermethod" finished-at="2023-03-06T11:05:32 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftermethod -->
-        <test-method is-config="true" signature="beforemethod()[pri:0, instance:pack1.LifeInsuranceTest@1283bb96]" started-at="2023-02-24T02:10:21 IST" name="beforemethod" finished-at="2023-02-24T02:10:21 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="beforemethod()[pri:0, instance:pack1.LifeInsuranceTest@1283bb96]" started-at="2023-03-06T11:05:32 IST" name="beforemethod" finished-at="2023-03-06T11:05:32 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforemethod -->
-        <test-method signature="LifeMobileInsuranceWebLogout()[pri:1, instance:pack1.LifeInsuranceTest@1283bb96]" started-at="2023-02-24T02:10:21 IST" name="LifeMobileInsuranceWebLogout" finished-at="2023-02-24T02:10:21 IST" duration-ms="2" status="PASS">
+        <test-method signature="LifeMobileInsuranceWebLogout()[pri:1, instance:pack1.LifeInsuranceTest@1283bb96]" started-at="2023-03-06T11:05:32 IST" name="LifeMobileInsuranceWebLogout" finished-at="2023-03-06T11:05:32 IST" duration-ms="11" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LifeMobileInsuranceWebLogout -->
-        <test-method is-config="true" signature="aftermethod()[pri:0, instance:pack1.LifeInsuranceTest@1283bb96]" started-at="2023-02-24T02:10:21 IST" name="aftermethod" finished-at="2023-02-24T02:10:21 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="aftermethod()[pri:0, instance:pack1.LifeInsuranceTest@1283bb96]" started-at="2023-03-06T11:05:32 IST" name="aftermethod" finished-at="2023-03-06T11:05:32 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftermethod -->
-        <test-method is-config="true" signature="beforemethod()[pri:0, instance:pack1.LifeInsuranceTest@1283bb96]" started-at="2023-02-24T02:10:21 IST" name="beforemethod" finished-at="2023-02-24T02:10:21 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforemethod -->
-        <test-method signature="LifeInsuranceWebLogout()[pri:2, instance:pack1.LifeInsuranceTest@1283bb96]" started-at="2023-02-24T02:10:21 IST" name="LifeInsuranceWebLogout" finished-at="2023-02-24T02:10:21 IST" duration-ms="2" status="PASS">
+        <test-method signature="LifeInsuranceWebLogout()[pri:2, instance:pack1.LifeInsuranceTest@1283bb96]" started-at="2023-03-06T11:05:32 IST" name="LifeInsuranceWebLogout" finished-at="2023-03-06T11:05:32 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LifeInsuranceWebLogout -->
-        <test-method is-config="true" signature="aftermethod()[pri:0, instance:pack1.LifeInsuranceTest@1283bb96]" started-at="2023-02-24T02:10:21 IST" name="aftermethod" finished-at="2023-02-24T02:10:21 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- aftermethod -->
-        <test-method signature="LifeInsuranceWebLogin()[pri:3, instance:pack1.LifeInsuranceTest@1283bb96]" started-at="2023-02-24T02:10:21 IST" name="LifeInsuranceWebLogin" finished-at="2023-02-24T02:10:21 IST" duration-ms="6" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LifeInsuranceWebLogin -->
-        <test-method is-config="true" signature="beforemethod()[pri:0, instance:pack1.LifeInsuranceTest@1283bb96]" started-at="2023-02-24T02:10:21 IST" name="beforemethod" finished-at="2023-02-24T02:10:21 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="beforemethod()[pri:0, instance:pack1.LifeInsuranceTest@1283bb96]" started-at="2023-03-06T11:05:32 IST" name="beforemethod" finished-at="2023-03-06T11:05:32 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforemethod -->
-        <test-method is-config="true" signature="aftermethod()[pri:0, instance:pack1.LifeInsuranceTest@1283bb96]" started-at="2023-02-24T02:10:21 IST" name="aftermethod" finished-at="2023-02-24T02:10:21 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="aftermethod()[pri:0, instance:pack1.LifeInsuranceTest@1283bb96]" started-at="2023-03-06T11:05:32 IST" name="aftermethod" finished-at="2023-03-06T11:05:32 IST" duration-ms="8" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftermethod -->
-        <test-method is-config="true" signature="afterclass()[pri:0, instance:pack1.LifeInsuranceTest@1283bb96]" started-at="2023-02-24T02:10:21 IST" name="afterclass" finished-at="2023-02-24T02:10:21 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="beforemethod()[pri:0, instance:pack1.LifeInsuranceTest@1283bb96]" started-at="2023-03-06T11:05:32 IST" name="beforemethod" finished-at="2023-03-06T11:05:32 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforemethod -->
+        <test-method signature="LifeInsuranceWebLogin()[pri:3, instance:pack1.LifeInsuranceTest@1283bb96]" started-at="2023-03-06T11:05:32 IST" name="LifeInsuranceWebLogin" finished-at="2023-03-06T11:05:32 IST" duration-ms="9" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LifeInsuranceWebLogin -->
+        <test-method is-config="true" signature="aftermethod()[pri:0, instance:pack1.LifeInsuranceTest@1283bb96]" started-at="2023-03-06T11:05:32 IST" name="aftermethod" finished-at="2023-03-06T11:05:32 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method is-config="true" signature="afterclass()[pri:0, instance:pack1.LifeInsuranceTest@1283bb96]" started-at="2023-03-06T11:05:32 IST" name="afterclass" finished-at="2023-03-06T11:05:32 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterclass -->
-        <test-method is-config="true" signature="aftersuite()[pri:0, instance:pack1.LifeInsuranceTest@1283bb96]" started-at="2023-02-24T02:10:21 IST" name="aftersuite" finished-at="2023-02-24T02:10:21 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="aftersuite()[pri:0, instance:pack1.LifeInsuranceTest@1283bb96]" started-at="2023-03-06T11:05:32 IST" name="aftersuite" finished-at="2023-03-06T11:05:32 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftersuite -->
       </class> <!-- pack1.LifeInsuranceTest -->
       <class name="pack1.VehicleInsuranceTest">
-        <test-method is-config="true" signature="before_it()[pri:0, instance:pack1.VehicleInsuranceTest@222545dc]" started-at="2023-02-24T02:10:21 IST" name="before_it" finished-at="2023-02-24T02:10:21 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="before_it()[pri:0, instance:pack1.VehicleInsuranceTest@222545dc]" started-at="2023-03-06T11:05:32 IST" name="before_it" finished-at="2023-03-06T11:05:32 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before_it -->
-        <test-method signature="four_wheeler()[pri:0, instance:pack1.VehicleInsuranceTest@222545dc]" started-at="2023-02-24T02:10:21 IST" name="four_wheeler" finished-at="2023-02-24T02:10:21 IST" duration-ms="11" status="PASS">
+        <test-method signature="four_wheeler()[pri:0, instance:pack1.VehicleInsuranceTest@222545dc]" started-at="2023-03-06T11:05:32 IST" name="four_wheeler" finished-at="2023-03-06T11:05:32 IST" duration-ms="14" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- four_wheeler -->
-        <test-method signature="three_wheeler()[pri:0, instance:pack1.VehicleInsuranceTest@222545dc]" started-at="2023-02-24T02:10:21 IST" name="three_wheeler" finished-at="2023-02-24T02:10:21 IST" duration-ms="2" status="PASS">
+        <test-method signature="three_wheeler()[pri:0, instance:pack1.VehicleInsuranceTest@222545dc]" started-at="2023-03-06T11:05:32 IST" name="three_wheeler" finished-at="2023-03-06T11:05:32 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- three_wheeler -->
-        <test-method signature="two_wheeler()[pri:0, instance:pack1.VehicleInsuranceTest@222545dc]" started-at="2023-02-24T02:10:21 IST" name="two_wheeler" finished-at="2023-02-24T02:10:21 IST" duration-ms="2" status="PASS">
+        <test-method signature="two_wheeler()[pri:0, instance:pack1.VehicleInsuranceTest@222545dc]" started-at="2023-03-06T11:05:32 IST" name="two_wheeler" finished-at="2023-03-06T11:05:32 IST" duration-ms="7" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- two_wheeler -->
-        <test-method is-config="true" signature="after_it()[pri:0, instance:pack1.VehicleInsuranceTest@222545dc]" started-at="2023-02-24T02:10:21 IST" name="after_it" finished-at="2023-02-24T02:10:21 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="after_it()[pri:0, instance:pack1.VehicleInsuranceTest@222545dc]" started-at="2023-03-06T11:05:32 IST" name="after_it" finished-at="2023-03-06T11:05:32 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after_it -->

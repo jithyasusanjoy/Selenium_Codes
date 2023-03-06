@@ -4,14 +4,18 @@
   <parameter name="Username" value="standard_user"/>
   <parameter name="URL" value="https://www.saucedemo.com/"/>
   <parameter name="Password" value="secret_sauce"/>
-  <test thread-count="5" name="Test(failed)">
+  <listeners>
+    <listener class-name="pack2.ListenerTest"/>
+  </listeners>
+  <test thread-count="5" name="United India Assurance(failed)">
     <classes>
-      <class name="Testcases.AlertInSelenium">
+      <class name="Testcases.TestTry">
         <methods>
-          <include name="browserload"/>
-          <include name="windowhandle"/>
+          <include name="testFail"/>
+          <include name="setUp"/>
+          <include name="close"/>
         </methods>
-      </class> <!-- Testcases.AlertInSelenium -->
+      </class> <!-- Testcases.TestTry -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- United India Assurance(failed) -->
 </suite> <!-- Failed suite [Suite] -->

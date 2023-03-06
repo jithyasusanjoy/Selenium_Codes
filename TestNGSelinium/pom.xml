@@ -12,7 +12,7 @@
           <version>3.0.0-M9</version>
           <configuration>
           <suiteXmlFiles>
-            <suiteXmlFile>testng.xml</suiteXmlFile>
+            <suiteXmlFile>new.xml</suiteXmlFile>
           </suiteXmlFiles>
         </configuration>
         </plugin>
