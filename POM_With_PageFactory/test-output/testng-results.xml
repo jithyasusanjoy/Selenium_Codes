@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-02-22T03:23:34 IST" name="Default suite" finished-at="2023-02-22T03:23:40 IST" duration-ms="5902">
+  <suite started-at="2023-03-07T02:58:41 IST" name="Suite" finished-at="2023-03-07T02:58:44 IST" duration-ms="2860">
     <groups>
     </groups>
-    <test started-at="2023-02-22T03:23:34 IST" name="Default test" finished-at="2023-02-22T03:23:40 IST" duration-ms="5902">
+    <test started-at="2023-03-07T02:58:41 IST" name="Test" finished-at="2023-03-07T02:58:44 IST" duration-ms="2860">
       <class name="test_pack.SwagLoginTest">
-        <test-method signature="Login()[pri:0, instance:test_pack.SwagLoginTest@1fa268de]" started-at="2023-02-22T03:23:34 IST" name="Login" finished-at="2023-02-22T03:23:40 IST" duration-ms="5860" status="PASS">
+        <test-method signature="Login()[pri:0, instance:test_pack.SwagLoginTest@1fa268de]" started-at="2023-03-07T02:58:42 IST" name="Login" finished-at="2023-03-07T02:58:44 IST" duration-ms="2796" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
       </class> <!-- test_pack.SwagLoginTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
