@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<listeners>
+<listener class-name="com.project.Utilities.Listeners"/>
+</listeners>
+  <test thread-count="5" name="Test">
+  <classes>
+  <class name="com.TestCases.VerifyUserLoginTest"></class>
+  <class name="com.TestCases.VerifyHomeLanguageTest"></class>
+  <class name="com.TestCases.VerifyLoggedUserTest"></class>
+  <class name="com.TestCases.VerifyProductFileUploadTest"></class>
+  <class name="com.TestCases.VerifyProductFileDownloadTest"></class>
+  <class name="com.TestCases.VerifyAddProductTest"></class>
+  <class name="com.TestCases.VerifyAddStoreTest"></class>
+  <class name="com.TestCases.VerifyEditStoreTest"></class>
+  <class name="com.TestCases.VerifyDeleteStoreTest"></class>
+  <class name="com.TestCases.VerifyUserLogoutTest"></class>
+  </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
