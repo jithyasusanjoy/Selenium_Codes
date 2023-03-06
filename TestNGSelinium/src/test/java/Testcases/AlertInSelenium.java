@@ -23,7 +23,7 @@ public class AlertInSelenium {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	}
 	
-	@Test
+	@Test(groups= {"smoke"})
 	public void handlingalert()
 	{
 		driver.get("https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_alert");
@@ -33,7 +33,7 @@ public class AlertInSelenium {
 		driver.findElement(By.xpath("//button[text()='Try it']")).click();
 		driver.switchTo().alert().accept();
 	}
-	@Test
+	@Test(groups= {"smoke"})
 	public void windowhandle()
 	{
 		driver.get("https://omayo.blogspot.com/");

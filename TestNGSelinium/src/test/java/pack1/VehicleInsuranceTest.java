@@ -7,7 +7,9 @@ import org.testng.annotations.Test;
 public class VehicleInsuranceTest {
 	
 	/*
-	 * @BeforeGroups("United India Assurance") public void before_it() {
+	 * @BeforeGroups("United India Assurance") 
+	 * public void before_it()
+	 *  {
 	 * System.out.println("--------Before group----------"); }
 	 * 
 	 * 

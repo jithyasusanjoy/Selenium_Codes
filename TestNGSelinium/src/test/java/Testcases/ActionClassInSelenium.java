@@ -8,12 +8,15 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
+import org.testng.annotations.AfterGroups;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeGroups;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 public class ActionClassInSelenium {
 	public WebDriver driver;
+	
 
 	@BeforeTest
 	public void IntialSetup() {
@@ -22,7 +25,7 @@ public class ActionClassInSelenium {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	}
 
-	@Test
+	@Test(groups= {"smoke"})
 	public void mouseclick() throws InterruptedException {
 		driver.get("https://www.saucedemo.com/");
 		WebElement username = driver.findElement(By.id("user-name"));
@@ -32,7 +35,7 @@ public class ActionClassInSelenium {
 	
 	}
 
-	@Test
+	@Test(groups= {"smoke"})
 	public void mousedoubleclick() throws InterruptedException {
 
 		driver.get("https://seleniumbase.io/w3schools/double_click");
@@ -45,7 +48,7 @@ public class ActionClassInSelenium {
 
 	}
 
-	@Test
+	@Test(groups= {"smoke"})
 	public void draganddrop() throws InterruptedException {
 
 		
@@ -66,12 +69,12 @@ public class ActionClassInSelenium {
 		System.out.println("Drag and drop done");	
 	}
 
-	@Test
+	@Test(groups={"smoke"})
 	public void mousehover() throws InterruptedException
 	{
 		driver.get("https://www.flipkart.com/");
 	
-		
+		Thread.sleep(3000);
 		Actions actions = new Actions(driver);
 		
 		driver.findElement(By.xpath("//button[text()='✕']")).click();

@@ -8,8 +8,10 @@
 		<listener class-name="Testcases.ListenerTest"></listener>
 	</listeners>
 	<test thread-count="5" name="Test">
+	
 		<classes>
 			<class name="Testcases.ActionClassInSelenium" />
+			<class name="Testcases.AlertInSelenium" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->
