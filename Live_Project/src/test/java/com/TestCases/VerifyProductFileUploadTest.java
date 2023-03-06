@@ -5,10 +5,9 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import com.Base.BaseClass.BaseClass;
-
-import WebElements.HomePage;
-import WebElements.LoginPage;
-import WebElements.ProductPage;
+import com.PageObjects.HomePage;
+import com.PageObjects.LoginPage;
+import com.PageObjects.ProductPage;
 
 public class VerifyProductFileUploadTest extends BaseClass {
 	@BeforeTest

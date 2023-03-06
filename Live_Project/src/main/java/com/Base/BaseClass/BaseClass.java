@@ -13,7 +13,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 
-import Actions_pack.ActionClass;
+import com.ActionClass.ActionClass;
 
 public class BaseClass {
 

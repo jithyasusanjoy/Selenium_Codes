@@ -5,11 +5,10 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import com.Base.BaseClass.BaseClass;
-
-import WebElements.AddStorePage;
-import WebElements.HomePage;
-import WebElements.LoginPage;
-import WebElements.StoresPage;
+import com.PageObjects.AddStorePage;
+import com.PageObjects.HomePage;
+import com.PageObjects.LoginPage;
+import com.PageObjects.StoresPage;
 
 public class VerifyEditStoreTest  extends BaseClass {
 	@BeforeTest

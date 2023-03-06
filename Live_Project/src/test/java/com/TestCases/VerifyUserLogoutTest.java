@@ -5,8 +5,8 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import com.Base.BaseClass.BaseClass;
-import WebElements.HomePage;
-import WebElements.LoginPage;
+import com.PageObjects.HomePage;
+import com.PageObjects.LoginPage;
 
 public class VerifyUserLogoutTest extends BaseClass {
 	
