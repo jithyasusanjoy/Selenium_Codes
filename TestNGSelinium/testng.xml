@@ -5,7 +5,7 @@
 <parameter name="Username" value="standard_user"></parameter>
 <parameter name="Password" value="secret_sauce"></parameter>
 <listeners>
-<listener class-name="pack2.ListenerTest"></listener>
+<listener class-name="Testcases.ListenerTest"></listener>
 </listeners>
   <test thread-count="5" name="United India Assurance">
   <groups>
