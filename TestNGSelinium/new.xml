@@ -6,8 +6,8 @@
 <parameter name="Password" value="secret_sauce"></parameter>
   <test thread-count="5" name="United India Assurance">
     <classes>
-      <class name="pack1.VehicleInsuranceTest"/>  
-       <class name="pack1.LifeInsuranceTest"/>  
+      <class name="Testcases.ActionClassInSelenium"/>  
+       <class name="Testcases.AlertInSelenium"/>  
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
