@@ -1,6 +1,8 @@
 package com.TestCases;
 
 import org.testng.Assert;
+import org.testng.annotations.AfterGroups;
+import org.testng.annotations.BeforeGroups;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -11,13 +13,24 @@ import com.PageObjects.LoginPage;
 import com.PageObjects.ProductPage;
 
 public class VerifyAddProductTest extends BaseClass {
+	@BeforeGroups("smoke")  
+	public void before_it()  
+	{  
+	System.out.println("--------Before group----------");  
+	}  
 	@BeforeTest
 	public void launch()
 	{
 		launchApp();
 	}
 	
-	@Test
+	@AfterGroups("smoke") 
+	public void after_it() 
+	{
+	System.out.println("--------After group----------");
+	}
+	
+	@Test(groups={"smoke"})
 	public void user_add_product()
 	{
 		LoginPage lp=new LoginPage(driver);

@@ -3,73 +3,15 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.TestCases.VerifyAddStoreTest">
-        <methods>
-          <include name="Teardown"/>
-          <include name="launch"/>
-          <include name="user_add_store"/>
-          <include name="loadConfig"/>
-        </methods>
-      </class> <!-- com.TestCases.VerifyAddStoreTest -->
-      <class name="com.TestCases.VerifyDeleteStoreTest">
-        <methods>
-          <include name="Teardown"/>
-          <include name="loadConfig"/>
-          <include name="launch"/>
-          <include name="user_edit_store"/>
-        </methods>
-      </class> <!-- com.TestCases.VerifyDeleteStoreTest -->
-      <class name="com.TestCases.VerifyProductFileUploadTest">
-        <methods>
-          <include name="Teardown"/>
-          <include name="user_add_product"/>
-          <include name="loadConfig"/>
-          <include name="launch"/>
-        </methods>
-      </class> <!-- com.TestCases.VerifyProductFileUploadTest -->
-      <class name="com.TestCases.VerifyLoggedUserTest">
-        <methods>
-          <include name="Teardown"/>
-          <include name="user_name"/>
-          <include name="loadConfig"/>
-          <include name="launch"/>
-        </methods>
-      </class> <!-- com.TestCases.VerifyLoggedUserTest -->
-      <class name="com.TestCases.VerifyUserLogoutTest">
-        <methods>
-          <include name="Teardown"/>
-          <include name="launch"/>
-          <include name="user_logout"/>
-          <include name="loadConfig"/>
-        </methods>
-      </class> <!-- com.TestCases.VerifyUserLogoutTest -->
-      <class name="com.TestCases.VerifyAddProductTest">
-        <methods>
-          <include name="Teardown"/>
-          <include name="launch"/>
-          <include name="loadConfig"/>
-          <include name="user_add_product"/>
-        </methods>
-      </class> <!-- com.TestCases.VerifyAddProductTest -->
-      <class name="com.TestCases.VerifyProductFileDownloadTest">
-        <methods>
-          <include name="user_add_product"/>
-          <include name="Teardown"/>
-          <include name="launch"/>
-          <include name="loadConfig"/>
-        </methods>
-      </class> <!-- com.TestCases.VerifyProductFileDownloadTest -->
-      <class name="com.TestCases.VerifyEditStoreTest">
-        <methods>
-          <include name="user_edit_store"/>
-          <include name="Teardown"/>
-          <include name="launch"/>
-          <include name="loadConfig"/>
-        </methods>
-      </class> <!-- com.TestCases.VerifyEditStoreTest -->
       <class name="com.TestCases.VerifyUserLoginTest">
         <methods>
+          <include name="validUserinvalidPass" invocation-numbers="0 1"/>
           <include name="Teardown"/>
+          <include name="invalid_User_valid_pass"/>
+          <include name="invalid_User_invalid_pass"/>
+          <include name="validUserLogin"/>
+          <include name="loadConfig"/>
+          <include name="launch"/>
         </methods>
       </class> <!-- com.TestCases.VerifyUserLoginTest -->
       <class name="com.TestCases.VerifyHomeLanguageTest">

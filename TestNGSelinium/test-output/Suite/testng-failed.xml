@@ -8,12 +8,24 @@
     <listener class-name="Testcases.ListenerTest"/>
   </listeners>
   <test thread-count="5" name="Test(failed)">
+    <groups>
+      <run>
+        <include name="smoke"/>
+      </run>
+    </groups>
     <classes>
+      <class name="Testcases.AlertInSelenium">
+        <methods>
+          <include name="handlingalert"/>
+          <include name="windowhandle"/>
+        </methods>
+      </class> <!-- Testcases.AlertInSelenium -->
       <class name="Testcases.ActionClassInSelenium">
         <methods>
-          <include name="IntialSetup"/>
           <include name="mousehover"/>
-          <include name="browserclose"/>
+          <include name="draganddrop"/>
+          <include name="mouseclick"/>
+          <include name="mousedoubleclick"/>
         </methods>
       </class> <!-- Testcases.ActionClassInSelenium -->
     </classes>

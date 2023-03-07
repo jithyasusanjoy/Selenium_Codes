@@ -6,6 +6,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 
+import org.apache.log4j.xml.DOMConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -14,6 +15,7 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 
 import com.ActionClass.ActionClass;
+import com.project.Utilities.ExtentReport;
 
 public class BaseClass {
 
@@ -24,6 +26,9 @@ public class BaseClass {
 	
 	@BeforeSuite
 	public void loadConfig() {
+		
+		DOMConfigurator.configure("log4j.xml");
+		ExtentReport.setExtent();
 		  
 		try {
 			 prop = new Properties();

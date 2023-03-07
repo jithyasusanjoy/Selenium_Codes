@@ -5,9 +5,8 @@
     <classes>
       <class name="com.TestCases.VerifyUserLoginTest">
         <methods>
-          <include name="validUserinvalidPass" invocation-numbers="0 1"/>
           <include name="Teardown"/>
-          <include name="invalid_User_valid_pass"/>
+          <include name="invalid_User_invalid_pass"/>
           <include name="loadConfig"/>
           <include name="launch"/>
         </methods>

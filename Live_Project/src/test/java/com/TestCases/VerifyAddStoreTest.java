@@ -8,6 +8,7 @@ import com.PageObjects.AddStorePage;
 import com.PageObjects.HomePage;
 import com.PageObjects.LoginPage;
 import com.PageObjects.StoresPage;
+import com.project.Utilities.Log;
 
 public class VerifyAddStoreTest extends BaseClass {
 	@BeforeTest
@@ -19,10 +20,12 @@ public class VerifyAddStoreTest extends BaseClass {
 	@Test
 	public void user_add_store() 
 	{
+		Log.startTestCase("VerifyAddStoreTest");
 		LoginPage lp=new LoginPage(driver);
 		lp.LoginFn(); 	
 		HomePage hp= new HomePage(driver);
 		Assert.assertEquals(hp.page_heading().getText(),"CHOOSE A STORE");
+		 Log.info("user is going to click  store menu");
 		act.click1(hp.stores(), "Clicked");		
 		StoresPage sp =new StoresPage(driver);
 		Assert.assertEquals(sp.add_store().getText(),"Add Store");	
@@ -40,5 +43,6 @@ public class VerifyAddStoreTest extends BaseClass {
 		act.type(sp.search(), "Bun");
 		Assert.assertEquals(sp.First_Element().getText(),"BunCafe");
 		System.out.println("Store added");
+		Log.endTestCase("VerifyAddStoreTest");
 	}
 }

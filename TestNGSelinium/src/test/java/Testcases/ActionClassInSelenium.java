@@ -8,9 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
-import org.testng.annotations.AfterGroups;
 import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeGroups;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -27,6 +25,7 @@ public class ActionClassInSelenium {
 
 	@Test(groups= {"smoke"})
 	public void mouseclick() throws InterruptedException {
+		
 		driver.get("https://www.saucedemo.com/");
 		WebElement username = driver.findElement(By.id("user-name"));
 		Actions act = new Actions(driver);

@@ -1,6 +1,7 @@
 package com.TestCases;
-import java.io.IOException;
 import java.time.Duration;
+import java.util.ArrayList;
+
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
@@ -9,6 +10,7 @@ import com.Base.BaseClass.BaseClass;
 import com.PageObjects.HomePage;
 import com.PageObjects.LoginPage;
 import com.project.Utilities.ExcelRead;
+import com.project.Utilities.Log;
 
 public class VerifyUserLoginTest extends BaseClass {
 	
@@ -17,8 +19,8 @@ public class VerifyUserLoginTest extends BaseClass {
 	public void launch()
 	{
 		launchApp();
+		
 	}
-	
 	@Test(priority=4)
 	public void validUserLogin()
 	{	
@@ -27,6 +29,7 @@ public class VerifyUserLoginTest extends BaseClass {
 		HomePage hp=new HomePage(driver);
 		Assert.assertEquals(hp.page_heading().getText(),"CHOOSE A STORE");
 		System.out.println("Logged in");
+		
 	}
 	
 	
@@ -56,23 +59,27 @@ public class VerifyUserLoginTest extends BaseClass {
 	  @Test(priority=2)
 	  public void invalid_User_valid_pass() 
 	  {
+		  Log.startTestCase("invalid_User_valid_pass");
 	  LoginPage lp=new LoginPage(driver);
+	  Log.info("user is going to enter username");
 	  act.type(lp.uname(),"aaammi"); 
+	  Log.info("user is going to enter password");
 	  act.type(lp.pwd(),"Password");
 	  act.click1(lp.lbutton(),"Clicking On Login Button");
 	  act.explicitWait(driver, lp.login_label(),Duration.ofSeconds(10));  
 	  Assert.assertEquals(lp.login_label().getText(),"Login");
 	  System.out.println("Unable to Login");
+	  Log.endTestCase("invalid_User_valid_pass"); 
 	  }
 	  
 	  @Test(priority=1)
-	  public void invalid_User_invalid_pass() throws IOException 
+	  public void invalid_User_invalid_pass() throws Exception 
 	  {
 	  LoginPage lp=new LoginPage(driver);
 	  ExcelRead data= new ExcelRead();
-	  data.read("VerifyUserLoginTest");
-	  act.type(lp.uname(),"aaammi");
-	  act.type(lp.pwd(),"Pwdddd");
+	  ArrayList<String> exceldata=data.getData("VerifyUserLoginTest");
+	  act.type(lp.uname(),exceldata.get(0));
+	  act.type(lp.pwd(),exceldata.get(1));
 	  act.click1(lp.lbutton(),"Clicking On Login Button"); 
 	  act.explicitWait(driver, lp.login_label(),Duration.ofSeconds(10)); 
 	  Assert.assertEquals(lp.login_label().getText(),"Login");
