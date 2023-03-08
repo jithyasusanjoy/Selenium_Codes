@@ -13,6 +13,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeTest;
 
 import com.ActionClass.ActionClass;
 import com.project.Utilities.ExtentReport;
@@ -22,14 +23,17 @@ public class BaseClass {
 	public static WebDriver driver;
 	public static Properties prop;
 	public static ActionClass act;
-	
-	
-	@BeforeSuite
-	public void loadConfig() {
 		
+	@BeforeSuite
+	public void loadingfiles()
+	{
 		DOMConfigurator.configure("log4j.xml");
-		ExtentReport.setExtent();
-		  
+		ExtentReport.setExtent();	
+	}
+	
+	@BeforeTest
+	public void loadConfig() {
+	  
 		try {
 			 prop = new Properties();
 			FileInputStream ip = new FileInputStream(
@@ -67,7 +71,8 @@ public class BaseClass {
 	@AfterSuite()
 	public void Teardown()
 	{
-		driver.close();
+		
+		ExtentReport.endReport();
 	}
 	
 }

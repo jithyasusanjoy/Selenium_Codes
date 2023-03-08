@@ -65,10 +65,18 @@ WebDriver driver;
 	@FindBy(xpath="//td[@class='hidden-xs productcode sorting_1']")
 	WebElement First_Element;
 	
+	@FindBy(xpath="(//button[@onclick=\"location.reload();\"])[2]")
+	WebElement Stock_close;
+	
 	
 	public AddProductPage(WebDriver driver) {
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
+	}
+	
+	public WebElement Stock_close()
+	{
+		return Stock_close;
 	}
 	public WebElement First_Element()
 	{

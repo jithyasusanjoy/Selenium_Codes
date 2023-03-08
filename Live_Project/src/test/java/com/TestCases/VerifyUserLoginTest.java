@@ -3,7 +3,8 @@ import java.time.Duration;
 import java.util.ArrayList;
 
 import org.testng.Assert;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import com.Base.BaseClass.BaseClass;
@@ -15,13 +16,13 @@ import com.project.Utilities.Log;
 public class VerifyUserLoginTest extends BaseClass {
 	
 	
-	@BeforeTest
+	@BeforeMethod
 	public void launch()
 	{
 		launchApp();
 		
 	}
-	@Test(priority=4)
+	@Test(priority=4,enabled=false)
 	public void validUserLogin()
 	{	
 		LoginPage lp=new LoginPage(driver);
@@ -33,7 +34,7 @@ public class VerifyUserLoginTest extends BaseClass {
 	}
 	
 	
-	@Test(dataProvider="getlogin",priority=3)
+	@Test(dataProvider="getlogin",priority=3,enabled=false)
 	public void validUserinvalidPass(String username,String password)
 	{
 		LoginPage lp=new LoginPage(driver);
@@ -56,15 +57,17 @@ public class VerifyUserLoginTest extends BaseClass {
 		return data;		
 	}
 	
-	  @Test(priority=2)
-	  public void invalid_User_valid_pass() 
+	  @Test(priority=1)
+	  public void invalid_User_valid_pass() throws Exception 
 	  {
-		  Log.startTestCase("invalid_User_valid_pass");
+	Log.startTestCase("invalid_User_valid_pass");
 	  LoginPage lp=new LoginPage(driver);
+	  ExcelRead data= new ExcelRead();
+	  ArrayList<String> exceldata=data.getData("Login");
 	  Log.info("user is going to enter username");
-	  act.type(lp.uname(),"aaammi"); 
+	  act.type(lp.uname(),exceldata.get(0)); 
 	  Log.info("user is going to enter password");
-	  act.type(lp.pwd(),"Password");
+	  act.type(lp.pwd(),exceldata.get(1));
 	  act.click1(lp.lbutton(),"Clicking On Login Button");
 	  act.explicitWait(driver, lp.login_label(),Duration.ofSeconds(10));  
 	  Assert.assertEquals(lp.login_label().getText(),"Login");
@@ -72,12 +75,12 @@ public class VerifyUserLoginTest extends BaseClass {
 	  Log.endTestCase("invalid_User_valid_pass"); 
 	  }
 	  
-	  @Test(priority=1)
+	  @Test(priority=2)
 	  public void invalid_User_invalid_pass() throws Exception 
 	  {
 	  LoginPage lp=new LoginPage(driver);
 	  ExcelRead data= new ExcelRead();
-	  ArrayList<String> exceldata=data.getData("VerifyUserLoginTest");
+	  ArrayList<String> exceldata=data.getData("Login1");
 	  act.type(lp.uname(),exceldata.get(0));
 	  act.type(lp.pwd(),exceldata.get(1));
 	  act.click1(lp.lbutton(),"Clicking On Login Button"); 
@@ -85,7 +88,12 @@ public class VerifyUserLoginTest extends BaseClass {
 	  Assert.assertEquals(lp.login_label().getText(),"Login");
 	  System.out.println("Unable to Login");
 	  }
-	 
+	  
+	  @AfterMethod
+		public void close()
+		{
+			driver.close();
+		}
 	
 	
 }

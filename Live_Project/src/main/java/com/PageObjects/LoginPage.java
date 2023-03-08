@@ -21,6 +21,9 @@ public class LoginPage extends BaseClass {
 	@FindBy(xpath="//h1[text()='Login']")
 	WebElement login_label;
 	
+	@FindBy(xpath="//img[@alt='logo']")
+	WebElement logo;
+	
 	
 	public LoginPage(WebDriver driver) {
 		this.driver=driver;
@@ -41,6 +44,10 @@ public class LoginPage extends BaseClass {
 	public WebElement login_label()
 	{
 		return login_label;
+	}
+	public Boolean IsLogoPresent() {
+		//return DispLogo().isDisplayed();
+		return act.isDisplayed(driver, logo);
 	}
 	public void LoginFn()
 	{

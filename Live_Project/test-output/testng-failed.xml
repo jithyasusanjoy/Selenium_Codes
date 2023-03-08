@@ -8,6 +8,8 @@
           <include name="Teardown"/>
           <include name="invalid_User_invalid_pass"/>
           <include name="loadConfig"/>
+          <include name="close"/>
+          <include name="loadingfiles"/>
           <include name="launch"/>
         </methods>
       </class> <!-- com.TestCases.VerifyUserLoginTest -->

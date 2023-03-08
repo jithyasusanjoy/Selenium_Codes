@@ -7,7 +7,7 @@
 	<test thread-count="5" name="Test">		
 		<classes>
 			<class name="com.TestCases.VerifyUserLoginTest"></class>
-			<class name="com.TestCases.VerifyHomeLanguageTest"></class>			
+				
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

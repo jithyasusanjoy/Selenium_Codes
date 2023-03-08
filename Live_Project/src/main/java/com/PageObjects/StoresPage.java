@@ -35,7 +35,7 @@ WebDriver driver;
 	@FindBy(xpath="//a[@data-dt-idx='3']")
 	WebElement Pagination;
 	
-	@FindBy(xpath="//td[@class='sorting_1']")
+	@FindBy(xpath="(//td[@class='sorting_1'])[1]")
 	WebElement First_Element;
 	
 	@FindBy(xpath="//td[@class='dataTables_empty']")
@@ -71,12 +71,12 @@ WebDriver driver;
 	{
 		return Edit_Row;
 	}
-	public WebElement sort_ascending()
+	public WebElement sort_descending()
 	{
 		return Sort_Ascending;
 	}
 	
-	public WebElement sort_descending()
+	public WebElement sort_ascending()
 	{
 		return Sort_Descending;
 	}
@@ -88,5 +88,8 @@ WebDriver driver;
 	{
 		return Pagination;
 	}
-	
+	public WebElement Manage_Table()
+	{
+		return Manage_Table;
+	}
 }

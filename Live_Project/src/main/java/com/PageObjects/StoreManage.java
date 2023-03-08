@@ -30,11 +30,18 @@ WebDriver driver;
 	@FindBy(xpath="(//button[@type='submit'])[3]")
 	WebElement Edit_Zone_Submit_btn;
 	
+	@FindBy(xpath="(//button[@type='submit'])[1]")
+	WebElement Edit_table_Submit_btn;
+	
+	
 	@FindBy(xpath="(//button[text()='Close'])[3]")
 	WebElement Edit_Zone_Close_btn;
 	
-	@FindBy(xpath="fa fa-times deletezone")
+	@FindBy(xpath="(//i[@class='fa fa-times deletezone'])[1]")
 	WebElement Delete_Zone;
+	
+	@FindBy(xpath="//button[@class='confirm']")
+	WebElement Delete_Zone_confirm;
 	
 	@FindBy(xpath="//button[@data-target='#Addtable']")
 	WebElement Add_table;
@@ -51,12 +58,38 @@ WebDriver driver;
 	@FindBy(xpath="(//button[text()='Close'])[1]")
 	WebElement Close_btn1;
 	
+	@FindBy(xpath="//h2[text()='Store Zones']")
+	WebElement Zone_heading;
+	
+	@FindBy(xpath="(//a[@data-original-title='Delete'])[1]")
+	WebElement Table_delete;
+	
+	@FindBy(xpath="(//a[@data-original-title='Edit'])[1]")
+	WebElement Table_edit;
+	
 	
 	public StoreManage(WebDriver driver) {
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
 	}
-
+	public WebElement Delete_Zone_confirm()
+	{
+		return Delete_Zone_confirm;
+	}
+		
+	public WebElement Edit_table_Submit_btn()
+	{
+		return Edit_table_Submit_btn;
+	}
+	
+	public WebElement Table_delete()
+	{
+		return Table_delete;
+	}
+	public WebElement Table_edit()
+	{
+		return Table_edit;
+	}
 
 	public WebElement add_Zone()
 	{
@@ -74,7 +107,7 @@ WebDriver driver;
 	{
 		return Add_Zone_Close_btn;
 	}
-	public WebElement dit_Zone_Name()
+	public WebElement edit_Zone_Name()
 	{
 		return Edit_Zone_Name;
 	}
@@ -114,5 +147,11 @@ WebDriver driver;
 	{
 		return Close_btn1;
 	}
+	public WebElement Zone_heading()
+	{
+		return Zone_heading;
+	}
+	
+	
 	
 }

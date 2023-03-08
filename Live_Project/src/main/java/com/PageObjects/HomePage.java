@@ -1,5 +1,7 @@
 package com.PageObjects;
 
+import java.util.List;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -59,12 +61,18 @@ public class HomePage {
 	@FindBy(xpath="//a[@href='https://qalegend.com/restaurant/logout']")
 	WebElement Logout;
 	
+	@FindBy(xpath="//ul[@class='nav navbar-nav']/li")
+	List<WebElement> menu;
+	
 	
 	public HomePage(WebDriver driver) {
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
 	}
-
+	public List<WebElement> menu()
+	{
+		return menu;
+	}
 	public WebElement page_heading()
 	{
 		return Heading;
