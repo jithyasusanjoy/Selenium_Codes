@@ -16,6 +16,7 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 
 import com.ActionClass.ActionClass;
+import com.PageObjects.LoginPage;
 import com.project.Utilities.ExtentReport;
 
 public class BaseClass {
@@ -23,15 +24,16 @@ public class BaseClass {
 	public static WebDriver driver;
 	public static Properties prop;
 	public static ActionClass act;
+	public static LoginPage lp ;
 		
-	@BeforeSuite
+	@BeforeSuite(groups={"Regression"})
 	public void loadingfiles()
 	{
 		DOMConfigurator.configure("log4j.xml");
 		ExtentReport.setExtent();	
 	}
 	
-	@BeforeTest
+	@BeforeTest(groups={"Regression"})
 	public void loadConfig() {
 	  
 		try {
@@ -68,7 +70,7 @@ public class BaseClass {
 		driver.get(prop.getProperty("url"));
 		 	
 	}
-	@AfterSuite()
+	@AfterSuite(groups={"Regression"})
 	public void Teardown()
 	{
 		

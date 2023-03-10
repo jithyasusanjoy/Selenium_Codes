@@ -97,6 +97,10 @@ public class HomePage {
 	{
 		return Suppliers;	
 	}
+	public WebElement Customers()
+	{
+		return Customers;	
+	}
 	public WebElement expense_Category()
 	{
 		return Expense_Category;

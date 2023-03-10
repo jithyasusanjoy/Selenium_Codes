@@ -16,7 +16,7 @@ public class ActionClassInSelenium {
 	public WebDriver driver;
 	
 
-	@BeforeTest
+	@BeforeTest(groups= {"smoke"})
 	public void IntialSetup() {
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
@@ -47,7 +47,7 @@ public class ActionClassInSelenium {
 
 	}
 
-	@Test(groups= {"smoke"})
+	@Test(groups= {"smoke"},priority=1)
 	public void draganddrop() throws InterruptedException {
 
 		
@@ -100,7 +100,7 @@ public class ActionClassInSelenium {
 	}
 	
 
-	@AfterTest
+	@AfterTest(groups= {"smoke"})
 	public void browserclose() {
 	 driver.quit();
 	}

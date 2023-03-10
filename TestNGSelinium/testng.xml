@@ -15,7 +15,7 @@
 	</groups>
 		<classes>
 			<class name="Testcases.ActionClassInSelenium" />
-			<class name="Testcases.AlertInSelenium" />
+			
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

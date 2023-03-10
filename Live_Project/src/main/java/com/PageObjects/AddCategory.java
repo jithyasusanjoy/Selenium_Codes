@@ -8,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 public class AddCategory {
 WebDriver driver;
 	
-	@FindBy(xpath="//button[@data-target='#Addcategory'] ")
+	@FindBy(xpath="//button[@data-target='#Addcategory']")
 	WebElement Add_Category;
 	
 	@FindBy(xpath="//input[@id='CategoryName']")

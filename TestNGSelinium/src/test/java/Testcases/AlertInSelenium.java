@@ -15,7 +15,7 @@ import org.testng.annotations.Test;
 public class AlertInSelenium {
 	public WebDriver driver;
 	
-	@BeforeTest
+	@BeforeTest(groups= {"smoke"})
 	public void browserload()
 	{
 		driver = new ChromeDriver();
