@@ -13,6 +13,7 @@ import com.PageObjects.HomePage;
 import com.PageObjects.LoginPage;
 import com.project.Utilities.ExcelRead;
 import com.project.Utilities.Log;
+import com.project.Utilities.RetryAnalyzer;
 
 public class VerifyPeopleTest extends BaseClass {
 	
@@ -27,7 +28,7 @@ public class VerifyPeopleTest extends BaseClass {
 		lp.LoginFn();
 	}
 	
-	@Test(priority=1,groups = { "Regression" })
+	@Test(priority=1,groups = { "Regression" }, retryAnalyzer = RetryAnalyzer.class)
 	public void verify_add_supplier() throws Exception 
 	{
 		Log.startTestCase("verify_add_supplier");	
@@ -54,7 +55,7 @@ public class VerifyPeopleTest extends BaseClass {
 	
 	
 	
-	@Test(priority=2,groups = { "Regression" })
+	@Test(priority=2,groups = { "Regression" }, retryAnalyzer = RetryAnalyzer.class)
 	public void verify_add_waiter() throws Exception 
 	{	
 		Log.startTestCase("verify_add_waiter");
@@ -79,7 +80,7 @@ public class VerifyPeopleTest extends BaseClass {
 		Log.endTestCase("verify_add_waiter");
 	}
 	
-	@Test(priority=3,groups = { "Regression" })
+	@Test(priority=3,groups = { "Regression" }, retryAnalyzer = RetryAnalyzer.class)
 	public void verify_add_customer() throws Exception 
 	{		
 		Log.startTestCase("verify_add_customer");

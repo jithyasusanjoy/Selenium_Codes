@@ -12,6 +12,7 @@ import com.PageObjects.StoreManage;
 import com.PageObjects.StoresPage;
 import com.project.Utilities.ExcelRead;
 import com.project.Utilities.Log;
+import com.project.Utilities.RetryAnalyzer;
 
 public class VerifyStoreManageTest extends BaseClass {
 	
@@ -33,7 +34,7 @@ public class VerifyStoreManageTest extends BaseClass {
 		Assert.assertEquals(sm.Zone_heading().getText(),"Store Zones");	
 	}
 	
-	@Test(priority=1,groups = { "Regression" })
+	@Test(priority=1,groups = { "Regression" }, retryAnalyzer = RetryAnalyzer.class)
 	public void verify_add_store_zone() throws Exception 
 	{
 		Log.startTestCase("verify_add_store_zone");
@@ -47,7 +48,7 @@ public class VerifyStoreManageTest extends BaseClass {
 		Log.endTestCase("verify_add_store_zone");
 	}
 	
-	@Test(priority=2,groups = { "Regression" })
+	@Test(priority=2,groups = { "Regression" }, retryAnalyzer = RetryAnalyzer.class)
 	public void verify_edit_store_zone() throws Exception 
 	{
 		Log.startTestCase("verify_edit_store_zone");
@@ -60,7 +61,7 @@ public class VerifyStoreManageTest extends BaseClass {
 		Log.info("Zone edited");
 		Log.endTestCase("verify_edit_store_zone");
 	}
-	@Test(priority=3,groups = { "Regression" })
+	@Test(priority=3,groups = { "Regression" }, retryAnalyzer = RetryAnalyzer.class)
 	public void verify_delete_store_zone() 
 	{
 		Log.startTestCase("verify_delete_store_zone");
@@ -71,7 +72,7 @@ public class VerifyStoreManageTest extends BaseClass {
 		Log.endTestCase("verify_delete_store_zone");
 	}
 	
-	@Test(priority=4,groups = { "Regression" })
+	@Test(priority=4,groups = { "Regression" }, retryAnalyzer = RetryAnalyzer.class)
 	public void verify_add_store_table() throws Exception 
 	{
 		Log.startTestCase("verify_add_store_table");
@@ -87,7 +88,7 @@ public class VerifyStoreManageTest extends BaseClass {
 		Log.endTestCase("verify_add_store_table");
 	}
 	
-	@Test(priority=5,groups = { "Regression" })
+	@Test(priority=5,groups = { "Regression" }, retryAnalyzer = RetryAnalyzer.class)
 	public void verify_edit_store_table() throws Exception 
 	{
 		Log.startTestCase("verify_edit_store_table");
@@ -101,7 +102,7 @@ public class VerifyStoreManageTest extends BaseClass {
 		Log.endTestCase("verify_edit_store_table");
 	}
 	
-	@Test(priority=6,groups = { "Regression" })
+	@Test(priority=6,groups = { "Regression" }, retryAnalyzer = RetryAnalyzer.class)
 	public void verify_delete_store_table() 
 	{
 		Log.startTestCase("verify_delete_store_table");

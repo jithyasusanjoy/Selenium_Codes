@@ -11,6 +11,7 @@ import com.PageObjects.HomePage;
 import com.PageObjects.LoginPage;
 import com.project.Utilities.ExcelRead;
 import com.project.Utilities.Log;
+import com.project.Utilities.RetryAnalyzer;
 
 public class VerifyAddExpenseTest extends BaseClass {
 	@BeforeMethod(groups = { "Regression" })
@@ -22,7 +23,7 @@ public class VerifyAddExpenseTest extends BaseClass {
 		lp.LoginFn();
 	}
 
-	@Test(groups = { "Regression" })
+	@Test(groups = { "Regression" }, retryAnalyzer = RetryAnalyzer.class)
 	public void verify_expense_addition() throws Exception {
 		Log.startTestCase("verify_expense_addition");
 		act.click1(hp.expenses(), "Clicked");

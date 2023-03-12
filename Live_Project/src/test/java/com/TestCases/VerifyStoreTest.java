@@ -51,7 +51,7 @@ public class VerifyStoreTest extends BaseClass {
 		Log.endTestCase("verify_sort_store_name_ascending_order");
 	}
 
-	@Test(priority = 3,groups = { "Regression" })
+	@Test(priority = 3,groups = { "Regression" }, retryAnalyzer = RetryAnalyzer.class)
 	public void verify_add_store() throws Exception {
 		Log.startTestCase("verify_add_store");
 		Assert.assertEquals(sp.add_store().getText(), "Add Store");

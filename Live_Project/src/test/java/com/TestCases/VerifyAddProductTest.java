@@ -70,7 +70,7 @@ public class VerifyAddProductTest extends BaseClass {
 		act.click1(ap.color_selection(), "color selected");
 		act.click1(ap.Submit_btn(), "Submitted");
 		act.fluentWait(driver, ap.Search(), 5);
-		//act.click1(ap.Stock_close(), "Closed stock popup");
+		act.click1(ap.Stock_close(), "Closed stock popup");
 		act.type(ap.Search(), "A1234");
 		Log.info("Entered search text");
 		Assert.assertEquals(ap.First_Element().getText(), "A1234");
@@ -98,7 +98,7 @@ public class VerifyAddProductTest extends BaseClass {
 		Log.endTestCase("verify_file_upload");
 	}
 	
-	@Test(groups = { "Regression" }, priority = 4)
+	@Test(groups = { "Regression" }, priority = 4, retryAnalyzer = RetryAnalyzer.class)
 	public void verify_print_menu() throws Exception {
 		Log.startTestCase("verify_print_menu");
 		act.click1(pp.print_Menu(), "Clicked print menu button");
