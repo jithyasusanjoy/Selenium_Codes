@@ -1,12 +1,10 @@
 package com.TestCases;
 
 import java.util.ArrayList;
-
 import org.testng.Assert;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-
 import com.Base.BaseClass.BaseClass;
 import com.PageObjects.AddCustomer;
 import com.PageObjects.AddSupplier;
@@ -17,36 +15,28 @@ import com.project.Utilities.ExcelRead;
 import com.project.Utilities.Log;
 
 public class VerifyPeopleTest extends BaseClass {
-	@BeforeTest
-	public void launch()
-	{
-		launchApp();
-		common_methods();
-	}
-	public void common_methods()
-	{
-		
-		LoginPage lp=new LoginPage(driver);
-		lp.LoginFn(); 	
-		HomePage hp= new HomePage(driver);
-		Log.info("user logged in");
-		Assert.assertEquals(hp.page_heading().getText(),"CHOOSE A STORE");
-		
+	
+	@BeforeMethod(groups = { "Regression" })
+	public void methods() {
+		hp = new HomePage(driver);
+		lp = new LoginPage(driver);
+		as = new AddSupplier(driver);
+		aw = new AddWaiter(driver);
+		ac = new AddCustomer(driver);
+		data = new ExcelRead();
+		lp.LoginFn();
 	}
 	
-	@Test(priority=1)
-	public void add_supplier() throws Exception 
+	@Test(priority=1,groups = { "Regression" })
+	public void verify_add_supplier() throws Exception 
 	{
-		Log.startTestCase("add_supplier");
-		HomePage hp= new HomePage(driver);
+		Log.startTestCase("verify_add_supplier");	
 		act.click1(hp.people(), "Clicked");	
 		Log.info("Clicked  people menu");
 		act.click1(hp.suppliers(), "Clicked");	
 		Log.info("Clicked  suppliers sub menu");
-		AddSupplier as = new AddSupplier(driver);
 		act.click1(as.add_Supplier(), "Clicked");	
 		Log.info("Clicked add suppliers button");
-		ExcelRead data= new ExcelRead();
 		ArrayList<String> exceldata=data.getData("AddSupplier");
 		act.type(as.supplier_Name(), exceldata.get(0));
 		Log.info("Entered suppliers name");
@@ -59,23 +49,21 @@ public class VerifyPeopleTest extends BaseClass {
 		act.click1(as.Submit_btn(), "Submitted");
 		Assert.assertTrue(as.add_Supplier().isDisplayed());
 		Log.info("Supplier added successfully");
-		Log.endTestCase("add_supplier");
+		Log.endTestCase("verify_add_supplier");
 		}
 	
 	
 	
-	@Test(priority=2)
-	public void add_waiter() throws Exception 
-	{
-		HomePage hp= new HomePage(driver);
+	@Test(priority=2,groups = { "Regression" })
+	public void verify_add_waiter() throws Exception 
+	{	
+		Log.startTestCase("verify_add_waiter");
 		act.click1(hp.people(), "Clicked");	
 		Log.info("clicked  people menu");
 		act.click1(hp.waiters(), "Clicked");	
 		Log.info("clicked  waiters sub menu");
-		AddWaiter aw = new AddWaiter(driver);
 		act.click1(aw.add_Waiter(), "Clicked");	
 		Log.info("clicked add waiters button");
-		ExcelRead data= new ExcelRead();
 		ArrayList<String> exceldata=data.getData("AddWaiter");
 		act.type(aw.waiter_Name(), exceldata.get(0));
 		Log.info("entered waiter name");
@@ -88,20 +76,19 @@ public class VerifyPeopleTest extends BaseClass {
 		act.click1(aw.Submit_btn(), "Submitted");
 		Assert.assertTrue(aw.add_Waiter().isDisplayed());
 		Log.info("Waiter added successfully");
+		Log.endTestCase("verify_add_waiter");
 	}
 	
-	@Test(priority=3)
-	public void add_customer() throws Exception 
-	{
-		HomePage hp= new HomePage(driver);
+	@Test(priority=3,groups = { "Regression" })
+	public void verify_add_customer() throws Exception 
+	{		
+		Log.startTestCase("verify_add_customer");
 		act.click1(hp.people(), "Clicked");	
 		Log.info("clicked  people menu");
 		act.click1(hp.Customers(), "Clicked");	
 		Log.info("clicked customers sub menu");
-		AddCustomer ac = new AddCustomer(driver);
 		act.click1(ac.add_Customer(), "Clicked");	
 		Log.info("clicked add customer button");
-		ExcelRead data= new ExcelRead();
 		ArrayList<String> exceldata=data.getData("AddCustomer");
 		act.type(ac.customer_Name(), exceldata.get(0));
 		Log.info("entered customer name");
@@ -114,12 +101,11 @@ public class VerifyPeopleTest extends BaseClass {
 		act.click1(ac.Submit_btn(), "Submitted");
 		Assert.assertTrue(ac.add_Customer().isDisplayed());
 		Log.info("customer added successfully");
-		Log.endTestCase("VerifyPeopleTest");
+		Log.endTestCase("verify_add_customer");
 	}
 	
-	@AfterTest
-	public void close()
-	{
-		driver.close();
+	@AfterMethod(groups = { "Regression" })
+	public void after_method() {
+		hp.logoff();
 	}
 }

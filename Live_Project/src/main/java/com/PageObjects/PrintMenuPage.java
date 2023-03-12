@@ -6,30 +6,32 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class PrintMenuPage {
-	
-WebDriver driver;
-	
-	
-	
-	@FindBy(xpath="//button[@onclick='PrintTicket()']")
+
+	WebDriver driver;
+
+	@FindBy(xpath = "//h1[text()='Menu']")
+	WebElement label;
+
+	@FindBy(xpath = "//button[@onclick='PrintTicket()']")
 	WebElement Print;
-	
-	@FindBy(xpath="(//button[text()='Close'])[9]")
+
+	@FindBy(xpath = "(//button[text()='Close'])[9]")
 	WebElement Close_btn;
-	
-	
+
 	public PrintMenuPage(WebDriver driver) {
-		this.driver=driver;
+		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
 
+	public WebElement label() {
+		return label;
+	}
 
-	public WebElement print()
-	{
+	public WebElement print() {
 		return Print;
 	}
-	public WebElement Close_btn()
-	{
+
+	public WebElement Close_btn() {
 		return Close_btn;
 	}
 

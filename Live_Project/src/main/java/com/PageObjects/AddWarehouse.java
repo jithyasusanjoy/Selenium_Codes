@@ -17,10 +17,10 @@ WebDriver driver;
 	@FindBy(xpath="//input[@id='WarehouseName']")
 	WebElement WarehouseName;
 	
-	@FindBy(xpath="//input[@id='Warehouse Phone']")
+	@FindBy(xpath="//input[@id='WarehousePhone']")
 	WebElement Warehouse_Phone;
 	
-	@FindBy(xpath="//input[@id='email']")
+	@FindBy(xpath="(//input[@id='email'])[2]")
 	WebElement email;
 	
 	@FindBy(xpath="//input[@id='Adresse']")

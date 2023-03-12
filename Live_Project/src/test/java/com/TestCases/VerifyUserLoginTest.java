@@ -1,11 +1,8 @@
 package com.TestCases;
-
 import java.time.Duration;
 import java.util.ArrayList;
-
 import org.testng.Assert;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import com.Base.BaseClass.BaseClass;
@@ -16,23 +13,26 @@ import com.project.Utilities.Log;
 
 public class VerifyUserLoginTest extends BaseClass {
 
-	@BeforeTest
-	public void launch() {
-		launchApp();
+	@BeforeMethod(groups = { "Regression" })
+	public void methods() {
+		hp = new HomePage(driver);
+		lp = new LoginPage(driver);
+		data = new ExcelRead();
 	}
 
-	@Test(priority = 4, enabled = false)
-	public void validUserLogin() {
+	@Test(priority = 4,groups = { "Regression" })
+	public void verify_valid_User_Login() {
 		Log.startTestCase("validUserLogin");
 		lp.LoginFn();
-		HomePage hp = new HomePage(driver);
 		Assert.assertEquals(hp.page_heading().getText(), "CHOOSE A STORE");
 		Log.info("User logged in");
 		Log.endTestCase("validUserLogin");
+		hp.logoff();
 	}
 
-	@Test(dataProvider = "getlogin", priority = 3, enabled = false)
-	public void valid_User_invalid_Pass(String username, String password) {
+	@Test(dataProvider = "getlogin", priority = 3,groups = { "Regression" })
+	public void verify_valid_User_invalid_Password_login(String username, String password) {
+
 		Log.startTestCase("valid_User_invalid_Pass");
 		act.type(lp.uname(), username);
 		Log.info("User entered valid username");
@@ -55,11 +55,11 @@ public class VerifyUserLoginTest extends BaseClass {
 		return data;
 	}
 
-	@Test(priority = 1)
-	public void invalid_User_valid_pass() throws Exception {
+	@Test(priority = 2,groups = { "Regression" })
+	public void verify_invalid_User_valid_password_login() throws Exception {
+
 		Log.startTestCase("invalid_User_valid_pass");
-		ExcelRead data = new ExcelRead();
-		ArrayList<String> exceldata = data.getData("Login");
+		ArrayList<String> exceldata = data.getData("Invalid");
 		act.type(lp.uname(), exceldata.get(0));
 		Log.info("User entered invalid username");
 		act.type(lp.pwd(), exceldata.get(1));
@@ -69,12 +69,12 @@ public class VerifyUserLoginTest extends BaseClass {
 		Assert.assertEquals(lp.login_label().getText(), "Login");
 		System.out.println("Unable to Login");
 		Log.endTestCase("invalid_User_valid_pass");
+
 	}
 
-	@Test(priority = 2)
-	public void invalid_User_invalid_pass() throws Exception {
+	@Test(priority = 1,groups = { "Regression" })
+	public void verify_invalid_User_invalid_password_login() throws Exception {
 		Log.startTestCase("invalid_User_invalid_pass");
-		ExcelRead data = new ExcelRead();
 		ArrayList<String> exceldata = data.getData("Login1");
 		act.type(lp.uname(), exceldata.get(0));
 		Log.info("User entered invalid username");
@@ -86,10 +86,6 @@ public class VerifyUserLoginTest extends BaseClass {
 		Log.info("Unable to Login");
 		Log.endTestCase("invalid_User_invalid_pass");
 	}
-
-	@AfterTest
-	public void close() {
-		driver.close();
-	}
+	
 
 }

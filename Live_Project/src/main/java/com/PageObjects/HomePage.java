@@ -7,7 +7,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class HomePage {
+import com.Base.BaseClass.BaseClass;
+
+public class HomePage extends BaseClass{
 	WebDriver driver;
 	
 	@FindBy(xpath="//h1[@class='text-center choose_store']")
@@ -19,10 +21,10 @@ public class HomePage {
 	@FindBy(xpath="//a[@data-toggle='dropdown']//img[@src='https://qalegend.com/restaurant/assets/img/flags/en.png']")
 	WebElement Language_dropdown;
 	
-	@FindBy(xpath="//a[@href='https://qalegend.com/restaurant/dashboard/change/portuguese']")
+	@FindBy(xpath="//a[@href='https://qalegend.com/restaurant/dashboard/change/english']")
 	WebElement Language;
 		
-	@FindBy(xpath="//img[@src='https://qalegend.com/restaurant/assets/img/flags/pr.png']")
+	@FindBy(xpath="//img[@src='https://qalegend.com/restaurant/assets/img/flags/en.png']")
 	WebElement Language_displayed;
 	
 	@FindBy(xpath="//a[@href='https://qalegend.com/restaurant/products']")
@@ -55,7 +57,7 @@ public class HomePage {
 	@FindBy(xpath="//a[@href='https://qalegend.com/restaurant/expences']")
 	WebElement Expenses;
 	
-	@FindBy(xpath="//a[@href='https://qalegend.com/restaurant/settings?tab=setting")
+	@FindBy(xpath="//a[@href='https://qalegend.com/restaurant/settings?tab=setting']")
 	WebElement Settings;
 	
 	@FindBy(xpath="//a[@href='https://qalegend.com/restaurant/logout']")
@@ -140,8 +142,14 @@ public class HomePage {
 	
 	public WebElement logout()
 	{
-		return Logout;
+		 return Logout;
 	}	
+	
+	public void logoff()
+	{
+		act.click1(hp.logout(), "Logout done");
+	}
 		
+	
 	
 }

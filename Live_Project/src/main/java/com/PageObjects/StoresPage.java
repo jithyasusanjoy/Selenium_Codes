@@ -1,5 +1,7 @@
 package com.PageObjects;
 
+import java.util.List;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -41,11 +43,36 @@ WebDriver driver;
 	@FindBy(xpath="//td[@class='dataTables_empty']")
 	WebElement No_Element;
 	
+	@FindBy(xpath="//table[@id='Table']//thead/tr/th")
+	List<WebElement> table_headings;
+	
+	@FindBy(xpath="//table[@id='Table']//tbody/tr/td[1]")
+	List<WebElement> table_rows;
+	
+	@FindBy(xpath="//div[@id='Table_info']")
+	WebElement validate_Page;
+	
+	 
 
 	public StoresPage(WebDriver driver) {
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
 	}
+	
+	
+	public WebElement validate_Page()
+	{
+		return validate_Page;
+	}
+	public List<WebElement> table_rows()
+	{
+		return table_rows;
+	}
+	public List<WebElement> table_headings()
+	{
+		return table_headings;
+	}
+
 	public WebElement No_Element()
 	{
 		return No_Element;

@@ -16,16 +16,15 @@
     <classes>
       <class name="Testcases.AlertInSelenium">
         <methods>
-          <include name="handlingalert"/>
+          <include name="browserload"/>
           <include name="windowhandle"/>
         </methods>
       </class> <!-- Testcases.AlertInSelenium -->
       <class name="Testcases.ActionClassInSelenium">
         <methods>
-          <include name="mousehover"/>
+          <include name="IntialSetup"/>
           <include name="draganddrop"/>
-          <include name="mouseclick"/>
-          <include name="mousedoubleclick"/>
+          <include name="browserclose"/>
         </methods>
       </class> <!-- Testcases.ActionClassInSelenium -->
     </classes>

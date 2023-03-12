@@ -55,116 +55,18 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>3/2/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>34/0/1</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Mar 08 02:55:07 IST 2023</td>
+<td>Started on:</td><td>Sun Mar 12 14:38:59 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>18 seconds (18081 ms)</td>
+<tr><td>Total time:</td><td>291 seconds (291584 ms)</td>
 </tr><tr>
-<td>Included groups:</td><td></td>
+<td>Included groups:</td><td>Regression </td>
 </tr><tr>
 <td>Excluded groups:</td><td></td>
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='com.TestCases.VerifyUserLoginTest.invalid_User_invalid_pass()'><b>invalid_User_invalid_pass</b><br>Test class: com.TestCases.VerifyUserLoginTest</td>
-<td><div><pre>java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
-	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:100)
-	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:106)
-	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:302)
-	at java.base/java.util.Objects.checkIndex(Objects.java:385)
-	at java.base/java.util.ArrayList.get(ArrayList.java:427)
-	at com.TestCases.VerifyUserLoginTest.invalid_User_invalid_pass(VerifyUserLoginTest.java:82)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1753645864", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1753645864'><pre>java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
-	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:100)
-	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:106)
-	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:302)
-	at java.base/java.util.Objects.checkIndex(Objects.java:385)
-	at java.base/java.util.ArrayList.get(ArrayList.java:427)
-	at com.TestCases.VerifyUserLoginTest.invalid_User_invalid_pass(VerifyUserLoginTest.java:82)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:808)
-	at org.testng.TestRunner.run(TestRunner.java:603)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.runSuites(TestNG.java:1092)
-	at org.testng.TestNG.run(TestNG.java:1060)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>com.TestCases.VerifyUserLoginTest@1a482e36</td></tr>
-<tr>
-<td title='com.TestCases.VerifyUserLoginTest.validUserLogin()'><b>validUserLogin</b><br>Test class: com.TestCases.VerifyUserLoginTest</td>
-<td><div><pre>java.lang.AssertionError: expected [CHOOSE A STORE] but found [ESCOLHA UMA LOJA]
-	at com.TestCases.VerifyUserLoginTest.validUserLogin(VerifyUserLoginTest.java:31)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2116025968", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2116025968'><pre>java.lang.AssertionError: expected [CHOOSE A STORE] but found [ESCOLHA UMA LOJA]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1413)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-	at org.testng.Assert.assertEquals(Assert.java:131)
-	at org.testng.Assert.assertEquals(Assert.java:655)
-	at org.testng.Assert.assertEquals(Assert.java:665)
-	at com.TestCases.VerifyUserLoginTest.validUserLogin(VerifyUserLoginTest.java:31)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:808)
-	at org.testng.TestRunner.run(TestRunner.java:603)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.runSuites(TestNG.java:1092)
-	at org.testng.TestNG.run(TestNG.java:1060)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>1</td>
-<td>com.TestCases.VerifyUserLoginTest@1a482e36</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -173,20 +75,226 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.TestCases.VerifyUserLoginTest.invalid_User_valid_pass()'><b>invalid_User_valid_pass</b><br>Test class: com.TestCases.VerifyUserLoginTest</td>
+<td title='com.TestCases.VerifyStoreManageTest.verify_edit_store_zone()'><b>verify_edit_store_zone</b><br>Test class: com.TestCases.VerifyStoreManageTest</td>
 <td></td>
 <td>1</td>
-<td>com.TestCases.VerifyUserLoginTest@1a482e36</td></tr>
+<td>com.TestCases.VerifyStoreManageTest@30c15d8b</td></tr>
 <tr>
-<td title='com.TestCases.VerifyUserLoginTest.validUserinvalidPass()'><b>validUserinvalidPass</b><br>Test class: com.TestCases.VerifyUserLoginTest<br>Parameters: Admin, paswd</td>
+<td title='com.TestCases.VerifySettingsTest.verify_add_new_user()'><b>verify_add_new_user</b><br>Test class: com.TestCases.VerifySettingsTest</td>
 <td></td>
-<td>1</td>
-<td>com.TestCases.VerifyUserLoginTest@1a482e36</td></tr>
+<td>5</td>
+<td>com.TestCases.VerifySettingsTest@4afcd809</td></tr>
 <tr>
-<td title='com.TestCases.VerifyUserLoginTest.validUserinvalidPass()'><b>validUserinvalidPass</b><br>Test class: com.TestCases.VerifyUserLoginTest<br>Parameters: Admin, paswdd</td>
+<td title='com.TestCases.VerifyAddProductTest.verify_add_product()'><b>verify_add_product</b><br>Test class: com.TestCases.VerifyAddProductTest</td>
+<td></td>
+<td>4</td>
+<td>com.TestCases.VerifyAddProductTest@51399530</td></tr>
+<tr>
+<td title='com.TestCases.VerifyPeopleTest.verify_add_waiter()'><b>verify_add_waiter</b><br>Test class: com.TestCases.VerifyPeopleTest</td>
+<td></td>
+<td>3</td>
+<td>com.TestCases.VerifyPeopleTest@2b71e916</td></tr>
+<tr>
+<td title='com.TestCases.VerifyStoreManageTest.verify_delete_store_zone()'><b>verify_delete_store_zone</b><br>Test class: com.TestCases.VerifyStoreManageTest</td>
+<td></td>
+<td>0</td>
+<td>com.TestCases.VerifyStoreManageTest@30c15d8b</td></tr>
+<tr>
+<td title='com.TestCases.VerifyCategoryTest.verify_add_expense_category()'><b>verify_add_expense_category</b><br>Test class: com.TestCases.VerifyCategoryTest</td>
 <td></td>
 <td>1</td>
-<td>com.TestCases.VerifyUserLoginTest@1a482e36</td></tr>
+<td>com.TestCases.VerifyCategoryTest@3754a4bf</td></tr>
+<tr>
+<td title='com.TestCases.VerifyStoreManageTest.verify_delete_store_table()'><b>verify_delete_store_table</b><br>Test class: com.TestCases.VerifyStoreManageTest</td>
+<td></td>
+<td>10</td>
+<td>com.TestCases.VerifyStoreManageTest@30c15d8b</td></tr>
+<tr>
+<td title='com.TestCases.VerifyCategoryTest.verify_add_product_category()'><b>verify_add_product_category</b><br>Test class: com.TestCases.VerifyCategoryTest</td>
+<td></td>
+<td>1</td>
+<td>com.TestCases.VerifyCategoryTest@3754a4bf</td></tr>
+<tr>
+<td title='com.TestCases.VerifyHomepageTest.verify_home_menu_elements()'><b>verify_home_menu_elements</b><br>Test class: com.TestCases.VerifyHomepageTest</td>
+<td></td>
+<td>0</td>
+<td>com.TestCases.VerifyHomepageTest@74235045</td></tr>
+<tr>
+<td title='com.TestCases.VerifyPeopleTest.verify_add_customer()'><b>verify_add_customer</b><br>Test class: com.TestCases.VerifyPeopleTest</td>
+<td></td>
+<td>4</td>
+<td>com.TestCases.VerifyPeopleTest@2b71e916</td></tr>
+<tr>
+<td title='com.TestCases.VerifyStoreTest.verify_storepage_pagination()'><b>verify_storepage_pagination</b><br>Test class: com.TestCases.VerifyStoreTest</td>
+<td></td>
+<td>0</td>
+<td>com.TestCases.VerifyStoreTest@2d3379b4</td></tr>
+<tr>
+<td title='com.TestCases.VerifyStoreTest.verify_delete_store()'><b>verify_delete_store</b><br>Test class: com.TestCases.VerifyStoreTest</td>
+<td></td>
+<td>1</td>
+<td>com.TestCases.VerifyStoreTest@2d3379b4</td></tr>
+<tr>
+<td title='com.TestCases.VerifyAddExpenseTest.verify_expense_addition()'><b>verify_expense_addition</b><br>Test class: com.TestCases.VerifyAddExpenseTest</td>
+<td></td>
+<td>3</td>
+<td>com.TestCases.VerifyAddExpenseTest@28701274</td></tr>
+<tr>
+<td title='com.TestCases.VerifyUserLoginTest.verify_valid_User_Login()'><b>verify_valid_User_Login</b><br>Test class: com.TestCases.VerifyUserLoginTest</td>
+<td></td>
+<td>2</td>
+<td>com.TestCases.VerifyUserLoginTest@76505305</td></tr>
+<tr>
+<td title='com.TestCases.VerifyStoreTest.verify_add_store()'><b>verify_add_store</b><br>Test class: com.TestCases.VerifyStoreTest</td>
+<td></td>
+<td>2</td>
+<td>com.TestCases.VerifyStoreTest@2d3379b4</td></tr>
+<tr>
+<td title='com.TestCases.VerifyAddProductTest.verify_print_menu()'><b>verify_print_menu</b><br>Test class: com.TestCases.VerifyAddProductTest</td>
+<td></td>
+<td>10</td>
+<td>com.TestCases.VerifyAddProductTest@51399530</td></tr>
+<tr>
+<td title='com.TestCases.VerifyStoreTest.verify_sort_store_coulmns()'><b>verify_sort_store_coulmns</b><br>Test class: com.TestCases.VerifyStoreTest</td>
+<td></td>
+<td>0</td>
+<td>com.TestCases.VerifyStoreTest@2d3379b4</td></tr>
+<tr>
+<td title='com.TestCases.VerifyHomepageTest.verify_language_selection()'><b>verify_language_selection</b><br>Test class: com.TestCases.VerifyHomepageTest</td>
+<td></td>
+<td>1</td>
+<td>com.TestCases.VerifyHomepageTest@74235045</td></tr>
+<tr>
+<td title='com.TestCases.VerifyStoreTest.verify_sort_store_name_descending_order()'><b>verify_sort_store_name_descending_order</b><br>Test class: com.TestCases.VerifyStoreTest</td>
+<td></td>
+<td>0</td>
+<td>com.TestCases.VerifyStoreTest@2d3379b4</td></tr>
+<tr>
+<td title='com.TestCases.VerifyStoreTest.verify_show_dropdown()'><b>verify_show_dropdown</b><br>Test class: com.TestCases.VerifyStoreTest</td>
+<td></td>
+<td>0</td>
+<td>com.TestCases.VerifyStoreTest@2d3379b4</td></tr>
+<tr>
+<td title='com.TestCases.VerifyStoreManageTest.verify_edit_store_table()'><b>verify_edit_store_table</b><br>Test class: com.TestCases.VerifyStoreManageTest</td>
+<td></td>
+<td>30</td>
+<td>com.TestCases.VerifyStoreManageTest@30c15d8b</td></tr>
+<tr>
+<td title='com.TestCases.VerifyHomepageTest.verify_logged_user_name()'><b>verify_logged_user_name</b><br>Test class: com.TestCases.VerifyHomepageTest</td>
+<td></td>
+<td>0</td>
+<td>com.TestCases.VerifyHomepageTest@74235045</td></tr>
+<tr>
+<td title='com.TestCases.VerifyUserLoginTest.verify_invalid_User_valid_password_login()'><b>verify_invalid_User_valid_password_login</b><br>Test class: com.TestCases.VerifyUserLoginTest</td>
+<td></td>
+<td>1</td>
+<td>com.TestCases.VerifyUserLoginTest@76505305</td></tr>
+<tr>
+<td title='com.TestCases.VerifyAddProductTest.verify_file_download()'><b>verify_file_download</b><br>Test class: com.TestCases.VerifyAddProductTest</td>
+<td></td>
+<td>0</td>
+<td>com.TestCases.VerifyAddProductTest@51399530</td></tr>
+<tr>
+<td title='com.TestCases.VerifyUserLoginTest.verify_invalid_User_invalid_password_login()'><b>verify_invalid_User_invalid_password_login</b><br>Test class: com.TestCases.VerifyUserLoginTest</td>
+<td></td>
+<td>1</td>
+<td>com.TestCases.VerifyUserLoginTest@76505305</td></tr>
+<tr>
+<td title='com.TestCases.VerifyUserLoginTest.verify_valid_User_invalid_Password_login()'><b>verify_valid_User_invalid_Password_login</b><br>Test class: com.TestCases.VerifyUserLoginTest<br>Parameters: Admin, paswdd</td>
+<td></td>
+<td>1</td>
+<td>com.TestCases.VerifyUserLoginTest@76505305</td></tr>
+<tr>
+<td title='com.TestCases.VerifyStoreManageTest.verify_add_store_zone()'><b>verify_add_store_zone</b><br>Test class: com.TestCases.VerifyStoreManageTest</td>
+<td></td>
+<td>1</td>
+<td>com.TestCases.VerifyStoreManageTest@30c15d8b</td></tr>
+<tr>
+<td title='com.TestCases.VerifyStoreManageTest.verify_add_store_table()'><b>verify_add_store_table</b><br>Test class: com.TestCases.VerifyStoreManageTest</td>
+<td></td>
+<td>11</td>
+<td>com.TestCases.VerifyStoreManageTest@30c15d8b</td></tr>
+<tr>
+<td title='com.TestCases.VerifySettingsTest.verify_add_new_warehouse()'><b>verify_add_new_warehouse</b><br>Test class: com.TestCases.VerifySettingsTest</td>
+<td></td>
+<td>2</td>
+<td>com.TestCases.VerifySettingsTest@4afcd809</td></tr>
+<tr>
+<td title='com.TestCases.VerifyPeopleTest.verify_add_supplier()'><b>verify_add_supplier</b><br>Test class: com.TestCases.VerifyPeopleTest</td>
+<td></td>
+<td>3</td>
+<td>com.TestCases.VerifyPeopleTest@2b71e916</td></tr>
+<tr>
+<td title='com.TestCases.VerifyStoreTest.verify_edit_store()'><b>verify_edit_store</b><br>Test class: com.TestCases.VerifyStoreTest</td>
+<td></td>
+<td>2</td>
+<td>com.TestCases.VerifyStoreTest@2d3379b4</td></tr>
+<tr>
+<td title='com.TestCases.VerifyUserLoginTest.verify_valid_User_invalid_Password_login()'><b>verify_valid_User_invalid_Password_login</b><br>Test class: com.TestCases.VerifyUserLoginTest<br>Parameters: Admin, paswd</td>
+<td></td>
+<td>1</td>
+<td>com.TestCases.VerifyUserLoginTest@76505305</td></tr>
+<tr>
+<td title='com.TestCases.VerifyStoreTest.verify_store_search()'><b>verify_store_search</b><br>Test class: com.TestCases.VerifyStoreTest</td>
+<td></td>
+<td>0</td>
+<td>com.TestCases.VerifyStoreTest@2d3379b4</td></tr>
+<tr>
+<td title='com.TestCases.VerifyAddProductTest.verify_file_upload()'><b>verify_file_upload</b><br>Test class: com.TestCases.VerifyAddProductTest</td>
+<td></td>
+<td>2</td>
+<td>com.TestCases.VerifyAddProductTest@51399530</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.TestCases.VerifyAddProductTest.verify_add_product()'><b>verify_add_product</b><br>Test class: com.TestCases.VerifyAddProductTest</td>
+<td><div><pre>java.lang.AssertionError: expected [A1234] but found [111]
+	at com.TestCases.VerifyAddProductTest.verify_add_product(VerifyAddProductTest.java:76)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1115434134", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1115434134'><pre>java.lang.AssertionError: expected [A1234] but found [111]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at com.TestCases.VerifyAddProductTest.verify_add_product(VerifyAddProductTest.java:76)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:808)
+	at org.testng.TestRunner.run(TestRunner.java:603)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.runSuites(TestNG.java:1092)
+	at org.testng.TestNG.run(TestNG.java:1060)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>3</td>
+<td>com.TestCases.VerifyAddProductTest@51399530</td></tr>
 </table><p>
 </body>
 </html>

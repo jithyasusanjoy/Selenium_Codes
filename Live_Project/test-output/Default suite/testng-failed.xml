@@ -3,16 +3,18 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.TestCases.VerifyUserLoginTest">
+      <class name="com.TestCases.VerifyHomepageTest">
         <methods>
           <include name="Teardown"/>
-          <include name="invalid_User_invalid_pass"/>
+          <include name="after_method"/>
+          <include name="methods"/>
           <include name="loadConfig"/>
-          <include name="close"/>
-          <include name="loadingfiles"/>
           <include name="launch"/>
+          <include name="loadingfiles"/>
+          <include name="verify_language_selection"/>
+          <include name="user_logout"/>
         </methods>
-      </class> <!-- com.TestCases.VerifyUserLoginTest -->
+      </class> <!-- com.TestCases.VerifyHomepageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

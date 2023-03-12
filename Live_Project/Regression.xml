@@ -5,6 +5,11 @@
 		<listener class-name="com.project.Utilities.Listeners"></listener>
 	</listeners>
 	<test thread-count="5" name="Test">
+		<groups>
+			<run>
+				<include name="Regression"></include>
+			</run>
+		</groups>
 		<classes>
 			<class name="com.TestCases.VerifyUserLoginTest"/>
 			<class name="com.TestCases.VerifyHomepageTest"/>
