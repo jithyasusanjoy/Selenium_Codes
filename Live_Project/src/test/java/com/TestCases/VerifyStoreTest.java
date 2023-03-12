@@ -1,5 +1,6 @@
 package com.TestCases;
 
+import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -28,6 +29,7 @@ public class VerifyStoreTest extends BaseClass {
 		asp = new AddStorePage(driver);
 		data = new ExcelRead();
 		lp.LoginFn();
+		act.explicitWait(driver, hp.stores(), Duration.ofSeconds(10));
 		act.click1(hp.stores(), "Clicked store menu");
 
 	}

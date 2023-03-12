@@ -1,5 +1,6 @@
 package com.TestCases;
 
+import java.time.Duration;
 import java.util.ArrayList;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
@@ -23,6 +24,7 @@ public class VerifySettingsTest extends BaseClass {
 		awh = new AddWarehouse(driver);
 		data = new ExcelRead();
 		lp.LoginFn();
+		act.explicitWait(driver, hp.settings(), Duration.ofSeconds(10));
 		act.click1(hp.settings(), "Clicked  settings menu");		
 	}
 	
