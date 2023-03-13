@@ -1,6 +1,5 @@
 package com.TestCases;
 
-import java.time.Duration;
 import java.util.ArrayList;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
@@ -27,7 +26,7 @@ public class VerifyPeopleTest extends BaseClass {
 		ac = new AddCustomer(driver);
 		data = new ExcelRead();
 		lp.LoginFn();
-		act.explicitWait(driver, hp.people(), Duration.ofSeconds(10));
+		
 	}
 	
 	@Test(priority=1,groups = { "Regression" }, retryAnalyzer = RetryAnalyzer.class)

@@ -1,6 +1,5 @@
 package com.TestCases;
 
-import java.time.Duration;
 import java.util.ArrayList;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
@@ -25,7 +24,6 @@ public class VerifyStoreManageTest extends BaseClass {
 		sm=new StoreManage(driver);
 		data = new ExcelRead();
 		lp.LoginFn();
-		act.explicitWait(driver, hp.stores(), Duration.ofSeconds(10));
 		common_steps();
 	}
 	public void common_steps()

@@ -1,6 +1,5 @@
 package com.TestCases;
 
-import java.time.Duration;
 import java.util.ArrayList;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
@@ -22,7 +21,7 @@ public class VerifyAddExpenseTest extends BaseClass {
 		ae = new AddExpense(driver);
 		data = new ExcelRead();
 		lp.LoginFn();
-		act.explicitWait(driver, hp.expenses(), Duration.ofSeconds(10));
+		
 	}
 
 	@Test(groups = { "Regression" }, retryAnalyzer = RetryAnalyzer.class)

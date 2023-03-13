@@ -1,6 +1,5 @@
 package com.TestCases;
 
-import java.time.Duration;
 import java.util.ArrayList;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
@@ -22,7 +21,6 @@ public class VerifyCategoryTest extends BaseClass {
 		ac1 = new AddCategory(driver);
 		data = new ExcelRead();
 		lp.LoginFn();
-		act.explicitWait(driver, hp.categories(), Duration.ofSeconds(10));
 		act.click1(hp.categories(), "Clicked  categories menu");
 	}
 

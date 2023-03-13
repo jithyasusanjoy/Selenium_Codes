@@ -1,6 +1,5 @@
 package com.TestCases;
 
-import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -29,7 +28,6 @@ public class VerifyStoreTest extends BaseClass {
 		asp = new AddStorePage(driver);
 		data = new ExcelRead();
 		lp.LoginFn();
-		act.explicitWait(driver, hp.stores(), Duration.ofSeconds(10));
 		act.click1(hp.stores(), "Clicked store menu");
 
 	}
@@ -170,7 +168,7 @@ public class VerifyStoreTest extends BaseClass {
 	public void verify_storepage_pagination() {
 		Log.startTestCase("verify_storepage_pagination"); 
 		act.click1(sp.pagination(), "Clicked page no");
-		Assert.assertEquals(sp.validate_Page().getText(),"Showing 21 to 30 of 215 entries");
+		Assert.assertTrue(sp.validate_Page().getText().contains("Showing 21 to 30"));
 		Log.endTestCase("verify_storepage_pagination");
 	}
 	

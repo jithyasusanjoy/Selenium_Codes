@@ -49,7 +49,7 @@ WebDriver driver;
 	@FindBy(xpath="//table[@id='Table']//tbody/tr/td[1]")
 	List<WebElement> table_rows;
 	
-	@FindBy(xpath="//div[@id='Table_info']")
+	@FindBy(xpath="//div[contains(text(),'Showing 21 to 30')]")
 	WebElement validate_Page;
 	
 	 

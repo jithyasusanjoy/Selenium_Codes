@@ -18,7 +18,9 @@ public class ExcelRead {
 		ArrayList<String> a = new ArrayList<String>();
 		
 		// Path of excel sheet
-		FileInputStream fil = new FileInputStream("D:\\Student.xlsx");
+		FileInputStream fil = new FileInputStream(
+				System.getProperty("user.dir") + "\\ExcelFile\\Student.xlsx");
+		
 		XSSFWorkbook wb = new XSSFWorkbook(fil);
 		
 		int sheets = 0;

@@ -2,7 +2,6 @@ package com.TestCases;
 
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
-import java.time.Duration;
 import java.util.ArrayList;
 import org.testng.Assert;
 import org.testng.annotations.AfterGroups;
@@ -38,7 +37,7 @@ public class VerifyAddProductTest extends BaseClass {
 		pmp= new PrintMenuPage(driver);
 		data = new ExcelRead();
 		lp.LoginFn();
-		act.explicitWait(driver, hp.products(), Duration.ofSeconds(10));
+		
 		act.click1(hp.products(), "Clicked product menu");
 	}
 

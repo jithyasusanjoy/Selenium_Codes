@@ -1,5 +1,4 @@
 package com.TestCases;
-import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
 import org.openqa.selenium.WebElement;
@@ -20,7 +19,6 @@ public class VerifyHomepageTest extends BaseClass {
 		hp = new HomePage(driver);
 		lp = new LoginPage(driver);
 		lp.LoginFn();
-		act.explicitWait(driver, hp.page_heading(), Duration.ofSeconds(10));
 	}
 
 	@Test(priority = 3,groups = { "Regression" }, retryAnalyzer = RetryAnalyzer.class)
