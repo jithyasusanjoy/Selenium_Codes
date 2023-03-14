@@ -1,12 +1,13 @@
 package com.PageObjects;
 
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class AddCustomer {
-WebDriver driver;
+import com.Base.BaseClass.BaseClass;
+
+public class AddCustomer extends BaseClass {
+
 	
 	@FindBy(xpath="//button[@data-target='#AddCustomer']")
 	WebElement Add_Customer;
@@ -30,9 +31,8 @@ WebDriver driver;
 	WebElement Close_btn1;
 	
 	
-	public AddCustomer(WebDriver driver) {
-		this.driver=driver;
-		PageFactory.initElements(driver, this);
+	public AddCustomer() {
+		PageFactory.initElements(getDriver(), this);
 	}
 
 

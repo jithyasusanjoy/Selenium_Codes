@@ -1,12 +1,13 @@
 package com.PageObjects;
 
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class AddWaiter {
-WebDriver driver;
+import com.Base.BaseClass.BaseClass;
+
+public class AddWaiter extends BaseClass{
+
 	
 	@FindBy(xpath="//button[@data-target='#AddWaiter']")
 	WebElement Add_Waiter;
@@ -30,9 +31,9 @@ WebDriver driver;
 	WebElement Close_btn1;
 	
 	
-	public AddWaiter(WebDriver driver) {
-		this.driver=driver;
-		PageFactory.initElements(driver, this);
+	public AddWaiter() {
+	
+		PageFactory.initElements(getDriver(), this);
 	}
 
 

@@ -5,8 +5,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class UploadFilePopup {
-WebDriver driver;
+import com.Base.BaseClass.BaseClass;
+
+public class UploadFilePopup extends BaseClass{
+
 	
 	@FindBy(xpath="(//input[@id='ImageInput'])[2]")
 	WebElement File;
@@ -19,11 +21,8 @@ WebDriver driver;
 	
 	
 	public UploadFilePopup(WebDriver driver) {
-		this.driver=driver;
-		PageFactory.initElements(driver, this);
+				PageFactory.initElements(getDriver(), this);
 	}
-
-
 	public WebElement file()
 	{
 		return File;

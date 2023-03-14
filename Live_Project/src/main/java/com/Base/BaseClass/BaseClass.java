@@ -11,6 +11,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
@@ -37,7 +38,7 @@ import com.project.Utilities.ExtentReport;
 
 public class BaseClass {
 
-	public static WebDriver driver;
+	//public static WebDriver driver;
 	public static Properties prop;
 	public static ActionClass act;
 	public static ExcelRead data;
@@ -56,6 +57,9 @@ public class BaseClass {
 	public static AddUser au ;
 	public static AddWarehouse awh;
 	public static PrintMenuPage pmp;
+	
+	//Thread local driver
+	public static ThreadLocal<RemoteWebDriver> driver=new ThreadLocal<RemoteWebDriver>();
 
 	@BeforeSuite(groups = { "Regression" })
 	public void loadingfiles() {
@@ -66,7 +70,22 @@ public class BaseClass {
 	@BeforeMethod(groups = { "Regression" })
 	public void launch() {
 		launchApp();
-		
+		hp = new HomePage();
+		lp = new LoginPage();
+		ae = new AddExpense();
+		data = new ExcelRead();
+		ac1 = new AddCategory();
+		as = new AddSupplier();
+		aw = new AddWaiter();
+		ac = new AddCustomer();
+		au = new AddUser();
+		awh = new AddWarehouse();
+		sp= new StoresPage();
+		sm=new StoreManage();
+		asp = new AddStorePage();
+		pp= new ProductPage(); 
+		ap= new AddProductPage();
+		pmp = new PrintMenuPage();
 	}
 
 	@BeforeTest(groups = { "Regression" })
@@ -84,23 +103,28 @@ public class BaseClass {
 			e.printStackTrace();
 		}
 	}
+	public static WebDriver getDriver()
+	{
+		return driver.get();
+	}
+	
 
 	public void launchApp() {
 		String browserName = prop.getProperty("Browser");
 		if (browserName.equalsIgnoreCase("Chrome")) {
-			driver = new ChromeDriver();
+			driver.set(new ChromeDriver());
 		} else if (browserName.equalsIgnoreCase("FireFox")) {
-			driver = new FirefoxDriver();
+			driver.set(new FirefoxDriver());
 		} else if (browserName.equalsIgnoreCase("Edge")) {
-			driver = new EdgeDriver();
+			driver.set(new EdgeDriver());
 
 		}
 
-		driver.manage().window().maximize();
+		getDriver().manage().window().maximize();
 		act = new ActionClass();
-		act.implicitWait(driver, 10);
-		act.pageLoadTimeOut(driver, 30);
-		driver.get(prop.getProperty("url"));
+		act.implicitWait(getDriver(), 10);
+		act.pageLoadTimeOut(getDriver(), 30);
+		getDriver().get(prop.getProperty("url"));
 
 	}
 	
@@ -108,7 +132,7 @@ public class BaseClass {
 	@AfterMethod(groups = { "Regression" })
 	public void user_logout() {
 		
-		driver.quit();
+		getDriver().quit();
 	}
 
 

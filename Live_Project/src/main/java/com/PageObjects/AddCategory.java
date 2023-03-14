@@ -1,12 +1,13 @@
 package com.PageObjects;
 
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class AddCategory {
-WebDriver driver;
+import com.Base.BaseClass.BaseClass;
+
+public class AddCategory extends BaseClass{
+
 	
 	@FindBy(xpath="//button[@data-target='#Addcategory']")
 	WebElement Add_Category;
@@ -22,11 +23,8 @@ WebDriver driver;
 	
 	
 	
-	
-	
-	public AddCategory(WebDriver driver) {
-		this.driver=driver;
-		PageFactory.initElements(driver, this);
+	public AddCategory() {
+		PageFactory.initElements(getDriver(), this);
 	}
 
 

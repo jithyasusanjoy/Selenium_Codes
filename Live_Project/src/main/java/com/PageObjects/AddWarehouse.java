@@ -1,12 +1,13 @@
 package com.PageObjects;
 
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class AddWarehouse {
-WebDriver driver;
+import com.Base.BaseClass.BaseClass;
+
+public class AddWarehouse extends BaseClass{
+
 	
 	@FindBy(xpath="//a[@href='#warehouses']")
 	WebElement Warehouse_tab;
@@ -34,9 +35,9 @@ WebDriver driver;
 	
 	
 	
-	public AddWarehouse(WebDriver driver) {
-		this.driver=driver;
-		PageFactory.initElements(driver, this);
+	public AddWarehouse() {
+		
+		PageFactory.initElements(getDriver(), this);
 	}
 
 

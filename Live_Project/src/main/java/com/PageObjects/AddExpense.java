@@ -1,13 +1,13 @@
 package com.PageObjects;
 
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class AddExpense{
-WebDriver driver;
-	
+import com.Base.BaseClass.BaseClass;
+
+public class AddExpense extends BaseClass{
+
 	@FindBy(xpath="//button[@data-target='#AddExpence']")
 	WebElement Add_Expense;
 	
@@ -41,9 +41,9 @@ WebDriver driver;
 	
 	
 	
-	public AddExpense(WebDriver driver) {
-		this.driver=driver;
-		PageFactory.initElements(driver, this);
+	public AddExpense() {
+		
+		PageFactory.initElements(getDriver(), this);
 	}
 
 

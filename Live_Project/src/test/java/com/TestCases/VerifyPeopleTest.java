@@ -3,36 +3,19 @@ package com.TestCases;
 import java.util.ArrayList;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import com.Base.BaseClass.BaseClass;
-import com.PageObjects.AddCustomer;
-import com.PageObjects.AddSupplier;
-import com.PageObjects.AddWaiter;
-import com.PageObjects.HomePage;
-import com.PageObjects.LoginPage;
-import com.project.Utilities.ExcelRead;
 import com.project.Utilities.Log;
 import com.project.Utilities.RetryAnalyzer;
 
 public class VerifyPeopleTest extends BaseClass {
 	
-	@BeforeMethod(groups = { "Regression" })
-	public void methods() {
-		hp = new HomePage(driver);
-		lp = new LoginPage(driver);
-		as = new AddSupplier(driver);
-		aw = new AddWaiter(driver);
-		ac = new AddCustomer(driver);
-		data = new ExcelRead();
-		lp.LoginFn();
-		
-	}
 	
 	@Test(priority=1,groups = { "Regression" }, retryAnalyzer = RetryAnalyzer.class)
 	public void verify_add_supplier() throws Exception 
 	{
 		Log.startTestCase("verify_add_supplier");	
+		lp.LoginFn();
 		act.click1(hp.people(), "Clicked");	
 		Log.info("Clicked  people menu");
 		act.click1(hp.suppliers(), "Clicked");	
@@ -60,6 +43,7 @@ public class VerifyPeopleTest extends BaseClass {
 	public void verify_add_waiter() throws Exception 
 	{	
 		Log.startTestCase("verify_add_waiter");
+		lp.LoginFn();
 		act.click1(hp.people(), "Clicked");	
 		Log.info("clicked  people menu");
 		act.click1(hp.waiters(), "Clicked");	
@@ -85,6 +69,7 @@ public class VerifyPeopleTest extends BaseClass {
 	public void verify_add_customer() throws Exception 
 	{		
 		Log.startTestCase("verify_add_customer");
+		lp.LoginFn();
 		act.click1(hp.people(), "Clicked");	
 		Log.info("clicked  people menu");
 		act.click1(hp.Customers(), "Clicked");	

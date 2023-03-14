@@ -1,12 +1,13 @@
 package com.PageObjects;
 
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class AddProductPage {
-WebDriver driver;
+import com.Base.BaseClass.BaseClass;
+
+public class AddProductPage extends BaseClass{
+
 	
 	@FindBy(xpath="//select[@id='Type']")
 	WebElement Type;
@@ -69,9 +70,9 @@ WebDriver driver;
 	WebElement Stock_close;
 	
 	
-	public AddProductPage(WebDriver driver) {
-		this.driver=driver;
-		PageFactory.initElements(driver, this);
+	public AddProductPage() {
+
+		PageFactory.initElements(getDriver(), this);
 	}
 	
 	public WebElement Stock_close()

@@ -1,13 +1,15 @@
 package com.PageObjects;
 
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class StoreManage {
+import com.Base.BaseClass.BaseClass;
+import com.project.Utilities.Log;
+
+public class StoreManage extends BaseClass {
 	
-WebDriver driver;
+
 	
 	@FindBy(xpath="//i[@class='fa fa-plus']")
 	WebElement Add_Zone;
@@ -68,9 +70,9 @@ WebDriver driver;
 	WebElement Table_edit;
 	
 	
-	public StoreManage(WebDriver driver) {
-		this.driver=driver;
-		PageFactory.initElements(driver, this);
+	public StoreManage() {
+		
+		PageFactory.initElements(getDriver(), this);
 	}
 	public WebElement Delete_Zone_confirm()
 	{
@@ -152,6 +154,12 @@ WebDriver driver;
 		return Zone_heading;
 	}
 	
-	
+	public void common_steps()
+	{
+		act.click1(hp.stores(), "Clicked");	
+		Log.info("clicked  store menu");
+		act.click1(sp.Manage_Table(), "Clicked manage store icon ");
+		
+	}
 	
 }

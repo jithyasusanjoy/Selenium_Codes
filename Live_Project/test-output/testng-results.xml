@@ -1,115 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-12T16:42:51 IST" name="Default suite" finished-at="2023-03-12T16:43:44 IST" duration-ms="52385">
+  <suite started-at="2023-03-14T21:37:09 IST" name="Default suite" finished-at="2023-03-14T21:37:18 IST" duration-ms="9144">
     <groups>
       <group name="Regression">
-        <method signature="VerifyAddProductTest.verify_add_product()[pri:1, instance:com.TestCases.VerifyAddProductTest@131774fe]" name="verify_add_product" class="com.TestCases.VerifyAddProductTest"/>
-        <method signature="VerifyAddProductTest.verify_file_download()[pri:2, instance:com.TestCases.VerifyAddProductTest@131774fe]" name="verify_file_download" class="com.TestCases.VerifyAddProductTest"/>
-        <method signature="VerifyAddProductTest.verify_file_upload()[pri:3, instance:com.TestCases.VerifyAddProductTest@131774fe]" name="verify_file_upload" class="com.TestCases.VerifyAddProductTest"/>
-        <method signature="VerifyAddProductTest.verify_print_menu()[pri:4, instance:com.TestCases.VerifyAddProductTest@131774fe]" name="verify_print_menu" class="com.TestCases.VerifyAddProductTest"/>
+        <method signature="VerifyAddExpenseTest.verify_expense_addition()[pri:0, instance:com.TestCases.VerifyAddExpenseTest@1d2adfbe]" name="verify_expense_addition" class="com.TestCases.VerifyAddExpenseTest"/>
       </group> <!-- Regression -->
     </groups>
-    <test started-at="2023-03-12T16:42:51 IST" name="Default test" finished-at="2023-03-12T16:43:44 IST" duration-ms="52385">
-      <class name="com.TestCases.VerifyAddProductTest">
-        <test-method is-config="true" signature="loadingfiles()[pri:0, instance:com.TestCases.VerifyAddProductTest@131774fe]" started-at="2023-03-12T16:42:51 IST" name="loadingfiles" finished-at="2023-03-12T16:42:51 IST" duration-ms="186" status="PASS">
+    <test started-at="2023-03-14T21:37:09 IST" name="Default test" finished-at="2023-03-14T21:37:18 IST" duration-ms="9144">
+      <class name="com.TestCases.VerifyAddExpenseTest">
+        <test-method is-config="true" signature="loadingfiles()[pri:0, instance:com.TestCases.VerifyAddExpenseTest@1d2adfbe]" started-at="2023-03-14T21:37:09 IST" name="loadingfiles" finished-at="2023-03-14T21:37:09 IST" duration-ms="194" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadingfiles -->
-        <test-method is-config="true" signature="loadConfig()[pri:0, instance:com.TestCases.VerifyAddProductTest@131774fe]" started-at="2023-03-12T16:42:51 IST" name="loadConfig" finished-at="2023-03-12T16:42:51 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="loadConfig()[pri:0, instance:com.TestCases.VerifyAddExpenseTest@1d2adfbe]" started-at="2023-03-14T21:37:09 IST" name="loadConfig" finished-at="2023-03-14T21:37:09 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadConfig -->
-        <test-method is-config="true" signature="launch()[pri:0, instance:com.TestCases.VerifyAddProductTest@131774fe]" started-at="2023-03-12T16:42:51 IST" name="launch" finished-at="2023-03-12T16:42:54 IST" duration-ms="2599" status="PASS">
+        <test-method is-config="true" signature="launch()[pri:0, instance:com.TestCases.VerifyAddExpenseTest@1d2adfbe]" started-at="2023-03-14T21:37:09 IST" name="launch" finished-at="2023-03-14T21:37:12 IST" duration-ms="2854" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launch -->
-        <test-method is-config="true" signature="methods()[pri:0, instance:com.TestCases.VerifyAddProductTest@131774fe]" started-at="2023-03-12T16:42:54 IST" name="methods" finished-at="2023-03-12T16:42:58 IST" duration-ms="3835" status="PASS">
+        <test-method signature="verify_expense_addition()[pri:0, instance:com.TestCases.VerifyAddExpenseTest@1d2adfbe]" started-at="2023-03-14T21:37:12 IST" name="verify_expense_addition" finished-at="2023-03-14T21:37:17 IST" duration-ms="4967" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- methods -->
-        <test-method signature="verify_add_product()[pri:1, instance:com.TestCases.VerifyAddProductTest@131774fe]" started-at="2023-03-12T16:42:58 IST" name="verify_add_product" finished-at="2023-03-12T16:43:08 IST" duration-ms="10394" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_add_product -->
-        <test-method is-config="true" signature="after_method()[pri:0, instance:com.TestCases.VerifyAddProductTest@131774fe]" started-at="2023-03-12T16:43:08 IST" name="after_method" finished-at="2023-03-12T16:43:09 IST" duration-ms="949" status="PASS">
+        </test-method> <!-- verify_expense_addition -->
+        <test-method is-config="true" signature="after_method()[pri:0, instance:com.TestCases.VerifyAddExpenseTest@1d2adfbe]" started-at="2023-03-14T21:37:17 IST" name="after_method" finished-at="2023-03-14T21:37:18 IST" duration-ms="1042" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after_method -->
-        <test-method is-config="true" signature="user_logout()[pri:0, instance:com.TestCases.VerifyAddProductTest@131774fe]" started-at="2023-03-12T16:43:09 IST" name="user_logout" finished-at="2023-03-12T16:43:09 IST" duration-ms="264" status="PASS">
+        <test-method is-config="true" signature="user_logout()[pri:0, instance:com.TestCases.VerifyAddExpenseTest@1d2adfbe]" started-at="2023-03-14T21:37:18 IST" name="user_logout" finished-at="2023-03-14T21:37:18 IST" duration-ms="256" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- user_logout -->
-        <test-method is-config="true" signature="launch()[pri:0, instance:com.TestCases.VerifyAddProductTest@131774fe]" started-at="2023-03-12T16:43:09 IST" name="launch" finished-at="2023-03-12T16:43:11 IST" duration-ms="1815" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launch -->
-        <test-method is-config="true" signature="methods()[pri:0, instance:com.TestCases.VerifyAddProductTest@131774fe]" started-at="2023-03-12T16:43:11 IST" name="methods" finished-at="2023-03-12T16:43:15 IST" duration-ms="4076" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- methods -->
-        <test-method signature="verify_file_download()[pri:2, instance:com.TestCases.VerifyAddProductTest@131774fe]" started-at="2023-03-12T16:43:15 IST" name="verify_file_download" finished-at="2023-03-12T16:43:16 IST" duration-ms="784" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_file_download -->
-        <test-method is-config="true" signature="after_method()[pri:0, instance:com.TestCases.VerifyAddProductTest@131774fe]" started-at="2023-03-12T16:43:16 IST" name="after_method" finished-at="2023-03-12T16:43:17 IST" duration-ms="531" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- after_method -->
-        <test-method is-config="true" signature="user_logout()[pri:0, instance:com.TestCases.VerifyAddProductTest@131774fe]" started-at="2023-03-12T16:43:17 IST" name="user_logout" finished-at="2023-03-12T16:43:17 IST" duration-ms="252" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- user_logout -->
-        <test-method is-config="true" signature="launch()[pri:0, instance:com.TestCases.VerifyAddProductTest@131774fe]" started-at="2023-03-12T16:43:17 IST" name="launch" finished-at="2023-03-12T16:43:19 IST" duration-ms="1738" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launch -->
-        <test-method is-config="true" signature="methods()[pri:0, instance:com.TestCases.VerifyAddProductTest@131774fe]" started-at="2023-03-12T16:43:19 IST" name="methods" finished-at="2023-03-12T16:43:23 IST" duration-ms="3821" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- methods -->
-        <test-method signature="verify_file_upload()[pri:3, instance:com.TestCases.VerifyAddProductTest@131774fe]" started-at="2023-03-12T16:43:23 IST" name="verify_file_upload" finished-at="2023-03-12T16:43:26 IST" duration-ms="3054" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_file_upload -->
-        <test-method is-config="true" signature="after_method()[pri:0, instance:com.TestCases.VerifyAddProductTest@131774fe]" started-at="2023-03-12T16:43:26 IST" name="after_method" finished-at="2023-03-12T16:43:27 IST" duration-ms="1042" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- after_method -->
-        <test-method is-config="true" signature="user_logout()[pri:0, instance:com.TestCases.VerifyAddProductTest@131774fe]" started-at="2023-03-12T16:43:27 IST" name="user_logout" finished-at="2023-03-12T16:43:27 IST" duration-ms="258" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- user_logout -->
-        <test-method is-config="true" signature="launch()[pri:0, instance:com.TestCases.VerifyAddProductTest@131774fe]" started-at="2023-03-12T16:43:27 IST" name="launch" finished-at="2023-03-12T16:43:29 IST" duration-ms="1661" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launch -->
-        <test-method is-config="true" signature="methods()[pri:0, instance:com.TestCases.VerifyAddProductTest@131774fe]" started-at="2023-03-12T16:43:29 IST" name="methods" finished-at="2023-03-12T16:43:33 IST" duration-ms="4462" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- methods -->
-        <test-method signature="verify_print_menu()[pri:4, instance:com.TestCases.VerifyAddProductTest@131774fe]" started-at="2023-03-12T16:43:33 IST" name="verify_print_menu" finished-at="2023-03-12T16:43:43 IST" duration-ms="9957" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_print_menu -->
-        <test-method is-config="true" signature="after_method()[pri:0, instance:com.TestCases.VerifyAddProductTest@131774fe]" started-at="2023-03-12T16:43:43 IST" name="after_method" finished-at="2023-03-12T16:43:43 IST" duration-ms="471" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- after_method -->
-        <test-method is-config="true" signature="user_logout()[pri:0, instance:com.TestCases.VerifyAddProductTest@131774fe]" started-at="2023-03-12T16:43:43 IST" name="user_logout" finished-at="2023-03-12T16:43:44 IST" duration-ms="388" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- user_logout -->
-        <test-method is-config="true" signature="after_it()[pri:0, instance:com.TestCases.VerifyAddProductTest@131774fe]" started-at="2023-03-12T16:43:44 IST" name="after_it" finished-at="2023-03-12T16:43:44 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- after_it -->
-        <test-method is-config="true" signature="Teardown()[pri:0, instance:com.TestCases.VerifyAddProductTest@131774fe]" started-at="2023-03-12T16:43:44 IST" name="Teardown" finished-at="2023-03-12T16:43:44 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="Teardown()[pri:0, instance:com.TestCases.VerifyAddExpenseTest@1d2adfbe]" started-at="2023-03-14T21:37:18 IST" name="Teardown" finished-at="2023-03-14T21:37:18 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Teardown -->
-      </class> <!-- com.TestCases.VerifyAddProductTest -->
+      </class> <!-- com.TestCases.VerifyAddExpenseTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

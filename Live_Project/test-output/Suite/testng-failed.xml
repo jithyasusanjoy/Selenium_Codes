@@ -11,18 +11,31 @@
       </run>
     </groups>
     <classes>
-      <class name="com.TestCases.VerifyAddProductTest">
+      <class name="com.TestCases.VerifyUserLoginTest">
         <methods>
           <include name="methods"/>
           <include name="Teardown"/>
-          <include name="after_method"/>
+          <include name="verify_valid_User_Login"/>
           <include name="loadConfig"/>
           <include name="launch"/>
-          <include name="verify_add_product"/>
           <include name="loadingfiles"/>
           <include name="user_logout"/>
         </methods>
-      </class> <!-- com.TestCases.VerifyAddProductTest -->
+      </class> <!-- com.TestCases.VerifyUserLoginTest -->
+      <class name="com.TestCases.VerifyHomepageTest">
+        <methods>
+          <include name="Teardown"/>
+          <include name="verify_home_menu_elements"/>
+          <include name="after_method"/>
+          <include name="methods"/>
+          <include name="loadConfig"/>
+          <include name="launch"/>
+          <include name="verify_language_selection"/>
+          <include name="loadingfiles"/>
+          <include name="verify_logged_user_name"/>
+          <include name="user_logout"/>
+        </methods>
+      </class> <!-- com.TestCases.VerifyHomepageTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

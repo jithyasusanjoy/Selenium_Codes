@@ -1,12 +1,13 @@
 package com.PageObjects;
 
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class ProductPage {
-WebDriver driver;
+import com.Base.BaseClass.BaseClass;
+
+public class ProductPage extends BaseClass{
+
 	
 	@FindBy(xpath="//button[@data-target='#Addproduct']")
 	WebElement Add_Product;
@@ -28,9 +29,9 @@ WebDriver driver;
 	
 	
 
-	public ProductPage(WebDriver driver) {
-		this.driver=driver;
-		PageFactory.initElements(driver, this);
+	public ProductPage() {
+	
+		PageFactory.initElements(getDriver(), this);
 	}
 	public WebElement Submit_btn()
 	{

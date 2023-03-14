@@ -2,23 +2,13 @@ package com.TestCases;
 import java.time.Duration;
 import java.util.ArrayList;
 import org.testng.Assert;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import com.Base.BaseClass.BaseClass;
-import com.PageObjects.HomePage;
-import com.PageObjects.LoginPage;
-import com.project.Utilities.ExcelRead;
 import com.project.Utilities.Log;
 
 public class VerifyUserLoginTest extends BaseClass {
 
-	@BeforeMethod(groups = { "Regression" })
-	public void methods() {
-		hp = new HomePage(driver);
-		lp = new LoginPage(driver);
-		data = new ExcelRead();
-	}
 
 	@Test(priority = 4,groups = { "Regression" })
 	public void verify_valid_User_Login() {
@@ -39,7 +29,7 @@ public class VerifyUserLoginTest extends BaseClass {
 		act.type(lp.pwd(), password);
 		Log.info("User entered invalid password");
 		act.click1(lp.lbutton(), "Clicking On Login Button");
-		act.explicitWait(driver, lp.login_label(), Duration.ofSeconds(10));
+		act.explicitWait(getDriver(), lp.login_label(), Duration.ofSeconds(10));
 		Assert.assertEquals(lp.login_label().getText(), "Login");
 		Log.info("Unable to Login");
 		Log.endTestCase("valid_User_invalid_Pass");
@@ -65,7 +55,7 @@ public class VerifyUserLoginTest extends BaseClass {
 		act.type(lp.pwd(), exceldata.get(1));
 		Log.info("User entered valid password");
 		act.click1(lp.lbutton(), "Clicked Login Button");
-		act.explicitWait(driver, lp.login_label(), Duration.ofSeconds(10));
+		act.explicitWait(getDriver(), lp.login_label(), Duration.ofSeconds(10));
 		Assert.assertEquals(lp.login_label().getText(), "Login");
 		System.out.println("Unable to Login");
 		Log.endTestCase("invalid_User_valid_pass");
@@ -81,7 +71,7 @@ public class VerifyUserLoginTest extends BaseClass {
 		act.type(lp.pwd(), exceldata.get(1));
 		Log.info("User entered invalid password");
 		act.click1(lp.lbutton(), "Clicked Login Button");
-		act.explicitWait(driver, lp.login_label(), Duration.ofSeconds(10));
+		act.explicitWait(getDriver(), lp.login_label(), Duration.ofSeconds(10));
 		Assert.assertEquals(lp.login_label().getText(), "Login");
 		Log.info("Unable to Login");
 		Log.endTestCase("invalid_User_invalid_pass");

@@ -1,16 +1,13 @@
 package com.PageObjects;
 
 import java.util.List;
-
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
 import com.Base.BaseClass.BaseClass;
 
 public class HomePage extends BaseClass{
-	WebDriver driver;
+	
 	
 	@FindBy(xpath="//h1[@class='text-center choose_store']")
 	WebElement Heading;
@@ -67,9 +64,9 @@ public class HomePage extends BaseClass{
 	List<WebElement> menu;
 	
 	
-	public HomePage(WebDriver driver) {
-		this.driver=driver;
-		PageFactory.initElements(driver, this);
+	public HomePage() {
+		
+		PageFactory.initElements(getDriver(), this);
 	}
 	public List<WebElement> menu()
 	{

@@ -1,14 +1,13 @@
 package com.PageObjects;
 
 import java.util.List;
-
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import com.Base.BaseClass.BaseClass;
 
-public class StoresPage {
-WebDriver driver;
+public class StoresPage extends BaseClass{
+
 	
 	@FindBy(xpath="//select[@name='Table_length']")
 	WebElement Show_Drop;
@@ -54,9 +53,9 @@ WebDriver driver;
 	
 	 
 
-	public StoresPage(WebDriver driver) {
-		this.driver=driver;
-		PageFactory.initElements(driver, this);
+	public StoresPage() {
+	
+		PageFactory.initElements(getDriver(), this);
 	}
 	
 	

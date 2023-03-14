@@ -1,13 +1,14 @@
 package com.PageObjects;
 
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class PrintMenuPage {
+import com.Base.BaseClass.BaseClass;
 
-	WebDriver driver;
+public class PrintMenuPage extends BaseClass{
+
+	
 
 	@FindBy(xpath = "//h1[text()='Menu']")
 	WebElement label;
@@ -18,9 +19,9 @@ public class PrintMenuPage {
 	@FindBy(xpath = "(//button[text()='Close'])[9]")
 	WebElement Close_btn;
 
-	public PrintMenuPage(WebDriver driver) {
-		this.driver = driver;
-		PageFactory.initElements(driver, this);
+	public PrintMenuPage() {
+	
+		PageFactory.initElements(getDriver(), this);
 	}
 
 	public WebElement label() {

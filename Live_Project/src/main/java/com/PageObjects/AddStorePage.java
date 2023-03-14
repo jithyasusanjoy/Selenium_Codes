@@ -1,12 +1,13 @@
 package com.PageObjects;
 
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class AddStorePage {
-WebDriver driver;
+import com.Base.BaseClass.BaseClass;
+
+public class AddStorePage extends BaseClass{
+
 	
 	@FindBy(xpath="//input[@id='StoreName']")
 	WebElement StoreName;
@@ -37,9 +38,9 @@ WebDriver driver;
 	
 	
 
-	public AddStorePage(WebDriver driver) {
-		this.driver=driver;
-		PageFactory.initElements(driver, this);
+	public AddStorePage() {
+	
+		PageFactory.initElements(getDriver(), this);
 	}
 
 

@@ -3,33 +3,19 @@ package com.TestCases;
 import java.util.ArrayList;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import com.Base.BaseClass.BaseClass;
-import com.PageObjects.AddUser;
-import com.PageObjects.AddWarehouse;
-import com.PageObjects.HomePage;
-import com.PageObjects.LoginPage;
-import com.project.Utilities.ExcelRead;
 import com.project.Utilities.Log;
 
 public class VerifySettingsTest extends BaseClass {
 	
-	@BeforeMethod(groups = { "Regression" })
-	public void methods() {
-		hp = new HomePage(driver);
-		lp = new LoginPage(driver);
-		au = new AddUser(driver);
-		awh = new AddWarehouse(driver);
-		data = new ExcelRead();
-		lp.LoginFn();
-		act.click1(hp.settings(), "Clicked  settings menu");		
-	}
 	
 	@Test(priority=1,groups = { "Regression" })
 	public void verify_add_new_user() throws Exception 
 	{
 		Log.startTestCase("add_new_user");
+		lp.LoginFn();
+		act.click1(hp.settings(), "Clicked  settings menu");
 		act.click1(au.user_tab(), "Clicked  user tab");	
 		act.click1(au.add_User(), "Clicked add user");	
 		Log.info("Clicked add user button");
@@ -60,6 +46,8 @@ public class VerifySettingsTest extends BaseClass {
 	public void verify_add_new_warehouse() throws Exception 
 	{
 		Log.startTestCase("add_new_warehouse");
+		lp.LoginFn();
+		act.click1(hp.settings(), "Clicked  settings menu");
 		act.click1(awh.Warehouse_tab(), "Clicked  user tab");	
 		act.click1(awh.add_Warehouse(), "Clicked AddWarehouse");	
 		Log.info("Clicked add Warehouse button");

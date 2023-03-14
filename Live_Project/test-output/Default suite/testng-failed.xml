@@ -3,18 +3,22 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.TestCases.VerifyHomepageTest">
+      <class name="com.TestCases.VerifyAddProductTest">
         <methods>
+          <include name="methods"/>
           <include name="Teardown"/>
           <include name="after_method"/>
-          <include name="methods"/>
+          <include name="verify_print_menu"/>
           <include name="loadConfig"/>
           <include name="launch"/>
+          <include name="verify_add_product"/>
+          <include name="after_it"/>
           <include name="loadingfiles"/>
-          <include name="verify_language_selection"/>
+          <include name="verify_file_download"/>
           <include name="user_logout"/>
+          <include name="verify_file_upload"/>
         </methods>
-      </class> <!-- com.TestCases.VerifyHomepageTest -->
+      </class> <!-- com.TestCases.VerifyAddProductTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

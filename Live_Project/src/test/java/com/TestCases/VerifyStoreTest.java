@@ -2,39 +2,22 @@ package com.TestCases;
 
 import java.util.ArrayList;
 import java.util.List;
-
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import com.Base.BaseClass.BaseClass;
-import com.PageObjects.AddStorePage;
-import com.PageObjects.HomePage;
-import com.PageObjects.LoginPage;
-import com.PageObjects.StoresPage;
-import com.project.Utilities.ExcelRead;
 import com.project.Utilities.Log;
 
 import com.project.Utilities.RetryAnalyzer;
 
 public class VerifyStoreTest extends BaseClass {
 
-	@BeforeMethod(groups = { "Regression" })
-	public void methods() {
-		hp = new HomePage(driver);
-		lp = new LoginPage(driver);
-		sp = new StoresPage(driver);
-		asp = new AddStorePage(driver);
-		data = new ExcelRead();
-		lp.LoginFn();
-		act.click1(hp.stores(), "Clicked store menu");
-
-	}
-
 	@Test(priority = 1,groups = { "Regression" }, retryAnalyzer = RetryAnalyzer.class)
 	public void verify_sort_store_name_descending_order() {
 		Log.startTestCase("verify_sort_store_name_descending_order"); 
+		lp.LoginFn();
+		act.click1(hp.stores(), "Clicked store menu");
 		act.click1(sp.sort_descending(), "Clicked storename");
 		Log.info("Store name sorted in descending order");
 		Assert.assertEquals(sp.First_Element().getText(), "VKS Store2147483647");
@@ -44,7 +27,10 @@ public class VerifyStoreTest extends BaseClass {
 	}
 
 	public void verify_sort_store_name_ascending_order() {
+	
 		Log.startTestCase("verify_sort_store_name_ascending_order");
+		lp.LoginFn();
+		act.click1(hp.stores(), "Clicked store menu");
 		act.click1(sp.sort_ascending(), "Clicked storename");
 		Log.info("Store name sorted in ascending order");
 		Assert.assertEquals(sp.First_Element().getText(), "AJStores");
@@ -54,6 +40,8 @@ public class VerifyStoreTest extends BaseClass {
 	@Test(priority = 3,groups = { "Regression" }, retryAnalyzer = RetryAnalyzer.class)
 	public void verify_add_store() throws Exception {
 		Log.startTestCase("verify_add_store");
+		lp.LoginFn();
+		act.click1(hp.stores(), "Clicked store menu");
 		Assert.assertEquals(sp.add_store().getText(), "Add Store");
 		act.click1(sp.add_store(), "Clicked Add store button");
 		ArrayList<String> exceldata = data.getData("AddStore");
@@ -72,7 +60,7 @@ public class VerifyStoreTest extends BaseClass {
 		act.type(asp.customerfooter(), exceldata.get(6));
 		Log.info("entered customerfooter");
 		act.click1(asp.Submit_btn(), "Submitted");
-		act.fluentWait(driver, sp.search(), 5);
+		act.fluentWait(getDriver(), sp.search(), 5);
 		act.type(sp.search(), "Bun");
 		Log.info("entered search text");
 		Assert.assertEquals(sp.First_Element().getText(), "BunCafe");
@@ -83,6 +71,8 @@ public class VerifyStoreTest extends BaseClass {
 	@Test(priority = 5,groups = { "Regression" })
 	public void verify_delete_store() {
 		Log.endTestCase("verify_delete_store");
+		lp.LoginFn();
+		act.click1(hp.stores(), "Clicked store menu");
 		Assert.assertEquals(sp.add_store().getText(), "Add Store");
 		act.type(sp.search(), "Bun");
 		Log.info("entered search text");
@@ -96,16 +86,17 @@ public class VerifyStoreTest extends BaseClass {
 
 	@Test(priority = 4, retryAnalyzer = RetryAnalyzer.class,groups = { "Regression" })
 	public void verify_edit_store() {
-		Log.endTestCase("verify_edit_store");
+		Log.startTestCase("verify_edit_store");
+		lp.LoginFn();
+		act.click1(hp.stores(), "Clicked store menu");
 		Assert.assertEquals(sp.add_store().getText(), "Add Store");
 		act.type(sp.search(), "Bun");
 		Log.info("entered search text");
 		act.click1(sp.Edit_Row(), "Clicked edit icon");
-		AddStorePage asp = new AddStorePage(driver);
 		act.type(asp.storename(), "BunCafe1");
 		Log.info("entered storename");
 		act.click1(asp.Submit_btn(), "Submitted");
-		act.fluentWait(driver, sp.search(), 5);
+		act.fluentWait(getDriver(), sp.search(), 5);
 		act.type(sp.search(), "Bun");
 		Log.info("entered search text");
 		Assert.assertEquals(sp.First_Element().getText(), "BunCafe1");
@@ -115,6 +106,8 @@ public class VerifyStoreTest extends BaseClass {
 	@Test(priority=6,groups = { "Regression" })
 	public void verify_sort_store_coulmns() {
 		Log.startTestCase("verify_sort_store_coulmns");
+		lp.LoginFn();
+		act.click1(hp.stores(), "Clicked store menu");
 		List<WebElement> list1 = sp.table_headings();
 		List<String> list2 = new ArrayList<String>();
 		List<String> list3 = new ArrayList<String>();
@@ -141,6 +134,8 @@ public class VerifyStoreTest extends BaseClass {
 	@Test(priority=7,groups = { "Regression" })
 	public void verify_show_dropdown() {
 		Log.startTestCase("verify_show_dropdown"); 
+		lp.LoginFn();
+		act.click1(hp.stores(), "Clicked store menu");
 		act.selectByValue(sp.show_drop(), "25");
 		Log.info("Value selected from dropdown");
 		List<WebElement> list1 = sp.table_rows();
@@ -150,6 +145,8 @@ public class VerifyStoreTest extends BaseClass {
 	@Test(priority=8,groups = { "Regression" })
 	public void verify_store_search() {
 		Log.startTestCase("verify_store_search"); 
+		lp.LoginFn();
+		act.click1(hp.stores(), "Clicked store menu");
 		act.type(sp.search(), "Ajstor");
 		Log.info("Text entered");
 		List<WebElement> list1 = sp.table_rows();
@@ -167,6 +164,8 @@ public class VerifyStoreTest extends BaseClass {
 	@Test(priority=9,groups = { "Regression" })
 	public void verify_storepage_pagination() {
 		Log.startTestCase("verify_storepage_pagination"); 
+		lp.LoginFn();
+		act.click1(hp.stores(), "Clicked store menu");
 		act.click1(sp.pagination(), "Clicked page no");
 		Assert.assertTrue(sp.validate_Page().getText().contains("Showing 21 to 30"));
 		Log.endTestCase("verify_storepage_pagination");

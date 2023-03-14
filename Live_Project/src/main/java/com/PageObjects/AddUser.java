@@ -1,12 +1,13 @@
 package com.PageObjects;
 
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class AddUser {
-WebDriver driver;
+import com.Base.BaseClass.BaseClass;
+
+public class AddUser extends BaseClass {
+
 	
 	@FindBy(xpath="//a[@href='#users']")
 	WebElement User_tab;
@@ -53,14 +54,11 @@ WebDriver driver;
 	@FindBy(xpath="(//button[text()='Close'])[1]")
 	WebElement Close_btn1;
 	
-	
 
 	
-	
-	
-	public AddUser(WebDriver driver) {
-		this.driver=driver;
-		PageFactory.initElements(driver, this);
+	public AddUser() {
+		
+		PageFactory.initElements(getDriver(), this);
 	}
 
 

@@ -3,34 +3,20 @@ package com.TestCases;
 import java.util.ArrayList;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import com.Base.BaseClass.BaseClass;
-import com.PageObjects.AddExpense;
-import com.PageObjects.HomePage;
-import com.PageObjects.LoginPage;
-import com.project.Utilities.ExcelRead;
 import com.project.Utilities.Log;
 import com.project.Utilities.RetryAnalyzer;
 
 public class VerifyAddExpenseTest extends BaseClass {
-	@BeforeMethod(groups = { "Regression" })
-	public void methods() {
-		hp = new HomePage(driver);
-		lp = new LoginPage(driver);
-		ae = new AddExpense(driver);
-		data = new ExcelRead();
-		lp.LoginFn();
-		
-	}
-
+	
+	
 	@Test(groups = { "Regression" }, retryAnalyzer = RetryAnalyzer.class)
 	public void verify_expense_addition() throws Exception {
 		Log.startTestCase("verify_expense_addition");
-		act.click1(hp.expenses(), "Clicked");
-		Log.info("clicked  expenses menu");	
-		act.click1(ae.add_Expense(), "Clicked");
-		Log.info("clicked add Expense button");
+		lp.LoginFn();
+		act.click1(hp.expenses(), "clicked  expenses menu");
+		act.click1(ae.add_Expense(), "clicked add Expense button");
 		ArrayList<String> exceldata = data.getData("AddExpense");		
 		act.type(ae.Date(), exceldata.get(0));
 	    Log.info("Entered date");
