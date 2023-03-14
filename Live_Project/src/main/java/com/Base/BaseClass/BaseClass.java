@@ -38,7 +38,7 @@ import com.project.Utilities.ExtentReport;
 
 public class BaseClass {
 
-	//public static WebDriver driver;
+	
 	public static Properties prop;
 	public static ActionClass act;
 	public static ExcelRead data;
