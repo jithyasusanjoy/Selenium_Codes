@@ -45,12 +45,12 @@ public class VerifyAddProductTest extends BaseClass {
 		Log.info("Entered product options");
 		act.type(ap.product_description(), exceldata.get(8));
 		Log.info("Entered product description");
-		act.fluentWait(getDriver(), ap.file_upload(), 5);
+		ap.fluentwait(ap.file_upload(), 5);
 		act.type(ap.file_upload(), exceldata.get(9));
 		Log.info("File selected");
 		act.click1(ap.color_selection(), "color selected");
 		act.click1(ap.Submit_btn(), "Submitted");
-		act.fluentWait(getDriver(), ap.Search(), 5);
+		ap.fluentwait(ap.Search(), 5);
 		act.click1(ap.Stock_close(), "Closed stock popup");
 		act.type(ap.Search(), "A1234");
 		Log.info("Entered search text");
@@ -98,7 +98,6 @@ public class VerifyAddProductTest extends BaseClass {
 		Assert.assertTrue(pmp.label().isDisplayed());
 		act.switchToOldWindow(getDriver());	
 		act.click1(pmp.Close_btn(), "Closed");
-		Thread.sleep(3000);
 		Log.endTestCase("verify_print_menu");
 	}
 	

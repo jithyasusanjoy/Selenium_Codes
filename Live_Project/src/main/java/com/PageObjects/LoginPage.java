@@ -54,5 +54,9 @@ public class LoginPage extends BaseClass {
 		act.type(password,prop.getProperty("Password"));
 		act.click1(login,"Clicking On Login Button");
 	}
+	public void explicitwait(WebElement element, int i)
+	{
+		act.fluentWait(getDriver(), element,i);
+	}
 	
 }

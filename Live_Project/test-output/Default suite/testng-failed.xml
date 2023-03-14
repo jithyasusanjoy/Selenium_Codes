@@ -5,7 +5,6 @@
     <classes>
       <class name="com.TestCases.VerifyAddProductTest">
         <methods>
-          <include name="methods"/>
           <include name="Teardown"/>
           <include name="after_method"/>
           <include name="verify_print_menu"/>

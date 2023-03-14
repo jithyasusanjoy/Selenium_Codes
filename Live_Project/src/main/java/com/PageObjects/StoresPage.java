@@ -118,4 +118,5 @@ public class StoresPage extends BaseClass{
 	{
 		return Manage_Table;
 	}
+	
 }

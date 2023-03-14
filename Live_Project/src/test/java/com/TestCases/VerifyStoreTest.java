@@ -60,7 +60,7 @@ public class VerifyStoreTest extends BaseClass {
 		act.type(asp.customerfooter(), exceldata.get(6));
 		Log.info("entered customerfooter");
 		act.click1(asp.Submit_btn(), "Submitted");
-		act.fluentWait(getDriver(), sp.search(), 5);
+		asp.fluentwait(sp.search(), 5);
 		act.type(sp.search(), "Bun");
 		Log.info("entered search text");
 		Assert.assertEquals(sp.First_Element().getText(), "BunCafe");
@@ -96,7 +96,7 @@ public class VerifyStoreTest extends BaseClass {
 		act.type(asp.storename(), "BunCafe1");
 		Log.info("entered storename");
 		act.click1(asp.Submit_btn(), "Submitted");
-		act.fluentWait(getDriver(), sp.search(), 5);
+		asp.fluentwait(sp.search(), 5);
 		act.type(sp.search(), "Bun");
 		Log.info("entered search text");
 		Assert.assertEquals(sp.First_Element().getText(), "BunCafe1");

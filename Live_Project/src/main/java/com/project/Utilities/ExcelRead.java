@@ -21,10 +21,8 @@ public class ExcelRead {
 		FileInputStream fil = new FileInputStream(
 				System.getProperty("user.dir") + "\\ExcelFile\\Student.xlsx");
 		
-		XSSFWorkbook wb = new XSSFWorkbook(fil);
-		
-		int sheets = 0;
-		
+		XSSFWorkbook wb = new XSSFWorkbook(fil);	
+		int sheets = 0;	
 		// Accessing the sheets of the workbook
 		sheets = wb.getNumberOfSheets();
 		

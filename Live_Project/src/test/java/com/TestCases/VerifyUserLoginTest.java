@@ -1,5 +1,4 @@
 package com.TestCases;
-import java.time.Duration;
 import java.util.ArrayList;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
@@ -29,7 +28,7 @@ public class VerifyUserLoginTest extends BaseClass {
 		act.type(lp.pwd(), password);
 		Log.info("User entered invalid password");
 		act.click1(lp.lbutton(), "Clicking On Login Button");
-		act.explicitWait(getDriver(), lp.login_label(), Duration.ofSeconds(10));
+		lp.explicitwait( lp.login_label(), 10);
 		Assert.assertEquals(lp.login_label().getText(), "Login");
 		Log.info("Unable to Login");
 		Log.endTestCase("valid_User_invalid_Pass");
@@ -55,7 +54,7 @@ public class VerifyUserLoginTest extends BaseClass {
 		act.type(lp.pwd(), exceldata.get(1));
 		Log.info("User entered valid password");
 		act.click1(lp.lbutton(), "Clicked Login Button");
-		act.explicitWait(getDriver(), lp.login_label(), Duration.ofSeconds(10));
+		lp.explicitwait( lp.login_label(), 10);
 		Assert.assertEquals(lp.login_label().getText(), "Login");
 		System.out.println("Unable to Login");
 		Log.endTestCase("invalid_User_valid_pass");
@@ -71,7 +70,7 @@ public class VerifyUserLoginTest extends BaseClass {
 		act.type(lp.pwd(), exceldata.get(1));
 		Log.info("User entered invalid password");
 		act.click1(lp.lbutton(), "Clicked Login Button");
-		act.explicitWait(getDriver(), lp.login_label(), Duration.ofSeconds(10));
+		lp.explicitwait( lp.login_label(), 10);
 		Assert.assertEquals(lp.login_label().getText(), "Login");
 		Log.info("Unable to Login");
 		Log.endTestCase("invalid_User_invalid_pass");
