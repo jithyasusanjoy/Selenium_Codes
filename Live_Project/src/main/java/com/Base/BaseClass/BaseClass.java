@@ -5,7 +5,6 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
-
 import org.apache.log4j.xml.DOMConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -17,6 +16,7 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 import com.ActionClass.ActionClass;
 import com.PageObjects.AddCategory;
 import com.PageObjects.AddCustomer;
@@ -61,15 +61,15 @@ public class BaseClass {
 	//Thread local driver
 	public static ThreadLocal<RemoteWebDriver> driver=new ThreadLocal<RemoteWebDriver>();
 
-	@BeforeSuite(groups = { "Regression" })
+	@BeforeSuite(groups = {"Regression"})
 	public void loadingfiles() {
 		DOMConfigurator.configure("log4j.xml");
 		ExtentReport.setExtent();
 	}
-
-	@BeforeMethod(groups = { "Regression" })
-	public void launch() {
-		launchApp();
+    @Parameters("Browser")
+	@BeforeMethod(groups = {"Regression"})
+	public void launch(String Browser) {
+		launchApp(Browser);
 		hp = new HomePage();
 		lp = new LoginPage();
 		ae = new AddExpense();
@@ -88,7 +88,7 @@ public class BaseClass {
 		pmp = new PrintMenuPage();
 	}
 
-	@BeforeTest(groups = { "Regression" })
+	@BeforeTest(groups = {"Regression"})
 	public void loadConfig() {
 
 		try {
@@ -109,9 +109,11 @@ public class BaseClass {
 	}
 	
 
-	public void launchApp() {
-		String browserName = prop.getProperty("Browser");
+	public void launchApp(String browserName) {
+		//String browserName = prop.getProperty("Browser");
 		if (browserName.equalsIgnoreCase("Chrome")) {
+//			ChromeOptions options=new ChromeOptions();
+//			options.addArguments("--remote-allow-orgins=*");
 			driver.set(new ChromeDriver());
 		} else if (browserName.equalsIgnoreCase("FireFox")) {
 			driver.set(new FirefoxDriver());
@@ -129,14 +131,14 @@ public class BaseClass {
 	}
 	
 	
-	@AfterMethod(groups = { "Regression" })
+	@AfterMethod(groups = {"Regression"})
 	public void user_logout() {
 		
 		getDriver().quit();
 	}
 
 
-	@AfterSuite(groups = { "Regression" })
+	@AfterSuite(groups = {"Regression"})
 	public void Teardown() {
 
 		ExtentReport.endReport();

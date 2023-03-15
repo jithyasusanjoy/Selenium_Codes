@@ -5,14 +5,22 @@
 		<listener class-name="com.project.Utilities.Listeners"></listener>
 	</listeners>
 	<test thread-count="5" name="Test">
+	<parameter name="Browser" value="Edge"></parameter>
 		<groups>
 			<run>
 				<include name="Regression"></include>
 			</run>
 		</groups>
 		<classes>
-			<class name="com.TestCases.VerifyAddExpenseTest"/>
+			<class name="com.TestCases.VerifyUserLoginTest"/>
+			<class name="com.TestCases.VerifyHomepageTest"/>
+			<class name="com.TestCases.VerifyAddProductTest"/>
+			<class name="com.TestCases.VerifyStoreTest"/>
+			<class name="com.TestCases.VerifyStoreManageTest"/>
 			<class name="com.TestCases.VerifyCategoryTest"/>
+			<class name="com.TestCases.VerifyAddExpenseTest"/>
+			<class name="com.TestCases.VerifyPeopleTest"/>
+			<class name="com.TestCases.VerifySettingsTest"/>		
 		</classes>	
 	</test> <!-- Test -->
 </suite> <!-- Suite -->
