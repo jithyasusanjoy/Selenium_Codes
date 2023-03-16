@@ -2,10 +2,10 @@ package com.TestCases;
 
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
+import java.time.Duration;
 import java.util.ArrayList;
 import org.testng.Assert;
 import org.testng.annotations.AfterGroups;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeGroups;
 import org.testng.annotations.Test;
 import com.Base.BaseClass.BaseClass;
@@ -23,7 +23,9 @@ public class VerifyAddProductTest extends BaseClass {
 	public void verify_add_product() throws Exception {
 		Log.startTestCase("verify_add_product");
 		lp.LoginFn();
+	    act.fluentWait(getDriver(), hp.page_heading(), 5);
 		act.click1(hp.products(), "Clicked product menu");
+		Thread.sleep(3000);
 		Assert.assertEquals(pp.add_product().getText(), "Add Product");
 		act.click1(pp.add_product(), "Clicked add product button");
 		ArrayList<String> exceldata = data.getData("AddProduct");
@@ -56,16 +58,21 @@ public class VerifyAddProductTest extends BaseClass {
 		Log.info("Entered search text");
 		Assert.assertEquals(ap.First_Element().getText(), "A1234");
 		Log.info("Product added");
+		Thread.sleep(3000);
+		hp.logoff();
 		Log.endTestCase("verify_add_product");
 	}
+
 
 	@Test(groups = { "Regression" }, priority = 2)
 	public void verify_file_download() throws InterruptedException {
 		Log.startTestCase("verify_file_download");
 		lp.LoginFn();
+		Thread.sleep(3000);
 		act.click1(hp.products(), "Clicked product menu");
 		Assert.assertEquals(pp.add_product().getText(), "Add Product");
 		act.click1(pp.download_CSV(), "Clicked");
+		hp.logoff();
 		Log.endTestCase("verify_file_download");
 	}
 
@@ -73,6 +80,7 @@ public class VerifyAddProductTest extends BaseClass {
 	public void verify_file_upload() throws Exception {
 		Log.startTestCase("verify_file_upload");
 		lp.LoginFn();
+		Thread.sleep(3000);
 		act.click1(hp.products(), "Clicked product menu");
 		ArrayList<String> exceldata = data.getData("AddProduct");
 		act.click1(pp.upload_CSV(), "Clicked file upload button");
@@ -80,6 +88,7 @@ public class VerifyAddProductTest extends BaseClass {
 		Log.info("File selected");
 		act.click1(pp.Submit_btn(), "Submitted");
 		Assert.assertEquals(pp.add_product().getText(), "Add Product");
+		hp.logoff();
 		Log.endTestCase("verify_file_upload");
 	}
 	
@@ -87,8 +96,11 @@ public class VerifyAddProductTest extends BaseClass {
 	public void verify_print_menu() throws Exception {
 		Log.startTestCase("verify_print_menu");
 		lp.LoginFn();
+		Thread.sleep(3000);
 		act.click1(hp.products(), "Clicked product menu");
+		Thread.sleep(3000);
 		act.click1(pp.print_Menu(), "Clicked print menu button");
+		Thread.sleep(3000);
 		act.click1(pmp.print(), "Clicked print button");
 		Thread.sleep(3000);
 		Robot rb =new Robot();
@@ -98,19 +110,14 @@ public class VerifyAddProductTest extends BaseClass {
 		Assert.assertTrue(pmp.label().isDisplayed());
 		act.switchToOldWindow(getDriver());	
 		act.click1(pmp.Close_btn(), "Closed");
+		hp.logoff();
 		Log.endTestCase("verify_print_menu");
 	}
-	
 	
 
 	@AfterGroups("Regression")
 	public void after_it() {
 		System.out.println("--------After group----------");
-	}
-
-	@AfterMethod(groups = { "Regression" })
-	public void after_method() {
-		hp.logoff();
 	}
 
 }

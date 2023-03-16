@@ -2,7 +2,6 @@ package com.TestCases;
 
 import java.util.ArrayList;
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 import com.Base.BaseClass.BaseClass;
 import com.project.Utilities.Log;
@@ -26,6 +25,7 @@ public class VerifyCategoryTest extends BaseClass {
 		act.click1(ac1.Submit_btn(), "Submitted");
 		Assert.assertTrue(ac1.add_Category().isDisplayed());
 		Log.info("Product category added successfully");
+		hp.logoff();
 		Log.endTestCase("add_product_category");
 	}
 
@@ -44,12 +44,8 @@ public class VerifyCategoryTest extends BaseClass {
 		act.click1(ac1.Submit_btn(), "Submitted");
 		Assert.assertTrue(ac1.add_Category().isDisplayed());
 		Log.info("Product category added successfully");
-		Log.endTestCase("add_expense_category");
-	}
-
-	@AfterMethod(groups = { "Regression" })
-	public void after_method() {
 		hp.logoff();
+		Log.endTestCase("add_expense_category");
 	}
 
 }

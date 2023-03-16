@@ -743,7 +743,7 @@ public class ActionClass extends BaseClass
 	}
 	
 	public void implicitWait(WebDriver driver, int timeOut) {
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 	}
 	
 	public void explicitWait(WebDriver driver, WebElement element, Duration timeOut ) {
@@ -752,11 +752,11 @@ public class ActionClass extends BaseClass
 	}
 	
 	public void pageLoadTimeOut(WebDriver driver, int timeOut) {
-		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
+		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(15));
 	}
 
 	public String screenShot(WebDriver driver, String filename) {
-		String dateName = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date(0,0,0));
+		String dateName = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date(0));
 		TakesScreenshot takesScreenshot = (TakesScreenshot) driver;
 		File source = takesScreenshot.getScreenshotAs(OutputType.FILE);
 		String destination = System.getProperty("user.dir") + "\\ScreenShots\\" + filename + "_" + dateName + ".png";

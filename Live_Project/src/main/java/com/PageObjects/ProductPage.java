@@ -1,5 +1,7 @@
 package com.PageObjects;
 
+import java.time.Duration;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -56,5 +58,9 @@ public class ProductPage extends BaseClass{
 	public WebElement print_Menu()
 	{
 		return Print_Menu;
+	}
+	public void explicitwait(WebElement element, Duration i)
+	{
+		act.explicitWait(getDriver(), element, i);
 	}
 }

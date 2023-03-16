@@ -2,16 +2,12 @@ package com.TestCases;
 
 import java.util.ArrayList;
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 import com.Base.BaseClass.BaseClass;
 import com.project.Utilities.Log;
 import com.project.Utilities.RetryAnalyzer;
 
 public class VerifyStoreManageTest extends BaseClass {
-	
-	
-	
 	
 	@Test(priority=1,groups = { "Regression" }, retryAnalyzer = RetryAnalyzer.class)
 	public void verify_add_store_zone() throws Exception 
@@ -26,6 +22,7 @@ public class VerifyStoreManageTest extends BaseClass {
 		act.click1(sm.add_Zone_Submit_btn(), "submitted");
 		Assert.assertEquals(sm.Zone_heading().getText(),"Store Zones");	
 		Log.info("Zone added");
+		hp.logoff();
 		Log.endTestCase("verify_add_store_zone");
 	}
 	
@@ -42,6 +39,7 @@ public class VerifyStoreManageTest extends BaseClass {
 		act.click1(sm.edit_Zone_Submit_btn(), "Submitted");
 		Assert.assertEquals(sm.Zone_heading().getText(),"Store Zones");	
 		Log.info("Zone edited");
+		hp.logoff();
 		Log.endTestCase("verify_edit_store_zone");
 	}
 	@Test(priority=3,groups = { "Regression" }, retryAnalyzer = RetryAnalyzer.class)
@@ -54,6 +52,7 @@ public class VerifyStoreManageTest extends BaseClass {
 		act.click1(sm.Delete_Zone_confirm(), "delete zone");
 		Assert.assertEquals(sm.Zone_heading().getText(),"Store Zones");	
 		Log.info("Zone deleted");
+		hp.logoff();
 		Log.endTestCase("verify_delete_store_zone");
 	}
 	
@@ -72,6 +71,7 @@ public class VerifyStoreManageTest extends BaseClass {
 		act.click1(sm.Submit_btn1(), "submitted");
 		Assert.assertEquals(sm.Zone_heading().getText(),"Store Zones");	
 		Log.info("table added");
+		hp.logoff();
 		Log.endTestCase("verify_add_store_table");
 	}
 	
@@ -88,6 +88,7 @@ public class VerifyStoreManageTest extends BaseClass {
 		act.click1(sm.Edit_table_Submit_btn(), "Submitted");
 		Assert.assertEquals(sm.Zone_heading().getText(),"Store Zones");	
 		System.out.println("Table edited");
+		hp.logoff();
 		Log.endTestCase("verify_edit_store_table");
 	}
 	
@@ -101,12 +102,8 @@ public class VerifyStoreManageTest extends BaseClass {
 		Log.info("Deleted table");
 		Assert.assertEquals(sm.Zone_heading().getText(),"Store Zones");	
 		System.out.println("Table deleted");
-		Log.endTestCase("verify_delete_store_table");
-	}
-	
-	@AfterMethod(groups = { "Regression" })
-	public void after_method() {
 		hp.logoff();
+		Log.endTestCase("verify_delete_store_table");
 	}
 	
 }

@@ -1,5 +1,6 @@
 package com.PageObjects;
 
+import java.time.Duration;
 import java.util.List;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -144,9 +145,10 @@ public class HomePage extends BaseClass{
 	
 	public void logoff()
 	{
-		act.click1(hp.logout(), "Logout done");
+		act.click1(hp.logout(), "Logout button click ");
 	}
-		
+
+	
 	
 	
 }

@@ -15,8 +15,9 @@ public class VerifyUserLoginTest extends BaseClass {
 		lp.LoginFn();
 		Assert.assertEquals(hp.page_heading().getText(), "CHOOSE A STORE");
 		Log.info("User logged in");
-		Log.endTestCase("validUserLogin");
 		hp.logoff();
+		Log.endTestCase("validUserLogin");
+		
 	}
 
 	@Test(dataProvider = "getlogin", priority = 3,groups = { "Regression" })

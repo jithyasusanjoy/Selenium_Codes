@@ -2,7 +2,6 @@ package com.TestCases;
 
 import java.util.ArrayList;
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 import com.Base.BaseClass.BaseClass;
 import com.project.Utilities.Log;
@@ -38,8 +37,9 @@ public class VerifySettingsTest extends BaseClass {
 		act.click1(au.Submit_btn(), "Submitted");
 		Assert.assertTrue(au.add_User().isDisplayed());
 		Log.info("User added successfully");
+		hp.logoff();
 		Log.endTestCase("add_new_user");
-		Thread.sleep(3000);
+		
 		}
 	
 	@Test(priority=2,groups = { "Regression" })
@@ -63,12 +63,10 @@ public class VerifySettingsTest extends BaseClass {
 		act.click1(awh.Submit_btn3(), "Submitted");
 		Assert.assertTrue(awh.add_Warehouse().isDisplayed());
 		Log.info("Warehouse added successfully");
+		hp.logoff();
 		Log.endTestCase("add_new_warehouse");
 	}
 	
-	@AfterMethod(groups = { "Regression" })
-	public void after_method() {
-		hp.logoff();
-	}
+	
 	
 }

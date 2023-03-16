@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 import com.Base.BaseClass.BaseClass;
 import com.project.Utilities.Log;
@@ -21,19 +20,21 @@ public class VerifyStoreTest extends BaseClass {
 		act.click1(sp.sort_descending(), "Clicked storename");
 		Log.info("Store name sorted in descending order");
 		Assert.assertEquals(sp.First_Element().getText(), "VKS Store2147483647");
+		hp.logoff();
 		Log.endTestCase("verify_sort_store_name_descending_order");
-		verify_sort_store_name_ascending_order();
 
 	}
-
+	@Test(priority = 2,groups = { "Regression" }, retryAnalyzer = RetryAnalyzer.class)
 	public void verify_sort_store_name_ascending_order() {
 	
 		Log.startTestCase("verify_sort_store_name_ascending_order");
 		lp.LoginFn();
 		act.click1(hp.stores(), "Clicked store menu");
+		act.click1(sp.sort_descending(), "Clicked storename");
 		act.click1(sp.sort_ascending(), "Clicked storename");
 		Log.info("Store name sorted in ascending order");
 		Assert.assertEquals(sp.First_Element().getText(), "AJStores");
+		hp.logoff();
 		Log.endTestCase("verify_sort_store_name_ascending_order");
 	}
 
@@ -65,6 +66,7 @@ public class VerifyStoreTest extends BaseClass {
 		Log.info("entered search text");
 		Assert.assertEquals(sp.First_Element().getText(), "BunCafe");
 		Log.info("Store added");
+		hp.logoff();
 		Log.endTestCase("verify_add_store");
 	}
 
@@ -81,6 +83,7 @@ public class VerifyStoreTest extends BaseClass {
 		Log.info("entered search text");
 		Assert.assertEquals(sp.No_Element().getText(), "No matching records found");
 		Log.info("Store Deleted");
+		hp.logoff();
 		Log.endTestCase("verify_delete_store");
 	}
 
@@ -101,6 +104,7 @@ public class VerifyStoreTest extends BaseClass {
 		Log.info("entered search text");
 		Assert.assertEquals(sp.First_Element().getText(), "BunCafe1");
 		Log.info("Store Edited");
+		hp.logoff();
 		Log.endTestCase("verify_edit_store");
 	}
 	@Test(priority=6,groups = { "Regression" })
@@ -128,7 +132,8 @@ public class VerifyStoreTest extends BaseClass {
 			}
 			break;
 		}
-		Assert.assertEquals(list2, list3);		
+		Assert.assertEquals(list2, list3);	
+		hp.logoff();
 		Log.endTestCase("verify_sort_store_coulmns");
 	}
 	@Test(priority=7,groups = { "Regression" })
@@ -140,6 +145,7 @@ public class VerifyStoreTest extends BaseClass {
 		Log.info("Value selected from dropdown");
 		List<WebElement> list1 = sp.table_rows();
 		Assert.assertEquals(list1.size(), 25);
+		hp.logoff();
 		Log.endTestCase("verify_show_dropdown");
 	}
 	@Test(priority=8,groups = { "Regression" })
@@ -159,6 +165,7 @@ public class VerifyStoreTest extends BaseClass {
 				}			
 			}		
 		Assert.assertTrue(list2.contains("Ajstory"));	
+		hp.logoff();
 		Log.endTestCase("verify_store_search");
 	}
 	@Test(priority=9,groups = { "Regression" })
@@ -168,12 +175,10 @@ public class VerifyStoreTest extends BaseClass {
 		act.click1(hp.stores(), "Clicked store menu");
 		act.click1(sp.pagination(), "Clicked page no");
 		Assert.assertTrue(sp.validate_Page().getText().contains("Showing 21 to 30"));
+		hp.logoff();
 		Log.endTestCase("verify_storepage_pagination");
 	}
 	
 	
-	@AfterMethod(groups = { "Regression" })
-	public void after_method() {
-		hp.logoff();
-	}
+	
 }

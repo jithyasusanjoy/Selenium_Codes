@@ -2,7 +2,6 @@ package com.TestCases;
 
 import java.util.ArrayList;
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 import com.Base.BaseClass.BaseClass;
 import com.project.Utilities.Log;
@@ -34,6 +33,7 @@ public class VerifyPeopleTest extends BaseClass {
 		act.click1(as.Submit_btn(), "Submitted");
 		Assert.assertTrue(as.add_Supplier().isDisplayed());
 		Log.info("Supplier added successfully");
+		hp.logoff();
 		Log.endTestCase("verify_add_supplier");
 		}
 	
@@ -62,6 +62,7 @@ public class VerifyPeopleTest extends BaseClass {
 		act.click1(aw.Submit_btn(), "Submitted");
 		Assert.assertTrue(aw.add_Waiter().isDisplayed());
 		Log.info("Waiter added successfully");
+		hp.logoff();
 		Log.endTestCase("verify_add_waiter");
 	}
 	
@@ -88,11 +89,7 @@ public class VerifyPeopleTest extends BaseClass {
 		act.click1(ac.Submit_btn(), "Submitted");
 		Assert.assertTrue(ac.add_Customer().isDisplayed());
 		Log.info("customer added successfully");
-		Log.endTestCase("verify_add_customer");
-	}
-	
-	@AfterMethod(groups = { "Regression" })
-	public void after_method() {
 		hp.logoff();
+		Log.endTestCase("verify_add_customer");
 	}
 }

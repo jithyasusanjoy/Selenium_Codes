@@ -2,7 +2,6 @@ package com.TestCases;
 
 import java.util.ArrayList;
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 import com.Base.BaseClass.BaseClass;
 import com.project.Utilities.Log;
@@ -36,12 +35,10 @@ public class VerifyAddExpenseTest extends BaseClass {
 		act.click1(ae.Submit_btn(), "Submitted");
 		Assert.assertTrue(ae.add_Expense().isDisplayed());
 		Log.info("Expense added successfully");
+		hp.logoff();
 		Log.endTestCase("verify_expense_addition");
 	}
 
-	@AfterMethod(groups = { "Regression" })
-	public void after_method() {
-		hp.logoff();
-	}
+	
 
 }

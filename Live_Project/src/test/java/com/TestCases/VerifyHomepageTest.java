@@ -3,7 +3,6 @@ import java.util.ArrayList;
 import java.util.List;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 import com.Base.BaseClass.BaseClass;
 import com.project.Utilities.Log;
@@ -22,6 +21,7 @@ public class VerifyHomepageTest extends BaseClass {
 		act.click1(hp.language(), "Selected Language");	
 		Assert.assertTrue(hp.Language_displayed().isDisplayed());
 		Log.info("Language Test passed");
+		hp.logoff();
 		Log.endTestCase("verify_language_selection");
 	}
 
@@ -33,6 +33,7 @@ public class VerifyHomepageTest extends BaseClass {
 		Assert.assertEquals(hp.page_heading().getText(), "CHOOSE A STORE");
 		Assert.assertEquals(hp.user_name().getText(), "  admin Doe");
 		Log.info("Admin user");
+		hp.logoff();
 		Log.endTestCase("verify_logged_user_name");
 	}
 
@@ -66,12 +67,10 @@ public class VerifyHomepageTest extends BaseClass {
 			break;
 		}
 		Assert.assertEquals(list1, list3);
+		hp.logoff();
 		Log.endTestCase("verify_home_menu_elements");
 	}
 
-	@AfterMethod(groups = { "Regression" })
-	public void after_method() {
-		hp.logoff();
-	}
+	
 
 }

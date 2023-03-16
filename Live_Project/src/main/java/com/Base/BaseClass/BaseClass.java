@@ -124,7 +124,7 @@ public class BaseClass {
 
 		getDriver().manage().window().maximize();
 		act = new ActionClass();
-		act.implicitWait(getDriver(), 10);
+		act.implicitWait(getDriver(), 15);
 		act.pageLoadTimeOut(getDriver(), 30);
 		getDriver().get(prop.getProperty("url"));
 
