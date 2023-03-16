@@ -6,14 +6,13 @@
       <class name="com.TestCases.VerifyAddProductTest">
         <methods>
           <include name="Teardown"/>
-          <include name="after_method"/>
           <include name="verify_print_menu"/>
           <include name="loadConfig"/>
           <include name="launch"/>
           <include name="verify_add_product"/>
           <include name="after_it"/>
-          <include name="loadingfiles"/>
           <include name="verify_file_download"/>
+          <include name="loadingfiles"/>
           <include name="user_logout"/>
           <include name="verify_file_upload"/>
         </methods>

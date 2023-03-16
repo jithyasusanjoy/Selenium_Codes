@@ -14,7 +14,7 @@ import com.project.Utilities.RetryAnalyzer;
 
 public class VerifyAddProductTest extends BaseClass {
 
-	@BeforeGroups("smoke")
+	@BeforeGroups("Regression")
 	public void before_it() {
 		System.out.println("--------Before group----------");
 	}
@@ -23,9 +23,9 @@ public class VerifyAddProductTest extends BaseClass {
 	public void verify_add_product() throws Exception {
 		Log.startTestCase("verify_add_product");
 		lp.LoginFn();
-	    act.fluentWait(getDriver(), hp.page_heading(), 5);
+		Thread.sleep(5000);
 		act.click1(hp.products(), "Clicked product menu");
-		Thread.sleep(3000);
+		Thread.sleep(5000);
 		Assert.assertEquals(pp.add_product().getText(), "Add Product");
 		act.click1(pp.add_product(), "Clicked add product button");
 		ArrayList<String> exceldata = data.getData("AddProduct");
@@ -48,7 +48,7 @@ public class VerifyAddProductTest extends BaseClass {
 		act.type(ap.product_description(), exceldata.get(8));
 		Log.info("Entered product description");
 		ap.fluentwait(ap.file_upload(), 5);
-		act.type(ap.file_upload(), exceldata.get(9));
+		act.type(ap.file_upload(), "C:\\Users\\jithya susan\\git\\Selenium_Codes\\Live_Project\\ExcelFile\\a2.png");
 		Log.info("File selected");
 		act.click1(ap.color_selection(), "color selected");
 		act.click1(ap.Submit_btn(), "Submitted");
@@ -68,9 +68,10 @@ public class VerifyAddProductTest extends BaseClass {
 	public void verify_file_download() throws InterruptedException {
 		Log.startTestCase("verify_file_download");
 		lp.LoginFn();
-		Thread.sleep(3000);
+		Thread.sleep(5000);
 		act.click1(hp.products(), "Clicked product menu");
 		Assert.assertEquals(pp.add_product().getText(), "Add Product");
+		Thread.sleep(5000);
 		act.click1(pp.download_CSV(), "Clicked");
 		hp.logoff();
 		Log.endTestCase("verify_file_download");
@@ -80,14 +81,16 @@ public class VerifyAddProductTest extends BaseClass {
 	public void verify_file_upload() throws Exception {
 		Log.startTestCase("verify_file_upload");
 		lp.LoginFn();
-		Thread.sleep(3000);
+		Thread.sleep(5000);
 		act.click1(hp.products(), "Clicked product menu");
 		ArrayList<String> exceldata = data.getData("AddProduct");
+		Thread.sleep(5000);
 		act.click1(pp.upload_CSV(), "Clicked file upload button");
 		act.type(pp.file_upload(), exceldata.get(9));
 		Log.info("File selected");
 		act.click1(pp.Submit_btn(), "Submitted");
 		Assert.assertEquals(pp.add_product().getText(), "Add Product");
+		Thread.sleep(5000);
 		hp.logoff();
 		Log.endTestCase("verify_file_upload");
 	}
@@ -96,20 +99,22 @@ public class VerifyAddProductTest extends BaseClass {
 	public void verify_print_menu() throws Exception {
 		Log.startTestCase("verify_print_menu");
 		lp.LoginFn();
-		Thread.sleep(3000);
+		Thread.sleep(5000);
 		act.click1(hp.products(), "Clicked product menu");
-		Thread.sleep(3000);
+		Thread.sleep(5000);
 		act.click1(pp.print_Menu(), "Clicked print menu button");
-		Thread.sleep(3000);
+		Thread.sleep(5000);
 		act.click1(pmp.print(), "Clicked print button");
-		Thread.sleep(3000);
+		Thread.sleep(5000);
 		Robot rb =new Robot();
 		rb.keyPress(KeyEvent.VK_ENTER);
 		rb.keyRelease(KeyEvent.VK_ENTER);
 		Log.info("printed");
 		Assert.assertTrue(pmp.label().isDisplayed());
 		act.switchToOldWindow(getDriver());	
+		Thread.sleep(5000);
 		act.click1(pmp.Close_btn(), "Closed");
+		Thread.sleep(5000);
 		hp.logoff();
 		Log.endTestCase("verify_print_menu");
 	}

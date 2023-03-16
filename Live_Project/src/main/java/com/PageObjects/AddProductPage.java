@@ -1,5 +1,8 @@
 package com.PageObjects;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -160,6 +163,8 @@ public class AddProductPage extends BaseClass{
 		return Close_btn;
 	}
 	
+
+
 	public void fluentwait(WebElement element, int i)
 	{
 		act.fluentWait(getDriver(), element,i);
