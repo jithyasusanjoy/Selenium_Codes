@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.project.Utilities.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="Browser" value="Edge"/>
+    <groups>
+      <run>
+        <include name="Regression"/>
+      </run>
+    </groups>
     <classes>
       <class name="com.TestCases.VerifyAddProductTest">
         <methods>
@@ -9,14 +18,10 @@
           <include name="verify_print_menu"/>
           <include name="loadConfig"/>
           <include name="launch"/>
-          <include name="verify_add_product"/>
-          <include name="after_it"/>
-          <include name="verify_file_download"/>
           <include name="loadingfiles"/>
           <include name="user_logout"/>
-          <include name="verify_file_upload"/>
         </methods>
       </class> <!-- com.TestCases.VerifyAddProductTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

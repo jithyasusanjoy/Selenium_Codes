@@ -11,13 +11,13 @@
 	</listeners>
 
 	<test thread-count="5" name="Test">	
-		<parameter name="Browser" value="Chrome"></parameter>
+		<parameter name="Browser" value="Edge"></parameter>
 		<classes>
 			<class name="com.TestCases.VerifyUserLoginTest" />
 		</classes>
 	</test> <!-- Test -->
 	<test thread-count="5" name="Test1">
-		<parameter name="Browser" value="Chrome"></parameter>
+		<parameter name="Browser" value="Edge"></parameter>
 		<classes>
 			<class name="com.TestCases.VerifyHomepageTest" />
 		</classes>

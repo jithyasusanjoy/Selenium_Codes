@@ -28,7 +28,7 @@ public class VerifyAddExpenseTest extends BaseClass {
 		Log.info("Selected store");
 		act.type(ae.amount(), exceldata.get(4));
 		Log.info("Entered amount");
-		act.type(ae.attachment(), exceldata.get(5));
+		act.type(ae.attachment(), "C:\\Users\\jithya susan\\git\\Selenium_Codes\\Live_Project\\ExcelFile\\a2.png");
 		Log.info("Selected file");
 		act.type(ae.note(), exceldata.get(6));
 		Log.info("Entered note");

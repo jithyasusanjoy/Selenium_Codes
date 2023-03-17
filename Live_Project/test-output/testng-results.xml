@@ -1,252 +1,613 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="0" failed="0" skipped="4">
+<testng-results retried="1" ignored="24" total="60" passed="34" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-17T03:32:35 IST" name="Default suite" finished-at="2023-03-17T03:32:35 IST" duration-ms="58">
+  <suite started-at="2023-03-17T23:58:47 IST" name="Suite" finished-at="2023-03-18T00:06:55 IST" duration-ms="488729">
     <groups>
       <group name="Regression">
-        <method signature="VerifyAddProductTest.verify_add_product()[pri:1, instance:com.TestCases.VerifyAddProductTest@7f3b84b8]" name="verify_add_product" class="com.TestCases.VerifyAddProductTest"/>
-        <method signature="VerifyAddProductTest.verify_file_download()[pri:2, instance:com.TestCases.VerifyAddProductTest@7f3b84b8]" name="verify_file_download" class="com.TestCases.VerifyAddProductTest"/>
-        <method signature="VerifyAddProductTest.verify_file_upload()[pri:3, instance:com.TestCases.VerifyAddProductTest@7f3b84b8]" name="verify_file_upload" class="com.TestCases.VerifyAddProductTest"/>
-        <method signature="VerifyAddProductTest.verify_print_menu()[pri:4, instance:com.TestCases.VerifyAddProductTest@7f3b84b8]" name="verify_print_menu" class="com.TestCases.VerifyAddProductTest"/>
+        <method signature="VerifyAddExpenseTest.verify_expense_addition()[pri:0, instance:com.TestCases.VerifyAddExpenseTest@765d7657]" name="verify_expense_addition" class="com.TestCases.VerifyAddExpenseTest"/>
+        <method signature="VerifyAddProductTest.verify_add_product()[pri:1, instance:com.TestCases.VerifyAddProductTest@515c6049]" name="verify_add_product" class="com.TestCases.VerifyAddProductTest"/>
+        <method signature="VerifyCategoryTest.verify_add_product_category()[pri:1, instance:com.TestCases.VerifyCategoryTest@443118b0]" name="verify_add_product_category" class="com.TestCases.VerifyCategoryTest"/>
+        <method signature="VerifyHomepageTest.verify_logged_user_name()[pri:1, instance:com.TestCases.VerifyHomepageTest@33d512c1]" name="verify_logged_user_name" class="com.TestCases.VerifyHomepageTest"/>
+        <method signature="VerifyPeopleTest.verify_add_supplier()[pri:1, instance:com.TestCases.VerifyPeopleTest@74235045]" name="verify_add_supplier" class="com.TestCases.VerifyPeopleTest"/>
+        <method signature="VerifySettingsTest.verify_add_new_user()[pri:1, instance:com.TestCases.VerifySettingsTest@618b19ad]" name="verify_add_new_user" class="com.TestCases.VerifySettingsTest"/>
+        <method signature="VerifyStoreManageTest.verify_add_store_zone()[pri:1, instance:com.TestCases.VerifyStoreManageTest@5fe94a96]" name="verify_add_store_zone" class="com.TestCases.VerifyStoreManageTest"/>
+        <method signature="VerifyStoreTest.verify_sort_store_name_descending_order()[pri:1, instance:com.TestCases.VerifyStoreTest@639c2c1d]" name="verify_sort_store_name_descending_order" class="com.TestCases.VerifyStoreTest"/>
+        <method signature="VerifyUserLoginTest.verify_invalid_User_invalid_password_login()[pri:1, instance:com.TestCases.VerifyUserLoginTest@7b98f307]" name="verify_invalid_User_invalid_password_login" class="com.TestCases.VerifyUserLoginTest"/>
+        <method signature="VerifyAddProductTest.verify_file_download()[pri:2, instance:com.TestCases.VerifyAddProductTest@515c6049]" name="verify_file_download" class="com.TestCases.VerifyAddProductTest"/>
+        <method signature="VerifyCategoryTest.verify_add_expense_category()[pri:2, instance:com.TestCases.VerifyCategoryTest@443118b0]" name="verify_add_expense_category" class="com.TestCases.VerifyCategoryTest"/>
+        <method signature="VerifyHomepageTest.verify_home_menu_elements()[pri:2, instance:com.TestCases.VerifyHomepageTest@33d512c1]" name="verify_home_menu_elements" class="com.TestCases.VerifyHomepageTest"/>
+        <method signature="VerifyPeopleTest.verify_add_waiter()[pri:2, instance:com.TestCases.VerifyPeopleTest@74235045]" name="verify_add_waiter" class="com.TestCases.VerifyPeopleTest"/>
+        <method signature="VerifySettingsTest.verify_add_new_warehouse()[pri:2, instance:com.TestCases.VerifySettingsTest@618b19ad]" name="verify_add_new_warehouse" class="com.TestCases.VerifySettingsTest"/>
+        <method signature="VerifyStoreManageTest.verify_edit_store_zone()[pri:2, instance:com.TestCases.VerifyStoreManageTest@5fe94a96]" name="verify_edit_store_zone" class="com.TestCases.VerifyStoreManageTest"/>
+        <method signature="VerifyStoreTest.verify_sort_store_name_ascending_order()[pri:2, instance:com.TestCases.VerifyStoreTest@639c2c1d]" name="verify_sort_store_name_ascending_order" class="com.TestCases.VerifyStoreTest"/>
+        <method signature="VerifyUserLoginTest.verify_invalid_User_valid_password_login()[pri:2, instance:com.TestCases.VerifyUserLoginTest@7b98f307]" name="verify_invalid_User_valid_password_login" class="com.TestCases.VerifyUserLoginTest"/>
+        <method signature="VerifyAddProductTest.verify_file_upload()[pri:3, instance:com.TestCases.VerifyAddProductTest@515c6049]" name="verify_file_upload" class="com.TestCases.VerifyAddProductTest"/>
+        <method signature="VerifyHomepageTest.verify_language_selection()[pri:3, instance:com.TestCases.VerifyHomepageTest@33d512c1]" name="verify_language_selection" class="com.TestCases.VerifyHomepageTest"/>
+        <method signature="VerifyPeopleTest.verify_add_customer()[pri:3, instance:com.TestCases.VerifyPeopleTest@74235045]" name="verify_add_customer" class="com.TestCases.VerifyPeopleTest"/>
+        <method signature="VerifyStoreManageTest.verify_delete_store_zone()[pri:3, instance:com.TestCases.VerifyStoreManageTest@5fe94a96]" name="verify_delete_store_zone" class="com.TestCases.VerifyStoreManageTest"/>
+        <method signature="VerifyStoreTest.verify_add_store()[pri:3, instance:com.TestCases.VerifyStoreTest@639c2c1d]" name="verify_add_store" class="com.TestCases.VerifyStoreTest"/>
+        <method signature="VerifyUserLoginTest.verify_valid_User_invalid_Password_login(java.lang.String,java.lang.String)[pri:3, instance:com.TestCases.VerifyUserLoginTest@7b98f307]" name="verify_valid_User_invalid_Password_login" class="com.TestCases.VerifyUserLoginTest"/>
+        <method signature="VerifyAddProductTest.verify_print_menu()[pri:4, instance:com.TestCases.VerifyAddProductTest@515c6049]" name="verify_print_menu" class="com.TestCases.VerifyAddProductTest"/>
+        <method signature="VerifyStoreManageTest.verify_add_store_table()[pri:4, instance:com.TestCases.VerifyStoreManageTest@5fe94a96]" name="verify_add_store_table" class="com.TestCases.VerifyStoreManageTest"/>
+        <method signature="VerifyStoreTest.verify_edit_store()[pri:4, instance:com.TestCases.VerifyStoreTest@639c2c1d]" name="verify_edit_store" class="com.TestCases.VerifyStoreTest"/>
+        <method signature="VerifyUserLoginTest.verify_valid_User_Login()[pri:4, instance:com.TestCases.VerifyUserLoginTest@7b98f307]" name="verify_valid_User_Login" class="com.TestCases.VerifyUserLoginTest"/>
+        <method signature="VerifyStoreManageTest.verify_edit_store_table()[pri:5, instance:com.TestCases.VerifyStoreManageTest@5fe94a96]" name="verify_edit_store_table" class="com.TestCases.VerifyStoreManageTest"/>
+        <method signature="VerifyStoreTest.verify_delete_store()[pri:5, instance:com.TestCases.VerifyStoreTest@639c2c1d]" name="verify_delete_store" class="com.TestCases.VerifyStoreTest"/>
+        <method signature="VerifyStoreManageTest.verify_delete_store_table()[pri:6, instance:com.TestCases.VerifyStoreManageTest@5fe94a96]" name="verify_delete_store_table" class="com.TestCases.VerifyStoreManageTest"/>
+        <method signature="VerifyStoreTest.verify_sort_store_coulmns()[pri:6, instance:com.TestCases.VerifyStoreTest@639c2c1d]" name="verify_sort_store_coulmns" class="com.TestCases.VerifyStoreTest"/>
+        <method signature="VerifyStoreTest.verify_show_dropdown()[pri:7, instance:com.TestCases.VerifyStoreTest@639c2c1d]" name="verify_show_dropdown" class="com.TestCases.VerifyStoreTest"/>
+        <method signature="VerifyStoreTest.verify_store_search()[pri:8, instance:com.TestCases.VerifyStoreTest@639c2c1d]" name="verify_store_search" class="com.TestCases.VerifyStoreTest"/>
+        <method signature="VerifyStoreTest.verify_storepage_pagination()[pri:9, instance:com.TestCases.VerifyStoreTest@639c2c1d]" name="verify_storepage_pagination" class="com.TestCases.VerifyStoreTest"/>
       </group> <!-- Regression -->
     </groups>
-    <test started-at="2023-03-17T03:32:35 IST" name="Default test" finished-at="2023-03-17T03:32:35 IST" duration-ms="58">
-      <class name="com.TestCases.VerifyAddProductTest">
-        <test-method is-config="true" signature="loadingfiles()[pri:0, instance:com.TestCases.VerifyAddProductTest@7f3b84b8]" started-at="2023-03-17T03:32:35 IST" name="loadingfiles" finished-at="2023-03-17T03:32:35 IST" duration-ms="175" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loadingfiles -->
-        <test-method is-config="true" signature="loadConfig()[pri:0, instance:com.TestCases.VerifyAddProductTest@7f3b84b8]" started-at="2023-03-17T03:32:35 IST" name="loadConfig" finished-at="2023-03-17T03:32:35 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loadConfig -->
-        <test-method is-config="true" signature="launch(java.lang.String)[pri:0, instance:com.TestCases.VerifyAddProductTest@7f3b84b8]" started-at="2023-03-17T03:32:35 IST" name="launch" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1679004155496" status="FAIL">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'Browser' is required by BeforeMethod on method launch but has not been marked @Optional or defined
-in C:\Users\jithya susan\AppData\Local\Temp\testng-eclipse-1106086686\testng-customsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'Browser' is required by BeforeMethod on method launch but has not been marked @Optional or defined
-in C:\Users\jithya susan\AppData\Local\Temp\testng-eclipse-1106086686\testng-customsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:267)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
-at org.testng.internal.Parameters.createParameters(Parameters.java:660)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:300)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:803)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:589)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:808)
-at org.testng.TestRunner.run(TestRunner.java:603)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-at org.testng.TestNG.runSuites(TestNG.java:1092)
-at org.testng.TestNG.run(TestNG.java:1060)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+    <test started-at="2023-03-17T23:58:47 IST" name="Test" finished-at="2023-03-18T00:06:55 IST" duration-ms="488729">
+      <class name="com.TestCases.VerifySettingsTest">
+        <test-method is-config="true" signature="launch(java.lang.String)[pri:0, instance:com.TestCases.VerifySettingsTest@618b19ad]" started-at="2023-03-18T00:06:37 IST" name="launch" finished-at="2023-03-18T00:06:40 IST" duration-ms="3460" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launch -->
-        <test-method signature="verify_add_product()[pri:1, instance:com.TestCases.VerifyAddProductTest@7f3b84b8]" started-at="2023-03-17T03:32:35 IST" name="verify_add_product" finished-at="2023-03-17T03:32:35 IST" duration-ms="0" status="SKIP">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'Browser' is required by BeforeMethod on method launch but has not been marked @Optional or defined
-in C:\Users\jithya susan\AppData\Local\Temp\testng-eclipse-1106086686\testng-customsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'Browser' is required by BeforeMethod on method launch but has not been marked @Optional or defined
-in C:\Users\jithya susan\AppData\Local\Temp\testng-eclipse-1106086686\testng-customsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:267)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
-at org.testng.internal.Parameters.createParameters(Parameters.java:660)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:300)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:803)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:589)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:808)
-at org.testng.TestRunner.run(TestRunner.java:603)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-at org.testng.TestNG.runSuites(TestNG.java:1092)
-at org.testng.TestNG.run(TestNG.java:1060)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        <test-method signature="verify_add_new_user()[pri:1, instance:com.TestCases.VerifySettingsTest@618b19ad]" started-at="2023-03-18T00:06:40 IST" name="verify_add_new_user" finished-at="2023-03-18T00:06:46 IST" duration-ms="5846" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_add_new_user -->
+        <test-method is-config="true" signature="user_logout()[pri:0, instance:com.TestCases.VerifySettingsTest@618b19ad]" started-at="2023-03-18T00:06:46 IST" name="user_logout" finished-at="2023-03-18T00:06:46 IST" duration-ms="361" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user_logout -->
+        <test-method is-config="true" signature="launch(java.lang.String)[pri:0, instance:com.TestCases.VerifySettingsTest@618b19ad]" started-at="2023-03-18T00:06:46 IST" name="launch" finished-at="2023-03-18T00:06:50 IST" duration-ms="3508" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch -->
+        <test-method signature="verify_add_new_warehouse()[pri:2, instance:com.TestCases.VerifySettingsTest@618b19ad]" started-at="2023-03-18T00:06:50 IST" name="verify_add_new_warehouse" finished-at="2023-03-18T00:06:55 IST" duration-ms="5237" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_add_new_warehouse -->
+        <test-method is-config="true" signature="user_logout()[pri:0, instance:com.TestCases.VerifySettingsTest@618b19ad]" started-at="2023-03-18T00:06:55 IST" name="user_logout" finished-at="2023-03-18T00:06:55 IST" duration-ms="306" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user_logout -->
+      </class> <!-- com.TestCases.VerifySettingsTest -->
+      <class name="com.TestCases.VerifyHomepageTest">
+        <test-method is-config="true" signature="launch(java.lang.String)[pri:0, instance:com.TestCases.VerifyHomepageTest@33d512c1]" started-at="2023-03-17T23:59:37 IST" name="launch" finished-at="2023-03-17T23:59:40 IST" duration-ms="3381" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch -->
+        <test-method signature="verify_logged_user_name()[pri:1, instance:com.TestCases.VerifyHomepageTest@33d512c1]" started-at="2023-03-17T23:59:40 IST" name="verify_logged_user_name" finished-at="2023-03-17T23:59:42 IST" duration-ms="1950" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_logged_user_name -->
+        <test-method is-config="true" signature="user_logout()[pri:0, instance:com.TestCases.VerifyHomepageTest@33d512c1]" started-at="2023-03-17T23:59:42 IST" name="user_logout" finished-at="2023-03-17T23:59:42 IST" duration-ms="284" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user_logout -->
+        <test-method is-config="true" signature="launch(java.lang.String)[pri:0, instance:com.TestCases.VerifyHomepageTest@33d512c1]" started-at="2023-03-17T23:59:42 IST" name="launch" finished-at="2023-03-17T23:59:47 IST" duration-ms="4598" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch -->
+        <test-method signature="verify_home_menu_elements()[pri:2, instance:com.TestCases.VerifyHomepageTest@33d512c1]" started-at="2023-03-17T23:59:47 IST" name="verify_home_menu_elements" finished-at="2023-03-17T23:59:49 IST" duration-ms="1909" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_home_menu_elements -->
+        <test-method is-config="true" signature="user_logout()[pri:0, instance:com.TestCases.VerifyHomepageTest@33d512c1]" started-at="2023-03-17T23:59:49 IST" name="user_logout" finished-at="2023-03-17T23:59:49 IST" duration-ms="297" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user_logout -->
+        <test-method is-config="true" signature="launch(java.lang.String)[pri:0, instance:com.TestCases.VerifyHomepageTest@33d512c1]" started-at="2023-03-17T23:59:49 IST" name="launch" finished-at="2023-03-17T23:59:54 IST" duration-ms="5201" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch -->
+        <test-method signature="verify_language_selection()[pri:3, instance:com.TestCases.VerifyHomepageTest@33d512c1]" started-at="2023-03-17T23:59:54 IST" name="verify_language_selection" finished-at="2023-03-17T23:59:57 IST" duration-ms="3136" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_language_selection -->
+        <test-method is-config="true" signature="user_logout()[pri:0, instance:com.TestCases.VerifyHomepageTest@33d512c1]" started-at="2023-03-17T23:59:57 IST" name="user_logout" finished-at="2023-03-17T23:59:58 IST" duration-ms="281" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user_logout -->
+      </class> <!-- com.TestCases.VerifyHomepageTest -->
+      <class name="com.TestCases.VerifyAddExpenseTest">
+        <test-method is-config="true" signature="launch(java.lang.String)[pri:0, instance:com.TestCases.VerifyAddExpenseTest@765d7657]" started-at="2023-03-18T00:04:30 IST" name="launch" finished-at="2023-03-18T00:04:33 IST" duration-ms="3450" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch -->
+        <test-method signature="verify_expense_addition()[pri:0, instance:com.TestCases.VerifyAddExpenseTest@765d7657]" started-at="2023-03-18T00:04:33 IST" name="verify_expense_addition" finished-at="2023-03-18T00:06:10 IST" duration-ms="96601" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_expense_addition -->
+        <test-method is-config="true" signature="user_logout()[pri:0, instance:com.TestCases.VerifyAddExpenseTest@765d7657]" started-at="2023-03-18T00:06:10 IST" name="user_logout" finished-at="2023-03-18T00:06:10 IST" duration-ms="324" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user_logout -->
+      </class> <!-- com.TestCases.VerifyAddExpenseTest -->
+      <class name="com.TestCases.VerifyStoreTest">
+        <test-method is-config="true" signature="launch(java.lang.String)[pri:0, instance:com.TestCases.VerifyStoreTest@639c2c1d]" started-at="2023-03-18T00:02:13 IST" name="launch" finished-at="2023-03-18T00:02:16 IST" duration-ms="3529" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch -->
+        <test-method signature="verify_sort_store_name_descending_order()[pri:1, instance:com.TestCases.VerifyStoreTest@639c2c1d]" started-at="2023-03-18T00:02:16 IST" name="verify_sort_store_name_descending_order" finished-at="2023-03-18T00:02:20 IST" duration-ms="3241" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_sort_store_name_descending_order -->
+        <test-method is-config="true" signature="user_logout()[pri:0, instance:com.TestCases.VerifyStoreTest@639c2c1d]" started-at="2023-03-18T00:02:20 IST" name="user_logout" finished-at="2023-03-18T00:02:20 IST" duration-ms="272" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user_logout -->
+        <test-method is-config="true" signature="launch(java.lang.String)[pri:0, instance:com.TestCases.VerifyStoreTest@639c2c1d]" started-at="2023-03-18T00:02:20 IST" name="launch" finished-at="2023-03-18T00:02:23 IST" duration-ms="3622" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch -->
+        <test-method signature="verify_sort_store_name_ascending_order()[pri:2, instance:com.TestCases.VerifyStoreTest@639c2c1d]" started-at="2023-03-18T00:02:23 IST" name="verify_sort_store_name_ascending_order" finished-at="2023-03-18T00:02:27 IST" duration-ms="3248" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_sort_store_name_ascending_order -->
+        <test-method is-config="true" signature="user_logout()[pri:0, instance:com.TestCases.VerifyStoreTest@639c2c1d]" started-at="2023-03-18T00:02:27 IST" name="user_logout" finished-at="2023-03-18T00:02:27 IST" duration-ms="289" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user_logout -->
+        <test-method is-config="true" signature="launch(java.lang.String)[pri:0, instance:com.TestCases.VerifyStoreTest@639c2c1d]" started-at="2023-03-18T00:02:27 IST" name="launch" finished-at="2023-03-18T00:02:30 IST" duration-ms="3456" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch -->
+        <test-method signature="verify_add_store()[pri:3, instance:com.TestCases.VerifyStoreTest@639c2c1d]" started-at="2023-03-18T00:02:30 IST" name="verify_add_store" finished-at="2023-03-18T00:02:37 IST" duration-ms="6521" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_add_store -->
+        <test-method is-config="true" signature="user_logout()[pri:0, instance:com.TestCases.VerifyStoreTest@639c2c1d]" started-at="2023-03-18T00:02:37 IST" name="user_logout" finished-at="2023-03-18T00:02:37 IST" duration-ms="259" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user_logout -->
+        <test-method is-config="true" signature="launch(java.lang.String)[pri:0, instance:com.TestCases.VerifyStoreTest@639c2c1d]" started-at="2023-03-18T00:02:37 IST" name="launch" finished-at="2023-03-18T00:02:41 IST" duration-ms="3445" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch -->
+        <test-method signature="verify_edit_store()[pri:4, instance:com.TestCases.VerifyStoreTest@639c2c1d]" started-at="2023-03-18T00:02:41 IST" name="verify_edit_store" finished-at="2023-03-18T00:02:46 IST" duration-ms="5312" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_edit_store -->
+        <test-method is-config="true" signature="user_logout()[pri:0, instance:com.TestCases.VerifyStoreTest@639c2c1d]" started-at="2023-03-18T00:02:46 IST" name="user_logout" finished-at="2023-03-18T00:02:46 IST" duration-ms="276" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user_logout -->
+        <test-method is-config="true" signature="launch(java.lang.String)[pri:0, instance:com.TestCases.VerifyStoreTest@639c2c1d]" started-at="2023-03-18T00:02:46 IST" name="launch" finished-at="2023-03-18T00:02:50 IST" duration-ms="3365" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch -->
+        <test-method signature="verify_delete_store()[pri:5, instance:com.TestCases.VerifyStoreTest@639c2c1d]" started-at="2023-03-18T00:02:50 IST" name="verify_delete_store" finished-at="2023-03-18T00:02:54 IST" duration-ms="4146" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_delete_store -->
+        <test-method is-config="true" signature="user_logout()[pri:0, instance:com.TestCases.VerifyStoreTest@639c2c1d]" started-at="2023-03-18T00:02:54 IST" name="user_logout" finished-at="2023-03-18T00:02:54 IST" duration-ms="294" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user_logout -->
+        <test-method is-config="true" signature="launch(java.lang.String)[pri:0, instance:com.TestCases.VerifyStoreTest@639c2c1d]" started-at="2023-03-18T00:02:54 IST" name="launch" finished-at="2023-03-18T00:02:58 IST" duration-ms="3598" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch -->
+        <test-method signature="verify_sort_store_coulmns()[pri:6, instance:com.TestCases.VerifyStoreTest@639c2c1d]" started-at="2023-03-18T00:02:58 IST" name="verify_sort_store_coulmns" finished-at="2023-03-18T00:03:01 IST" duration-ms="2979" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_sort_store_coulmns -->
+        <test-method is-config="true" signature="user_logout()[pri:0, instance:com.TestCases.VerifyStoreTest@639c2c1d]" started-at="2023-03-18T00:03:01 IST" name="user_logout" finished-at="2023-03-18T00:03:01 IST" duration-ms="282" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user_logout -->
+        <test-method is-config="true" signature="launch(java.lang.String)[pri:0, instance:com.TestCases.VerifyStoreTest@639c2c1d]" started-at="2023-03-18T00:03:01 IST" name="launch" finished-at="2023-03-18T00:03:04 IST" duration-ms="3448" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch -->
+        <test-method signature="verify_show_dropdown()[pri:7, instance:com.TestCases.VerifyStoreTest@639c2c1d]" started-at="2023-03-18T00:03:04 IST" name="verify_show_dropdown" finished-at="2023-03-18T00:03:07 IST" duration-ms="3046" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_show_dropdown -->
+        <test-method is-config="true" signature="user_logout()[pri:0, instance:com.TestCases.VerifyStoreTest@639c2c1d]" started-at="2023-03-18T00:03:07 IST" name="user_logout" finished-at="2023-03-18T00:03:08 IST" duration-ms="279" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user_logout -->
+        <test-method is-config="true" signature="launch(java.lang.String)[pri:0, instance:com.TestCases.VerifyStoreTest@639c2c1d]" started-at="2023-03-18T00:03:08 IST" name="launch" finished-at="2023-03-18T00:03:11 IST" duration-ms="3523" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch -->
+        <test-method signature="verify_store_search()[pri:8, instance:com.TestCases.VerifyStoreTest@639c2c1d]" started-at="2023-03-18T00:03:11 IST" name="verify_store_search" finished-at="2023-03-18T00:03:14 IST" duration-ms="2968" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_store_search -->
+        <test-method is-config="true" signature="user_logout()[pri:0, instance:com.TestCases.VerifyStoreTest@639c2c1d]" started-at="2023-03-18T00:03:14 IST" name="user_logout" finished-at="2023-03-18T00:03:14 IST" duration-ms="275" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user_logout -->
+        <test-method is-config="true" signature="launch(java.lang.String)[pri:0, instance:com.TestCases.VerifyStoreTest@639c2c1d]" started-at="2023-03-18T00:03:14 IST" name="launch" finished-at="2023-03-18T00:03:18 IST" duration-ms="3464" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch -->
+        <test-method signature="verify_storepage_pagination()[pri:9, instance:com.TestCases.VerifyStoreTest@639c2c1d]" started-at="2023-03-18T00:03:18 IST" name="verify_storepage_pagination" finished-at="2023-03-18T00:03:21 IST" duration-ms="3166" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_storepage_pagination -->
+        <test-method is-config="true" signature="user_logout()[pri:0, instance:com.TestCases.VerifyStoreTest@639c2c1d]" started-at="2023-03-18T00:03:21 IST" name="user_logout" finished-at="2023-03-18T00:03:21 IST" duration-ms="266" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user_logout -->
+      </class> <!-- com.TestCases.VerifyStoreTest -->
+      <class name="com.TestCases.VerifyStoreManageTest">
+        <test-method is-config="true" signature="launch(java.lang.String)[pri:0, instance:com.TestCases.VerifyStoreManageTest@5fe94a96]" started-at="2023-03-18T00:03:21 IST" name="launch" finished-at="2023-03-18T00:03:25 IST" duration-ms="3409" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch -->
+        <test-method signature="verify_add_store_zone()[pri:1, instance:com.TestCases.VerifyStoreManageTest@5fe94a96]" started-at="2023-03-18T00:03:25 IST" name="verify_add_store_zone" finished-at="2023-03-18T00:03:30 IST" duration-ms="5231" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_add_store_zone -->
+        <test-method is-config="true" signature="user_logout()[pri:0, instance:com.TestCases.VerifyStoreManageTest@5fe94a96]" started-at="2023-03-18T00:03:30 IST" name="user_logout" finished-at="2023-03-18T00:03:30 IST" duration-ms="329" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user_logout -->
+        <test-method is-config="true" signature="launch(java.lang.String)[pri:0, instance:com.TestCases.VerifyStoreManageTest@5fe94a96]" started-at="2023-03-18T00:03:30 IST" name="launch" finished-at="2023-03-18T00:03:34 IST" duration-ms="3474" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch -->
+        <test-method signature="verify_edit_store_zone()[pri:2, instance:com.TestCases.VerifyStoreManageTest@5fe94a96]" started-at="2023-03-18T00:03:34 IST" name="verify_edit_store_zone" finished-at="2023-03-18T00:03:39 IST" duration-ms="5143" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_edit_store_zone -->
+        <test-method is-config="true" signature="user_logout()[pri:0, instance:com.TestCases.VerifyStoreManageTest@5fe94a96]" started-at="2023-03-18T00:03:39 IST" name="user_logout" finished-at="2023-03-18T00:03:39 IST" duration-ms="274" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user_logout -->
+        <test-method is-config="true" signature="launch(java.lang.String)[pri:0, instance:com.TestCases.VerifyStoreManageTest@5fe94a96]" started-at="2023-03-18T00:03:39 IST" name="launch" finished-at="2023-03-18T00:03:43 IST" duration-ms="3465" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch -->
+        <test-method signature="verify_delete_store_zone()[pri:3, instance:com.TestCases.VerifyStoreManageTest@5fe94a96]" started-at="2023-03-18T00:03:43 IST" name="verify_delete_store_zone" finished-at="2023-03-18T00:03:47 IST" duration-ms="4064" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_delete_store_zone -->
+        <test-method is-config="true" signature="user_logout()[pri:0, instance:com.TestCases.VerifyStoreManageTest@5fe94a96]" started-at="2023-03-18T00:03:47 IST" name="user_logout" finished-at="2023-03-18T00:03:47 IST" duration-ms="264" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user_logout -->
+        <test-method is-config="true" signature="launch(java.lang.String)[pri:0, instance:com.TestCases.VerifyStoreManageTest@5fe94a96]" started-at="2023-03-18T00:03:47 IST" name="launch" finished-at="2023-03-18T00:03:50 IST" duration-ms="3372" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch -->
+        <test-method signature="verify_add_store_table()[pri:4, instance:com.TestCases.VerifyStoreManageTest@5fe94a96]" started-at="2023-03-18T00:03:50 IST" name="verify_add_store_table" finished-at="2023-03-18T00:03:56 IST" duration-ms="5117" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_add_store_table -->
+        <test-method is-config="true" signature="user_logout()[pri:0, instance:com.TestCases.VerifyStoreManageTest@5fe94a96]" started-at="2023-03-18T00:03:56 IST" name="user_logout" finished-at="2023-03-18T00:03:56 IST" duration-ms="285" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user_logout -->
+        <test-method is-config="true" signature="launch(java.lang.String)[pri:0, instance:com.TestCases.VerifyStoreManageTest@5fe94a96]" started-at="2023-03-18T00:03:56 IST" name="launch" finished-at="2023-03-18T00:03:59 IST" duration-ms="3539" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch -->
+        <test-method signature="verify_edit_store_table()[pri:5, instance:com.TestCases.VerifyStoreManageTest@5fe94a96]" started-at="2023-03-18T00:03:59 IST" name="verify_edit_store_table" finished-at="2023-03-18T00:04:05 IST" duration-ms="5705" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_edit_store_table -->
+        <test-method is-config="true" signature="user_logout()[pri:0, instance:com.TestCases.VerifyStoreManageTest@5fe94a96]" started-at="2023-03-18T00:04:05 IST" name="user_logout" finished-at="2023-03-18T00:04:05 IST" duration-ms="288" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user_logout -->
+        <test-method is-config="true" signature="launch(java.lang.String)[pri:0, instance:com.TestCases.VerifyStoreManageTest@5fe94a96]" started-at="2023-03-18T00:04:05 IST" name="launch" finished-at="2023-03-18T00:04:09 IST" duration-ms="3371" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch -->
+        <test-method signature="verify_delete_store_table()[pri:6, instance:com.TestCases.VerifyStoreManageTest@5fe94a96]" started-at="2023-03-18T00:04:09 IST" name="verify_delete_store_table" finished-at="2023-03-18T00:04:14 IST" duration-ms="4894" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_delete_store_table -->
+        <test-method is-config="true" signature="user_logout()[pri:0, instance:com.TestCases.VerifyStoreManageTest@5fe94a96]" started-at="2023-03-18T00:04:14 IST" name="user_logout" finished-at="2023-03-18T00:04:14 IST" duration-ms="286" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user_logout -->
+      </class> <!-- com.TestCases.VerifyStoreManageTest -->
+      <class name="com.TestCases.VerifyCategoryTest">
+        <test-method is-config="true" signature="launch(java.lang.String)[pri:0, instance:com.TestCases.VerifyCategoryTest@443118b0]" started-at="2023-03-18T00:04:14 IST" name="launch" finished-at="2023-03-18T00:04:17 IST" duration-ms="3417" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch -->
+        <test-method signature="verify_add_product_category()[pri:1, instance:com.TestCases.VerifyCategoryTest@443118b0]" started-at="2023-03-18T00:04:17 IST" name="verify_add_product_category" finished-at="2023-03-18T00:04:22 IST" duration-ms="4402" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_add_product_category -->
+        <test-method is-config="true" signature="user_logout()[pri:0, instance:com.TestCases.VerifyCategoryTest@443118b0]" started-at="2023-03-18T00:04:22 IST" name="user_logout" finished-at="2023-03-18T00:04:22 IST" duration-ms="339" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user_logout -->
+        <test-method is-config="true" signature="launch(java.lang.String)[pri:0, instance:com.TestCases.VerifyCategoryTest@443118b0]" started-at="2023-03-18T00:04:22 IST" name="launch" finished-at="2023-03-18T00:04:25 IST" duration-ms="3425" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch -->
+        <test-method signature="verify_add_expense_category()[pri:2, instance:com.TestCases.VerifyCategoryTest@443118b0]" started-at="2023-03-18T00:04:25 IST" name="verify_add_expense_category" finished-at="2023-03-18T00:04:30 IST" duration-ms="4236" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_add_expense_category -->
+        <test-method is-config="true" signature="user_logout()[pri:0, instance:com.TestCases.VerifyCategoryTest@443118b0]" started-at="2023-03-18T00:04:30 IST" name="user_logout" finished-at="2023-03-18T00:04:30 IST" duration-ms="274" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user_logout -->
+      </class> <!-- com.TestCases.VerifyCategoryTest -->
+      <class name="com.TestCases.VerifyAddProductTest">
+        <test-method is-config="true" signature="before_it()[pri:0, instance:com.TestCases.VerifyAddProductTest@515c6049]" started-at="2023-03-17T23:58:47 IST" name="before_it" finished-at="2023-03-17T23:58:47 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before_it -->
+        <test-method is-config="true" signature="launch(java.lang.String)[pri:0, instance:com.TestCases.VerifyAddProductTest@515c6049]" started-at="2023-03-17T23:59:58 IST" name="launch" finished-at="2023-03-18T00:00:02 IST" duration-ms="4138" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch -->
+        <test-method signature="verify_add_product()[pri:1, instance:com.TestCases.VerifyAddProductTest@515c6049]" started-at="2023-03-18T00:00:02 IST" name="verify_add_product" finished-at="2023-03-18T00:00:28 IST" duration-ms="26095" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_add_product -->
-        <test-method is-config="true" signature="user_logout()[pri:0, instance:com.TestCases.VerifyAddProductTest@7f3b84b8]" started-at="2023-03-17T03:32:35 IST" name="user_logout" finished-at="2023-03-17T03:32:35 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="user_logout()[pri:0, instance:com.TestCases.VerifyAddProductTest@515c6049]" started-at="2023-03-18T00:00:28 IST" name="user_logout" finished-at="2023-03-18T00:00:28 IST" duration-ms="340" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- user_logout -->
-        <test-method is-config="true" signature="launch(java.lang.String)[pri:0, instance:com.TestCases.VerifyAddProductTest@7f3b84b8]" started-at="2023-03-17T03:32:35 IST" name="launch" finished-at="2023-03-17T03:32:35 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="launch(java.lang.String)[pri:0, instance:com.TestCases.VerifyAddProductTest@515c6049]" started-at="2023-03-18T00:00:28 IST" name="launch" finished-at="2023-03-18T00:00:32 IST" duration-ms="3593" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launch -->
-        <test-method signature="verify_file_download()[pri:2, instance:com.TestCases.VerifyAddProductTest@7f3b84b8]" started-at="2023-03-17T03:32:35 IST" name="verify_file_download" finished-at="2023-03-17T03:32:35 IST" duration-ms="0" status="SKIP">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'Browser' is required by BeforeMethod on method launch but has not been marked @Optional or defined
-in C:\Users\jithya susan\AppData\Local\Temp\testng-eclipse-1106086686\testng-customsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'Browser' is required by BeforeMethod on method launch but has not been marked @Optional or defined
-in C:\Users\jithya susan\AppData\Local\Temp\testng-eclipse-1106086686\testng-customsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:267)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
-at org.testng.internal.Parameters.createParameters(Parameters.java:660)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:300)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:803)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:589)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:808)
-at org.testng.TestRunner.run(TestRunner.java:603)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-at org.testng.TestNG.runSuites(TestNG.java:1092)
-at org.testng.TestNG.run(TestNG.java:1060)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        <test-method signature="verify_file_download()[pri:2, instance:com.TestCases.VerifyAddProductTest@515c6049]" started-at="2023-03-18T00:00:32 IST" name="verify_file_download" finished-at="2023-03-18T00:00:37 IST" duration-ms="5016" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_file_download -->
-        <test-method is-config="true" signature="user_logout()[pri:0, instance:com.TestCases.VerifyAddProductTest@7f3b84b8]" started-at="2023-03-17T03:32:35 IST" name="user_logout" finished-at="2023-03-17T03:32:35 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="user_logout()[pri:0, instance:com.TestCases.VerifyAddProductTest@515c6049]" started-at="2023-03-18T00:00:37 IST" name="user_logout" finished-at="2023-03-18T00:00:38 IST" duration-ms="1416" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- user_logout -->
-        <test-method is-config="true" signature="launch(java.lang.String)[pri:0, instance:com.TestCases.VerifyAddProductTest@7f3b84b8]" started-at="2023-03-17T03:32:35 IST" name="launch" finished-at="2023-03-17T03:32:35 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="launch(java.lang.String)[pri:0, instance:com.TestCases.VerifyAddProductTest@515c6049]" started-at="2023-03-18T00:00:38 IST" name="launch" finished-at="2023-03-18T00:00:42 IST" duration-ms="3526" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launch -->
-        <test-method signature="verify_file_upload()[pri:3, instance:com.TestCases.VerifyAddProductTest@7f3b84b8]" started-at="2023-03-17T03:32:35 IST" name="verify_file_upload" finished-at="2023-03-17T03:32:35 IST" duration-ms="0" status="SKIP">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'Browser' is required by BeforeMethod on method launch but has not been marked @Optional or defined
-in C:\Users\jithya susan\AppData\Local\Temp\testng-eclipse-1106086686\testng-customsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'Browser' is required by BeforeMethod on method launch but has not been marked @Optional or defined
-in C:\Users\jithya susan\AppData\Local\Temp\testng-eclipse-1106086686\testng-customsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:267)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
-at org.testng.internal.Parameters.createParameters(Parameters.java:660)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:300)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:803)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:589)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:808)
-at org.testng.TestRunner.run(TestRunner.java:603)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-at org.testng.TestNG.runSuites(TestNG.java:1092)
-at org.testng.TestNG.run(TestNG.java:1060)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        <test-method signature="verify_file_upload()[pri:3, instance:com.TestCases.VerifyAddProductTest@515c6049]" started-at="2023-03-18T00:00:42 IST" name="verify_file_upload" finished-at="2023-03-18T00:00:49 IST" duration-ms="7460" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_file_upload -->
-        <test-method is-config="true" signature="user_logout()[pri:0, instance:com.TestCases.VerifyAddProductTest@7f3b84b8]" started-at="2023-03-17T03:32:35 IST" name="user_logout" finished-at="2023-03-17T03:32:35 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="user_logout()[pri:0, instance:com.TestCases.VerifyAddProductTest@515c6049]" started-at="2023-03-18T00:00:49 IST" name="user_logout" finished-at="2023-03-18T00:00:50 IST" duration-ms="324" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- user_logout -->
-        <test-method is-config="true" signature="launch(java.lang.String)[pri:0, instance:com.TestCases.VerifyAddProductTest@7f3b84b8]" started-at="2023-03-17T03:32:35 IST" name="launch" finished-at="2023-03-17T03:32:35 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="launch(java.lang.String)[pri:0, instance:com.TestCases.VerifyAddProductTest@515c6049]" started-at="2023-03-18T00:00:50 IST" name="launch" finished-at="2023-03-18T00:00:53 IST" duration-ms="3476" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launch -->
-        <test-method signature="verify_print_menu()[pri:4, instance:com.TestCases.VerifyAddProductTest@7f3b84b8]" started-at="2023-03-17T03:32:35 IST" name="verify_print_menu" finished-at="2023-03-17T03:32:35 IST" duration-ms="0" status="SKIP">
-          <exception class="org.testng.TestNGException">
+        <test-method retried="true" signature="verify_print_menu()[pri:4, instance:com.TestCases.VerifyAddProductTest@515c6049]" started-at="2023-03-18T00:00:53 IST" name="verify_print_menu" finished-at="2023-03-18T00:01:30 IST" duration-ms="36733" status="SKIP">
+          <exception class="org.openqa.selenium.ScriptTimeoutException">
             <message>
-              <![CDATA[
-Parameter 'Browser' is required by BeforeMethod on method launch but has not been marked @Optional or defined
-in C:\Users\jithya susan\AppData\Local\Temp\testng-eclipse-1106086686\testng-customsuite.xml]]>
+              <![CDATA[script timeout
+  (Session info: MicrosoftEdge=111.0.1661.41)
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [47a35a519392c0072098757db44032fe, isElementDisplayed {id=653b1f70-ab44-4f05-bdc2-fd426f625749}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 111.0.1661.41, ms:edgeOptions: {debuggerAddress: localhost:61108}, msedge: {msedgedriverVersion: 111.0.1661.44 (fc2a57ec5a41..., userDataDir: C:\Users\JITHYA~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61108/devtoo..., se:cdpVersion: 111.0.1661.41, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: msedge on WINDOWS (47a35a519392c0072098757db44032fe)] -> xpath: //h1[text()='Menu']]
+Session ID: 47a35a519392c0072098757db44032fe]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'Browser' is required by BeforeMethod on method launch but has not been marked @Optional or defined
-in C:\Users\jithya susan\AppData\Local\Temp\testng-eclipse-1106086686\testng-customsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:267)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
-at org.testng.internal.Parameters.createParameters(Parameters.java:660)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:300)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:803)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:589)
+              <![CDATA[org.openqa.selenium.ScriptTimeoutException: script timeout
+  (Session info: MicrosoftEdge=111.0.1661.41)
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [47a35a519392c0072098757db44032fe, isElementDisplayed {id=653b1f70-ab44-4f05-bdc2-fd426f625749}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 111.0.1661.41, ms:edgeOptions: {debuggerAddress: localhost:61108}, msedge: {msedgedriverVersion: 111.0.1661.44 (fc2a57ec5a41..., userDataDir: C:\Users\JITHYA~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61108/devtoo..., se:cdpVersion: 111.0.1661.41, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: msedge on WINDOWS (47a35a519392c0072098757db44032fe)] -> xpath: //h1[text()='Menu']]
+Session ID: 47a35a519392c0072098757db44032fe
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:313)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+at jdk.proxy2/jdk.proxy2.$Proxy23.isDisplayed(Unknown Source)
+at com.TestCases.VerifyAddProductTest.verify_print_menu(VerifyAddProductTest.java:100)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
 at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
 at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
@@ -271,23 +632,298 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+          </exception> <!-- org.openqa.selenium.ScriptTimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_print_menu -->
-        <test-method is-config="true" signature="user_logout()[pri:0, instance:com.TestCases.VerifyAddProductTest@7f3b84b8]" started-at="2023-03-17T03:32:35 IST" name="user_logout" finished-at="2023-03-17T03:32:35 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="user_logout()[pri:0, instance:com.TestCases.VerifyAddProductTest@515c6049]" started-at="2023-03-18T00:01:30 IST" name="user_logout" finished-at="2023-03-18T00:01:30 IST" duration-ms="330" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- user_logout -->
-        <test-method is-config="true" signature="after_it()[pri:0, instance:com.TestCases.VerifyAddProductTest@7f3b84b8]" started-at="2023-03-17T03:32:35 IST" name="after_it" finished-at="2023-03-17T03:32:35 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="launch(java.lang.String)[pri:0, instance:com.TestCases.VerifyAddProductTest@515c6049]" started-at="2023-03-18T00:01:30 IST" name="launch" finished-at="2023-03-18T00:01:36 IST" duration-ms="5902" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch -->
+        <test-method signature="verify_print_menu()[pri:4, instance:com.TestCases.VerifyAddProductTest@515c6049]" started-at="2023-03-18T00:01:36 IST" name="verify_print_menu" finished-at="2023-03-18T00:02:12 IST" duration-ms="36096" status="FAIL">
+          <exception class="org.openqa.selenium.ScriptTimeoutException">
+            <message>
+              <![CDATA[script timeout
+  (Session info: MicrosoftEdge=111.0.1661.41)
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [018de07dd43ef9e2c5daf1064a0116d3, isElementDisplayed {id=e015b029-c15c-48c9-9cec-3b6614db2545}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 111.0.1661.41, ms:edgeOptions: {debuggerAddress: localhost:61296}, msedge: {msedgedriverVersion: 111.0.1661.44 (fc2a57ec5a41..., userDataDir: C:\Users\JITHYA~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61296/devtoo..., se:cdpVersion: 111.0.1661.41, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: msedge on WINDOWS (018de07dd43ef9e2c5daf1064a0116d3)] -> xpath: //h1[text()='Menu']]
+Session ID: 018de07dd43ef9e2c5daf1064a0116d3]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ScriptTimeoutException: script timeout
+  (Session info: MicrosoftEdge=111.0.1661.41)
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [018de07dd43ef9e2c5daf1064a0116d3, isElementDisplayed {id=e015b029-c15c-48c9-9cec-3b6614db2545}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 111.0.1661.41, ms:edgeOptions: {debuggerAddress: localhost:61296}, msedge: {msedgedriverVersion: 111.0.1661.44 (fc2a57ec5a41..., userDataDir: C:\Users\JITHYA~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61296/devtoo..., se:cdpVersion: 111.0.1661.41, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: msedge on WINDOWS (018de07dd43ef9e2c5daf1064a0116d3)] -> xpath: //h1[text()='Menu']]
+Session ID: 018de07dd43ef9e2c5daf1064a0116d3
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:313)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+at jdk.proxy2/jdk.proxy2.$Proxy23.isDisplayed(Unknown Source)
+at com.TestCases.VerifyAddProductTest.verify_print_menu(VerifyAddProductTest.java:100)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:262)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ScriptTimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_print_menu -->
+        <test-method is-config="true" signature="user_logout()[pri:0, instance:com.TestCases.VerifyAddProductTest@515c6049]" started-at="2023-03-18T00:02:12 IST" name="user_logout" finished-at="2023-03-18T00:02:13 IST" duration-ms="371" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user_logout -->
+        <test-method is-config="true" signature="after_it()[pri:0, instance:com.TestCases.VerifyAddProductTest@515c6049]" started-at="2023-03-18T00:06:55 IST" name="after_it" finished-at="2023-03-18T00:06:55 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after_it -->
-        <test-method is-config="true" signature="Teardown()[pri:0, instance:com.TestCases.VerifyAddProductTest@7f3b84b8]" started-at="2023-03-17T03:32:35 IST" name="Teardown" finished-at="2023-03-17T03:32:35 IST" duration-ms="1" status="PASS">
+      </class> <!-- com.TestCases.VerifyAddProductTest -->
+      <class name="com.TestCases.VerifyUserLoginTest">
+        <test-method is-config="true" signature="loadingfiles()[pri:0, instance:com.TestCases.VerifyUserLoginTest@7b98f307]" started-at="2023-03-17T23:58:47 IST" name="loadingfiles" finished-at="2023-03-17T23:58:47 IST" duration-ms="177" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loadingfiles -->
+        <test-method is-config="true" signature="loadConfig()[pri:0, instance:com.TestCases.VerifyUserLoginTest@7b98f307]" started-at="2023-03-17T23:58:47 IST" name="loadConfig" finished-at="2023-03-17T23:58:47 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loadConfig -->
+        <test-method is-config="true" signature="launch(java.lang.String)[pri:0, instance:com.TestCases.VerifyUserLoginTest@7b98f307]" started-at="2023-03-17T23:58:47 IST" name="launch" finished-at="2023-03-17T23:59:03 IST" duration-ms="16578" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch -->
+        <test-method signature="verify_invalid_User_invalid_password_login()[pri:1, instance:com.TestCases.VerifyUserLoginTest@7b98f307]" started-at="2023-03-17T23:59:03 IST" name="verify_invalid_User_invalid_password_login" finished-at="2023-03-17T23:59:07 IST" duration-ms="3226" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_invalid_User_invalid_password_login -->
+        <test-method is-config="true" signature="user_logout()[pri:0, instance:com.TestCases.VerifyUserLoginTest@7b98f307]" started-at="2023-03-17T23:59:07 IST" name="user_logout" finished-at="2023-03-17T23:59:07 IST" duration-ms="332" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user_logout -->
+        <test-method is-config="true" signature="launch(java.lang.String)[pri:0, instance:com.TestCases.VerifyUserLoginTest@7b98f307]" started-at="2023-03-17T23:59:07 IST" name="launch" finished-at="2023-03-17T23:59:11 IST" duration-ms="4413" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch -->
+        <test-method signature="verify_invalid_User_valid_password_login()[pri:2, instance:com.TestCases.VerifyUserLoginTest@7b98f307]" started-at="2023-03-17T23:59:11 IST" name="verify_invalid_User_valid_password_login" finished-at="2023-03-17T23:59:14 IST" duration-ms="2615" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_invalid_User_valid_password_login -->
+        <test-method is-config="true" signature="user_logout()[pri:0, instance:com.TestCases.VerifyUserLoginTest@7b98f307]" started-at="2023-03-17T23:59:14 IST" name="user_logout" finished-at="2023-03-17T23:59:14 IST" duration-ms="336" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user_logout -->
+        <test-method is-config="true" signature="launch(java.lang.String)[pri:0, instance:com.TestCases.VerifyUserLoginTest@7b98f307]" started-at="2023-03-17T23:59:14 IST" name="launch" finished-at="2023-03-17T23:59:18 IST" duration-ms="3405" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch -->
+        <test-method signature="verify_valid_User_invalid_Password_login(java.lang.String,java.lang.String)[pri:3, instance:com.TestCases.VerifyUserLoginTest@7b98f307]" started-at="2023-03-17T23:59:18 IST" name="verify_valid_User_invalid_Password_login" data-provider="getlogin" finished-at="2023-03-17T23:59:20 IST" duration-ms="2616" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[paswd]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_valid_User_invalid_Password_login -->
+        <test-method is-config="true" signature="user_logout()[pri:0, instance:com.TestCases.VerifyUserLoginTest@7b98f307]" started-at="2023-03-17T23:59:20 IST" name="user_logout" finished-at="2023-03-17T23:59:21 IST" duration-ms="346" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user_logout -->
+        <test-method is-config="true" signature="launch(java.lang.String)[pri:0, instance:com.TestCases.VerifyUserLoginTest@7b98f307]" started-at="2023-03-17T23:59:21 IST" name="launch" finished-at="2023-03-17T23:59:26 IST" duration-ms="5167" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch -->
+        <test-method signature="verify_valid_User_invalid_Password_login(java.lang.String,java.lang.String)[pri:3, instance:com.TestCases.VerifyUserLoginTest@7b98f307]" started-at="2023-03-17T23:59:26 IST" name="verify_valid_User_invalid_Password_login" data-provider="getlogin" finished-at="2023-03-17T23:59:29 IST" duration-ms="3509" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[paswdd]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_valid_User_invalid_Password_login -->
+        <test-method is-config="true" signature="user_logout()[pri:0, instance:com.TestCases.VerifyUserLoginTest@7b98f307]" started-at="2023-03-17T23:59:29 IST" name="user_logout" finished-at="2023-03-17T23:59:30 IST" duration-ms="1185" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user_logout -->
+        <test-method is-config="true" signature="launch(java.lang.String)[pri:0, instance:com.TestCases.VerifyUserLoginTest@7b98f307]" started-at="2023-03-17T23:59:30 IST" name="launch" finished-at="2023-03-17T23:59:34 IST" duration-ms="3597" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch -->
+        <test-method signature="verify_valid_User_Login()[pri:4, instance:com.TestCases.VerifyUserLoginTest@7b98f307]" started-at="2023-03-17T23:59:34 IST" name="verify_valid_User_Login" finished-at="2023-03-17T23:59:36 IST" duration-ms="2225" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_valid_User_Login -->
+        <test-method is-config="true" signature="user_logout()[pri:0, instance:com.TestCases.VerifyUserLoginTest@7b98f307]" started-at="2023-03-17T23:59:36 IST" name="user_logout" finished-at="2023-03-17T23:59:37 IST" duration-ms="269" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user_logout -->
+        <test-method is-config="true" signature="Teardown()[pri:0, instance:com.TestCases.VerifyUserLoginTest@7b98f307]" started-at="2023-03-18T00:06:56 IST" name="Teardown" finished-at="2023-03-18T00:06:56 IST" duration-ms="337" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Teardown -->
-      </class> <!-- com.TestCases.VerifyAddProductTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- com.TestCases.VerifyUserLoginTest -->
+      <class name="com.TestCases.VerifyPeopleTest">
+        <test-method is-config="true" signature="launch(java.lang.String)[pri:0, instance:com.TestCases.VerifyPeopleTest@74235045]" started-at="2023-03-18T00:06:10 IST" name="launch" finished-at="2023-03-18T00:06:14 IST" duration-ms="3425" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch -->
+        <test-method signature="verify_add_supplier()[pri:1, instance:com.TestCases.VerifyPeopleTest@74235045]" started-at="2023-03-18T00:06:14 IST" name="verify_add_supplier" finished-at="2023-03-18T00:06:19 IST" duration-ms="5030" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_add_supplier -->
+        <test-method is-config="true" signature="user_logout()[pri:0, instance:com.TestCases.VerifyPeopleTest@74235045]" started-at="2023-03-18T00:06:19 IST" name="user_logout" finished-at="2023-03-18T00:06:19 IST" duration-ms="280" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user_logout -->
+        <test-method is-config="true" signature="launch(java.lang.String)[pri:0, instance:com.TestCases.VerifyPeopleTest@74235045]" started-at="2023-03-18T00:06:19 IST" name="launch" finished-at="2023-03-18T00:06:23 IST" duration-ms="3407" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch -->
+        <test-method signature="verify_add_waiter()[pri:2, instance:com.TestCases.VerifyPeopleTest@74235045]" started-at="2023-03-18T00:06:23 IST" name="verify_add_waiter" finished-at="2023-03-18T00:06:28 IST" duration-ms="5249" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_add_waiter -->
+        <test-method is-config="true" signature="user_logout()[pri:0, instance:com.TestCases.VerifyPeopleTest@74235045]" started-at="2023-03-18T00:06:28 IST" name="user_logout" finished-at="2023-03-18T00:06:28 IST" duration-ms="280" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user_logout -->
+        <test-method is-config="true" signature="launch(java.lang.String)[pri:0, instance:com.TestCases.VerifyPeopleTest@74235045]" started-at="2023-03-18T00:06:28 IST" name="launch" finished-at="2023-03-18T00:06:31 IST" duration-ms="3402" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch -->
+        <test-method signature="verify_add_customer()[pri:3, instance:com.TestCases.VerifyPeopleTest@74235045]" started-at="2023-03-18T00:06:31 IST" name="verify_add_customer" finished-at="2023-03-18T00:06:36 IST" duration-ms="5023" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_add_customer -->
+        <test-method is-config="true" signature="user_logout()[pri:0, instance:com.TestCases.VerifyPeopleTest@74235045]" started-at="2023-03-18T00:06:36 IST" name="user_logout" finished-at="2023-03-18T00:06:37 IST" duration-ms="269" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user_logout -->
+      </class> <!-- com.TestCases.VerifyPeopleTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

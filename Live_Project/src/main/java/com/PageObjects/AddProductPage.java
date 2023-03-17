@@ -162,9 +162,6 @@ public class AddProductPage extends BaseClass{
 	{
 		return Close_btn;
 	}
-	
-
-
 	public void fluentwait(WebElement element, int i)
 	{
 		act.fluentWait(getDriver(), element,i);

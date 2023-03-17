@@ -5,7 +5,12 @@
     <listener class-name="com.project.Utilities.Listeners"/>
   </listeners>
   <test thread-count="5" name="Test(failed)">
-    <parameter name="Browser" value="Chrome"/>
+    <parameter name="Browser" value="Edge"/>
+    <groups>
+      <run>
+        <include name="Regression"/>
+      </run>
+    </groups>
     <classes>
       <class name="com.TestCases.VerifyAddProductTest">
         <methods>
@@ -13,12 +18,8 @@
           <include name="verify_print_menu"/>
           <include name="loadConfig"/>
           <include name="launch"/>
-          <include name="after_it"/>
-          <include name="verify_add_product"/>
-          <include name="verify_file_download"/>
           <include name="loadingfiles"/>
           <include name="user_logout"/>
-          <include name="verify_file_upload"/>
         </methods>
       </class> <!-- com.TestCases.VerifyAddProductTest -->
     </classes>

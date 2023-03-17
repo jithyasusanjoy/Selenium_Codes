@@ -32,7 +32,7 @@ public class VerifySettingsTest extends BaseClass {
 		Log.info("Entered password");
 		act.type(au.confirm_password(), exceldata.get(5));
 		Log.info("Entered confirm password");
-		act.type(au.file(), exceldata.get(6));
+		act.type(au.file(), "C:\\Users\\jithya susan\\git\\Selenium_Codes\\Live_Project\\ExcelFile\\a2.png");
 		Log.info("Entered file");
 		act.click1(au.Submit_btn(), "Submitted");
 		Assert.assertTrue(au.add_User().isDisplayed());
