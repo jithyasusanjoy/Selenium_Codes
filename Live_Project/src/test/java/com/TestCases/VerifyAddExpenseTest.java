@@ -14,7 +14,6 @@ public class VerifyAddExpenseTest extends BaseClass {
 	public void verify_expense_addition() throws Exception {
 		Log.startTestCase("verify_expense_addition");
 		lp.LoginFn();
-		Thread.sleep(3000);
 		act.click1(hp.expenses(), "clicked  expenses menu");
 		act.click1(ae.add_Expense(), "clicked add Expense button");
 		ArrayList<String> exceldata = data.getData("AddExpense");		

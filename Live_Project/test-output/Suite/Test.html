@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>34/1/1</td>
+<td>Tests passed/Failed/Skipped:</td><td>4/2/1</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Mar 17 23:58:47 IST 2023</td>
+<td>Started on:</td><td>Sat Mar 18 03:29:21 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>488 seconds (488729 ms)</td>
+<tr><td>Total time:</td><td>112 seconds (112113 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td>Regression </td>
 </tr><tr>
@@ -75,282 +75,16 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.TestCases.VerifyAddProductTest.verify_print_menu()'><b>verify_print_menu</b><br>Test class: com.TestCases.VerifyAddProductTest</td>
-<td><div><pre>org.openqa.selenium.ScriptTimeoutException: script timeout
-  (Session info: MicrosoftEdge=111.0.1661.41)
-Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [018de07dd43ef9e2c5daf1064a0116d3, isElementDisplayed {id=e015b029-c15c-48c9-9cec-3b6614db2545}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 111.0.1661.41, ms:edgeOptions: {debuggerAddress: localhost:61296}, msedge: {msedgedriverVersion: 111.0.1661.44 (fc2a57ec5a41..., userDataDir: C:\Users\JITHYA~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61296/devtoo..., se:cdpVersion: 111.0.1661.41, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[EdgeDriver: msedge on WINDOWS (018de07dd43ef9e2c5daf1064a0116d3)] -&gt; xpath: //h1[text()=&apos;Menu&apos;]]
-Session ID: 018de07dd43ef9e2c5daf1064a0116d3
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:313)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at jdk.proxy2/jdk.proxy2.$Proxy23.isDisplayed(Unknown Source)
-	at com.TestCases.VerifyAddProductTest.verify_print_menu(VerifyAddProductTest.java:100)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace287649987", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace287649987'><pre>org.openqa.selenium.ScriptTimeoutException: script timeout
-  (Session info: MicrosoftEdge=111.0.1661.41)
-Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [018de07dd43ef9e2c5daf1064a0116d3, isElementDisplayed {id=e015b029-c15c-48c9-9cec-3b6614db2545}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 111.0.1661.41, ms:edgeOptions: {debuggerAddress: localhost:61296}, msedge: {msedgedriverVersion: 111.0.1661.44 (fc2a57ec5a41..., userDataDir: C:\Users\JITHYA~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61296/devtoo..., se:cdpVersion: 111.0.1661.41, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[EdgeDriver: msedge on WINDOWS (018de07dd43ef9e2c5daf1064a0116d3)] -&gt; xpath: //h1[text()=&apos;Menu&apos;]]
-Session ID: 018de07dd43ef9e2c5daf1064a0116d3
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:313)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at jdk.proxy2/jdk.proxy2.$Proxy23.isDisplayed(Unknown Source)
-	at com.TestCases.VerifyAddProductTest.verify_print_menu(VerifyAddProductTest.java:100)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
-	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:262)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:808)
-	at org.testng.TestRunner.run(TestRunner.java:603)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.runSuites(TestNG.java:1092)
-	at org.testng.TestNG.run(TestNG.java:1060)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>36</td>
-<td>com.TestCases.VerifyAddProductTest@515c6049</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='com.TestCases.VerifyUserLoginTest.verify_valid_User_Login()'><b>verify_valid_User_Login</b><br>Test class: com.TestCases.VerifyUserLoginTest</td>
-<td></td>
-<td>2</td>
-<td>com.TestCases.VerifyUserLoginTest@7b98f307</td></tr>
-<tr>
-<td title='com.TestCases.VerifyStoreTest.verify_show_dropdown()'><b>verify_show_dropdown</b><br>Test class: com.TestCases.VerifyStoreTest</td>
-<td></td>
-<td>3</td>
-<td>com.TestCases.VerifyStoreTest@639c2c1d</td></tr>
-<tr>
-<td title='com.TestCases.VerifyStoreManageTest.verify_edit_store_table()'><b>verify_edit_store_table</b><br>Test class: com.TestCases.VerifyStoreManageTest</td>
-<td></td>
-<td>5</td>
-<td>com.TestCases.VerifyStoreManageTest@5fe94a96</td></tr>
-<tr>
-<td title='com.TestCases.VerifySettingsTest.verify_add_new_user()'><b>verify_add_new_user</b><br>Test class: com.TestCases.VerifySettingsTest</td>
-<td></td>
-<td>5</td>
-<td>com.TestCases.VerifySettingsTest@618b19ad</td></tr>
-<tr>
-<td title='com.TestCases.VerifyAddProductTest.verify_file_download()'><b>verify_file_download</b><br>Test class: com.TestCases.VerifyAddProductTest</td>
-<td></td>
-<td>5</td>
-<td>com.TestCases.VerifyAddProductTest@515c6049</td></tr>
-<tr>
-<td title='com.TestCases.VerifyStoreManageTest.verify_delete_store_zone()'><b>verify_delete_store_zone</b><br>Test class: com.TestCases.VerifyStoreManageTest</td>
-<td></td>
-<td>4</td>
-<td>com.TestCases.VerifyStoreManageTest@5fe94a96</td></tr>
-<tr>
-<td title='com.TestCases.VerifyPeopleTest.verify_add_waiter()'><b>verify_add_waiter</b><br>Test class: com.TestCases.VerifyPeopleTest</td>
-<td></td>
-<td>5</td>
-<td>com.TestCases.VerifyPeopleTest@74235045</td></tr>
-<tr>
-<td title='com.TestCases.VerifyHomepageTest.verify_logged_user_name()'><b>verify_logged_user_name</b><br>Test class: com.TestCases.VerifyHomepageTest</td>
-<td></td>
-<td>1</td>
-<td>com.TestCases.VerifyHomepageTest@33d512c1</td></tr>
-<tr>
-<td title='com.TestCases.VerifyAddProductTest.verify_add_product()'><b>verify_add_product</b><br>Test class: com.TestCases.VerifyAddProductTest</td>
-<td></td>
-<td>26</td>
-<td>com.TestCases.VerifyAddProductTest@515c6049</td></tr>
-<tr>
-<td title='com.TestCases.VerifyHomepageTest.verify_language_selection()'><b>verify_language_selection</b><br>Test class: com.TestCases.VerifyHomepageTest</td>
-<td></td>
-<td>3</td>
-<td>com.TestCases.VerifyHomepageTest@33d512c1</td></tr>
-<tr>
-<td title='com.TestCases.VerifyUserLoginTest.verify_valid_User_invalid_Password_login()'><b>verify_valid_User_invalid_Password_login</b><br>Test class: com.TestCases.VerifyUserLoginTest<br>Parameters: Admin, paswdd</td>
-<td></td>
-<td>3</td>
-<td>com.TestCases.VerifyUserLoginTest@7b98f307</td></tr>
-<tr>
-<td title='com.TestCases.VerifyCategoryTest.verify_add_product_category()'><b>verify_add_product_category</b><br>Test class: com.TestCases.VerifyCategoryTest</td>
-<td></td>
-<td>4</td>
-<td>com.TestCases.VerifyCategoryTest@443118b0</td></tr>
-<tr>
-<td title='com.TestCases.VerifyPeopleTest.verify_add_supplier()'><b>verify_add_supplier</b><br>Test class: com.TestCases.VerifyPeopleTest</td>
-<td></td>
-<td>5</td>
-<td>com.TestCases.VerifyPeopleTest@74235045</td></tr>
-<tr>
-<td title='com.TestCases.VerifyStoreManageTest.verify_delete_store_table()'><b>verify_delete_store_table</b><br>Test class: com.TestCases.VerifyStoreManageTest</td>
-<td></td>
-<td>4</td>
-<td>com.TestCases.VerifyStoreManageTest@5fe94a96</td></tr>
-<tr>
-<td title='com.TestCases.VerifyAddProductTest.verify_file_upload()'><b>verify_file_upload</b><br>Test class: com.TestCases.VerifyAddProductTest</td>
-<td></td>
-<td>7</td>
-<td>com.TestCases.VerifyAddProductTest@515c6049</td></tr>
-<tr>
-<td title='com.TestCases.VerifyStoreManageTest.verify_edit_store_zone()'><b>verify_edit_store_zone</b><br>Test class: com.TestCases.VerifyStoreManageTest</td>
-<td></td>
-<td>5</td>
-<td>com.TestCases.VerifyStoreManageTest@5fe94a96</td></tr>
-<tr>
-<td title='com.TestCases.VerifyUserLoginTest.verify_invalid_User_valid_password_login()'><b>verify_invalid_User_valid_password_login</b><br>Test class: com.TestCases.VerifyUserLoginTest</td>
-<td></td>
-<td>2</td>
-<td>com.TestCases.VerifyUserLoginTest@7b98f307</td></tr>
-<tr>
-<td title='com.TestCases.VerifyStoreManageTest.verify_add_store_table()'><b>verify_add_store_table</b><br>Test class: com.TestCases.VerifyStoreManageTest</td>
-<td></td>
-<td>5</td>
-<td>com.TestCases.VerifyStoreManageTest@5fe94a96</td></tr>
-<tr>
-<td title='com.TestCases.VerifyStoreTest.verify_delete_store()'><b>verify_delete_store</b><br>Test class: com.TestCases.VerifyStoreTest</td>
-<td></td>
-<td>4</td>
-<td>com.TestCases.VerifyStoreTest@639c2c1d</td></tr>
-<tr>
-<td title='com.TestCases.VerifyStoreManageTest.verify_add_store_zone()'><b>verify_add_store_zone</b><br>Test class: com.TestCases.VerifyStoreManageTest</td>
-<td></td>
-<td>5</td>
-<td>com.TestCases.VerifyStoreManageTest@5fe94a96</td></tr>
-<tr>
-<td title='com.TestCases.VerifyStoreTest.verify_edit_store()'><b>verify_edit_store</b><br>Test class: com.TestCases.VerifyStoreTest</td>
-<td></td>
-<td>5</td>
-<td>com.TestCases.VerifyStoreTest@639c2c1d</td></tr>
-<tr>
-<td title='com.TestCases.VerifyAddExpenseTest.verify_expense_addition()'><b>verify_expense_addition</b><br>Test class: com.TestCases.VerifyAddExpenseTest</td>
-<td></td>
-<td>96</td>
-<td>com.TestCases.VerifyAddExpenseTest@765d7657</td></tr>
-<tr>
-<td title='com.TestCases.VerifyStoreTest.verify_store_search()'><b>verify_store_search</b><br>Test class: com.TestCases.VerifyStoreTest</td>
-<td></td>
-<td>2</td>
-<td>com.TestCases.VerifyStoreTest@639c2c1d</td></tr>
-<tr>
-<td title='com.TestCases.VerifyStoreTest.verify_sort_store_name_ascending_order()'><b>verify_sort_store_name_ascending_order</b><br>Test class: com.TestCases.VerifyStoreTest</td>
-<td></td>
-<td>3</td>
-<td>com.TestCases.VerifyStoreTest@639c2c1d</td></tr>
-<tr>
-<td title='com.TestCases.VerifyStoreTest.verify_storepage_pagination()'><b>verify_storepage_pagination</b><br>Test class: com.TestCases.VerifyStoreTest</td>
-<td></td>
-<td>3</td>
-<td>com.TestCases.VerifyStoreTest@639c2c1d</td></tr>
-<tr>
-<td title='com.TestCases.VerifyCategoryTest.verify_add_expense_category()'><b>verify_add_expense_category</b><br>Test class: com.TestCases.VerifyCategoryTest</td>
-<td></td>
-<td>4</td>
-<td>com.TestCases.VerifyCategoryTest@443118b0</td></tr>
-<tr>
-<td title='com.TestCases.VerifyUserLoginTest.verify_valid_User_invalid_Password_login()'><b>verify_valid_User_invalid_Password_login</b><br>Test class: com.TestCases.VerifyUserLoginTest<br>Parameters: Admin, paswd</td>
-<td></td>
-<td>2</td>
-<td>com.TestCases.VerifyUserLoginTest@7b98f307</td></tr>
-<tr>
-<td title='com.TestCases.VerifyStoreTest.verify_sort_store_name_descending_order()'><b>verify_sort_store_name_descending_order</b><br>Test class: com.TestCases.VerifyStoreTest</td>
-<td></td>
-<td>3</td>
-<td>com.TestCases.VerifyStoreTest@639c2c1d</td></tr>
-<tr>
 <td title='com.TestCases.VerifyHomepageTest.verify_home_menu_elements()'><b>verify_home_menu_elements</b><br>Test class: com.TestCases.VerifyHomepageTest</td>
-<td></td>
-<td>1</td>
-<td>com.TestCases.VerifyHomepageTest@33d512c1</td></tr>
-<tr>
-<td title='com.TestCases.VerifyStoreTest.verify_add_store()'><b>verify_add_store</b><br>Test class: com.TestCases.VerifyStoreTest</td>
-<td></td>
-<td>6</td>
-<td>com.TestCases.VerifyStoreTest@639c2c1d</td></tr>
-<tr>
-<td title='com.TestCases.VerifyUserLoginTest.verify_invalid_User_invalid_password_login()'><b>verify_invalid_User_invalid_password_login</b><br>Test class: com.TestCases.VerifyUserLoginTest</td>
-<td></td>
-<td>3</td>
-<td>com.TestCases.VerifyUserLoginTest@7b98f307</td></tr>
-<tr>
-<td title='com.TestCases.VerifyStoreTest.verify_sort_store_coulmns()'><b>verify_sort_store_coulmns</b><br>Test class: com.TestCases.VerifyStoreTest</td>
-<td></td>
-<td>2</td>
-<td>com.TestCases.VerifyStoreTest@639c2c1d</td></tr>
-<tr>
-<td title='com.TestCases.VerifyPeopleTest.verify_add_customer()'><b>verify_add_customer</b><br>Test class: com.TestCases.VerifyPeopleTest</td>
-<td></td>
-<td>5</td>
-<td>com.TestCases.VerifyPeopleTest@74235045</td></tr>
-<tr>
-<td title='com.TestCases.VerifySettingsTest.verify_add_new_warehouse()'><b>verify_add_new_warehouse</b><br>Test class: com.TestCases.VerifySettingsTest</td>
-<td></td>
-<td>5</td>
-<td>com.TestCases.VerifySettingsTest@618b19ad</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='com.TestCases.VerifyAddProductTest.verify_print_menu()'><b>verify_print_menu</b><br>Test class: com.TestCases.VerifyAddProductTest</td>
-<td><div><pre>org.openqa.selenium.ScriptTimeoutException: script timeout
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h1[@class=&apos;text-center choose_store&apos;]&quot;}
   (Session info: MicrosoftEdge=111.0.1661.41)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19&apos;
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [47a35a519392c0072098757db44032fe, isElementDisplayed {id=653b1f70-ab44-4f05-bdc2-fd426f625749}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 111.0.1661.41, ms:edgeOptions: {debuggerAddress: localhost:61108}, msedge: {msedgedriverVersion: 111.0.1661.44 (fc2a57ec5a41..., userDataDir: C:\Users\JITHYA~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61108/devtoo..., se:cdpVersion: 111.0.1661.41, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[EdgeDriver: msedge on WINDOWS (47a35a519392c0072098757db44032fe)] -&gt; xpath: //h1[text()=&apos;Menu&apos;]]
-Session ID: 47a35a519392c0072098757db44032fe
+Command: [3ecfbcc5dfd8634d30c8a2df68fb8bd5, findElement {using=xpath, value=//h1[@class=&apos;text-center choose_store&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 111.0.1661.41, ms:edgeOptions: {debuggerAddress: localhost:63498}, msedge: {msedgedriverVersion: 111.0.1661.44 (fc2a57ec5a41..., userDataDir: C:\Users\JITHYA~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63498/devtoo..., se:cdpVersion: 111.0.1661.41, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3ecfbcc5dfd8634d30c8a2df68fb8bd5
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -358,22 +92,25 @@ Session ID: 47a35a519392c0072098757db44032fe
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:313)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at jdk.proxy2/jdk.proxy2.$Proxy23.isDisplayed(Unknown Source)
-	at com.TestCases.VerifyAddProductTest.verify_print_menu(VerifyAddProductTest.java:100)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy23.getText(Unknown Source)
+	at com.TestCases.VerifyHomepageTest.verify_home_menu_elements(VerifyHomepageTest.java:45)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1652748779", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1652748779'><pre>org.openqa.selenium.ScriptTimeoutException: script timeout
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2044272973", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2044272973'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h1[@class=&apos;text-center choose_store&apos;]&quot;}
   (Session info: MicrosoftEdge=111.0.1661.41)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19&apos;
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [47a35a519392c0072098757db44032fe, isElementDisplayed {id=653b1f70-ab44-4f05-bdc2-fd426f625749}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 111.0.1661.41, ms:edgeOptions: {debuggerAddress: localhost:61108}, msedge: {msedgedriverVersion: 111.0.1661.44 (fc2a57ec5a41..., userDataDir: C:\Users\JITHYA~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61108/devtoo..., se:cdpVersion: 111.0.1661.41, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[EdgeDriver: msedge on WINDOWS (47a35a519392c0072098757db44032fe)] -&gt; xpath: //h1[text()=&apos;Menu&apos;]]
-Session ID: 47a35a519392c0072098757db44032fe
+Command: [3ecfbcc5dfd8634d30c8a2df68fb8bd5, findElement {using=xpath, value=//h1[@class=&apos;text-center choose_store&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 111.0.1661.41, ms:edgeOptions: {debuggerAddress: localhost:63498}, msedge: {msedgedriverVersion: 111.0.1661.44 (fc2a57ec5a41..., userDataDir: C:\Users\JITHYA~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63498/devtoo..., se:cdpVersion: 111.0.1661.41, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3ecfbcc5dfd8634d30c8a2df68fb8bd5
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
@@ -384,13 +121,14 @@ Session ID: 47a35a519392c0072098757db44032fe
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:313)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at jdk.proxy2/jdk.proxy2.$Proxy23.isDisplayed(Unknown Source)
-	at com.TestCases.VerifyAddProductTest.verify_print_menu(VerifyAddProductTest.java:100)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy23.getText(Unknown Source)
+	at com.TestCases.VerifyHomepageTest.verify_home_menu_elements(VerifyHomepageTest.java:45)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
@@ -418,8 +156,126 @@ Session ID: 47a35a519392c0072098757db44032fe
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>36</td>
-<td>com.TestCases.VerifyAddProductTest@515c6049</td></tr>
+<td>15</td>
+<td>com.TestCases.VerifyHomepageTest@4c583ecf</td></tr>
+<tr>
+<td title='com.TestCases.VerifyAddProductTest.verify_add_product()'><b>verify_add_product</b><br>Test class: com.TestCases.VerifyAddProductTest</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [A124] but found [A1234]
+	at com.TestCases.VerifyAddProductTest.verify_add_product(VerifyAddProductTest.java:62)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace862090614", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace862090614'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [A124] but found [A1234]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at com.TestCases.VerifyAddProductTest.verify_add_product(VerifyAddProductTest.java:62)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:262)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:808)
+	at org.testng.TestRunner.run(TestRunner.java:603)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.runSuites(TestNG.java:1092)
+	at org.testng.TestNG.run(TestNG.java:1060)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>23</td>
+<td>com.TestCases.VerifyAddProductTest@692f203f</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.TestCases.VerifyAddProductTest.verify_file_download()'><b>verify_file_download</b><br>Test class: com.TestCases.VerifyAddProductTest</td>
+<td></td>
+<td>4</td>
+<td>com.TestCases.VerifyAddProductTest@692f203f</td></tr>
+<tr>
+<td title='com.TestCases.VerifyUserLoginTest.verify_valid_User_Login()'><b>verify_valid_User_Login</b><br>Test class: com.TestCases.VerifyUserLoginTest</td>
+<td></td>
+<td>1</td>
+<td>com.TestCases.VerifyUserLoginTest@31304f14</td></tr>
+<tr>
+<td title='com.TestCases.VerifyAddProductTest.verify_file_upload()'><b>verify_file_upload</b><br>Test class: com.TestCases.VerifyAddProductTest</td>
+<td></td>
+<td>7</td>
+<td>com.TestCases.VerifyAddProductTest@692f203f</td></tr>
+<tr>
+<td title='com.TestCases.VerifyHomepageTest.verify_language_selection()'><b>verify_language_selection</b><br>Test class: com.TestCases.VerifyHomepageTest</td>
+<td></td>
+<td>4</td>
+<td>com.TestCases.VerifyHomepageTest@4c583ecf</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.TestCases.VerifyAddProductTest.verify_add_product()'><b>verify_add_product</b><br>Test class: com.TestCases.VerifyAddProductTest</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [A124] but found [A1234]
+	at com.TestCases.VerifyAddProductTest.verify_add_product(VerifyAddProductTest.java:62)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace6167135", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace6167135'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [A124] but found [A1234]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at com.TestCases.VerifyAddProductTest.verify_add_product(VerifyAddProductTest.java:62)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:808)
+	at org.testng.TestRunner.run(TestRunner.java:603)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.runSuites(TestNG.java:1092)
+	at org.testng.TestNG.run(TestNG.java:1060)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>23</td>
+<td>com.TestCases.VerifyAddProductTest@692f203f</td></tr>
 </table><p>
 </body>
 </html>

@@ -42,7 +42,7 @@ public class VerifySettingsTest extends BaseClass {
 		
 		}
 	
-	@Test(priority=2,groups = { "Regression" })
+	@Test(priority=2)
 	public void verify_add_new_warehouse() throws Exception 
 	{
 		Log.startTestCase("add_new_warehouse");

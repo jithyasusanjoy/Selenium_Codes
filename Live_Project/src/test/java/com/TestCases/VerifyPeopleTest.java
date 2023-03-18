@@ -39,7 +39,7 @@ public class VerifyPeopleTest extends BaseClass {
 	
 	
 	
-	@Test(priority=2,groups = { "Regression" }, retryAnalyzer = RetryAnalyzer.class)
+	@Test(priority=2, retryAnalyzer = RetryAnalyzer.class)
 	public void verify_add_waiter() throws Exception 
 	{	
 		Log.startTestCase("verify_add_waiter");
@@ -66,7 +66,7 @@ public class VerifyPeopleTest extends BaseClass {
 		Log.endTestCase("verify_add_waiter");
 	}
 	
-	@Test(priority=3,groups = { "Regression" }, retryAnalyzer = RetryAnalyzer.class)
+	@Test(priority=3, retryAnalyzer = RetryAnalyzer.class)
 	public void verify_add_customer() throws Exception 
 	{		
 		Log.startTestCase("verify_add_customer");

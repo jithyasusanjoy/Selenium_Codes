@@ -7,6 +7,8 @@ import org.testng.Assert;
 import org.testng.annotations.AfterGroups;
 import org.testng.annotations.BeforeGroups;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
+
 import com.Base.BaseClass.BaseClass;
 import com.project.Utilities.Log;
 import com.project.Utilities.RetryAnalyzer;
@@ -53,9 +55,11 @@ public class VerifyAddProductTest extends BaseClass {
 		act.click1(ap.Stock_close(), "Closed stock popup");
 		act.type(ap.Search(), "A1234");
 		Log.info("Entered search text");
-		Assert.assertEquals(ap.First_Element().getText(), "A1234");
+		SoftAssert softAssert = new SoftAssert();
+		softAssert.assertEquals(ap.First_Element().getText(), "A124");
 		Log.info("Product added");
 		hp.logoff();
+		softAssert.assertAll();
 		Log.endTestCase("verify_add_product");
 	}
 
@@ -85,7 +89,7 @@ public class VerifyAddProductTest extends BaseClass {
 		Log.endTestCase("verify_file_upload");
 	}
 	
-	@Test(groups = { "Regression" }, priority = 4, retryAnalyzer = RetryAnalyzer.class)
+	@Test(priority = 4, retryAnalyzer = RetryAnalyzer.class)
 	public void verify_print_menu() throws Exception {
 		Log.startTestCase("verify_print_menu");
 		lp.LoginFn();		

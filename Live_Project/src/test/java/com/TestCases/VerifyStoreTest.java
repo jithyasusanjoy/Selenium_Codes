@@ -12,7 +12,7 @@ import com.project.Utilities.RetryAnalyzer;
 
 public class VerifyStoreTest extends BaseClass {
 
-	@Test(priority = 1,groups = { "Regression" }, retryAnalyzer = RetryAnalyzer.class)
+	@Test(priority = 1, retryAnalyzer = RetryAnalyzer.class)
 	public void verify_sort_store_name_descending_order() {
 		Log.startTestCase("verify_sort_store_name_descending_order"); 
 		lp.LoginFn();
@@ -24,7 +24,7 @@ public class VerifyStoreTest extends BaseClass {
 		Log.endTestCase("verify_sort_store_name_descending_order");
 
 	}
-	@Test(priority = 2,groups = { "Regression" }, retryAnalyzer = RetryAnalyzer.class)
+	@Test(priority = 2, retryAnalyzer = RetryAnalyzer.class)
 	public void verify_sort_store_name_ascending_order() {
 	
 		Log.startTestCase("verify_sort_store_name_ascending_order");

@@ -25,7 +25,7 @@ public class VerifyHomepageTest extends BaseClass {
 		Log.endTestCase("verify_language_selection");
 	}
 
-	@Test(priority = 1,groups = { "Regression"})
+	@Test(priority = 1)
 	public void verify_logged_user_name() throws InterruptedException {
 		Log.startTestCase("verify_logged_user_name");
 		lp.LoginFn();

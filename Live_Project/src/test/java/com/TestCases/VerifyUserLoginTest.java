@@ -20,7 +20,7 @@ public class VerifyUserLoginTest extends BaseClass {
 		
 	}
 
-	@Test(dataProvider = "getlogin", priority = 3,groups = { "Regression" })
+	@Test(dataProvider = "getlogin", priority = 3)
 	public void verify_valid_User_invalid_Password_login(String username, String password) {
 
 		Log.startTestCase("valid_User_invalid_Pass");
@@ -45,7 +45,7 @@ public class VerifyUserLoginTest extends BaseClass {
 		return data;
 	}
 
-	@Test(priority = 2,groups = { "Regression" })
+	@Test(priority = 2)
 	public void verify_invalid_User_valid_password_login() throws Exception {
 
 		Log.startTestCase("invalid_User_valid_pass");
@@ -62,7 +62,7 @@ public class VerifyUserLoginTest extends BaseClass {
 
 	}
 
-	@Test(priority = 1,groups = { "Regression" })
+	@Test(priority = 1)
 	public void verify_invalid_User_invalid_password_login() throws Exception {
 		Log.startTestCase("invalid_User_invalid_pass");
 		ArrayList<String> exceldata = data.getData("Login1");

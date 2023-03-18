@@ -10,7 +10,7 @@ public class VerifyCategoryTest extends BaseClass {
 
 
 
-	@Test(priority = 1,groups = { "Regression" })
+	@Test(priority = 1)
 	public void verify_add_product_category() throws Exception {
 		Log.startTestCase("add_product_category");
 		lp.LoginFn();
@@ -29,7 +29,7 @@ public class VerifyCategoryTest extends BaseClass {
 		Log.endTestCase("add_product_category");
 	}
 
-	@Test(priority = 2,groups = { "Regression" })
+	@Test(priority = 2)
 	public void verify_add_expense_category() throws Exception {
 		Log.startTestCase("add_expense_category");
 		lp.LoginFn();

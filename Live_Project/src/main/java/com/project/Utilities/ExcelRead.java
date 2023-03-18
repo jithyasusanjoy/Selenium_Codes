@@ -50,7 +50,7 @@ public class ExcelRead {
 				// iterator
 				while (cel.hasNext()) {
 					Cell value = cel.next();
-					if (value.getStringCellValue().equalsIgnoreCase("TestCases")) {
+					if (value.getStringCellValue().equalsIgnoreCase("TestCase")) {
 						col = k;
 					}
 					k++;
