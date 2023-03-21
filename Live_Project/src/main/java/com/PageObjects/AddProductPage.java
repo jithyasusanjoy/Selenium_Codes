@@ -1,8 +1,5 @@
 package com.PageObjects;
 
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -13,64 +10,64 @@ public class AddProductPage extends BaseClass{
 
 	
 	@FindBy(xpath="//select[@id='Type']")
-	WebElement Type;
+	private WebElement Type;
 	
 	@FindBy(xpath="//input[@id='ProductCode']")
-	WebElement Code;
+	private WebElement Code;
 	
 	@FindBy(xpath="//input[@id='ProductName']")
-	WebElement Name;
+	private WebElement Name;
 	
 	@FindBy(xpath="//select[@id='Category']")
-	WebElement Category;
+	private WebElement Category;
 	
 	@FindBy(xpath="//select[@id='Supplier']")
-	WebElement Supplier;
+	private WebElement Supplier;
 	
 	@FindBy(xpath="//input[@id='PurchasePrice']")
-	WebElement Purchase_Price;
+	private WebElement Purchase_Price;
 		
 	@FindBy(xpath="//input[@id='Tax']")
-	WebElement Tax;
+	private WebElement Tax;
 	
 	@FindBy(xpath="//select[@id='taxType']")
-	WebElement Tax_method;
+	private WebElement Tax_method;
 	
 	@FindBy(xpath="//input[@id='Price']")
-	WebElement Price;
+	private WebElement Price;
 	
 	@FindBy(xpath="//input[@id='Unit']")
-	WebElement Product_Unit;
+	private WebElement Product_Unit;
 	
 	@FindBy(xpath="//input[@id='AlertQt']")
-	WebElement Alert_Quantity;
+	private WebElement Alert_Quantity;
 	
 	@FindBy(xpath="//textarea[@id='ProductOptions']")
-	WebElement Product_Options;
+	private WebElement Product_Options;
 	
 	@FindBy(xpath="(//input[@id='ImageInput'])[1]")
-	WebElement File_Upload;
+	private WebElement File_Upload;
 	
 	@FindBy(xpath="//div[@class='note-editable panel-body']")
-	WebElement Product_Description;
+	private WebElement Product_Description;
 	
 	@FindBy(xpath="//label[@class='btn color04']")
-	WebElement Color_Selection;
+	private WebElement Color_Selection;
 	
 	@FindBy(xpath="(//button[@type='submit'])[2]")
-	WebElement Submit_btn;
+	private WebElement Submit_btn;
 	
 	@FindBy(xpath="(//button[text()='Close'])[2] ")
-	WebElement Close_btn;
+	private WebElement Close_btn;
 	
 	@FindBy(xpath="//input[@type='search']")
-	WebElement Search;
+	private WebElement Search;
 	
 	@FindBy(xpath="//td[@class='hidden-xs productcode sorting_1']")
-	WebElement First_Element;
+	private WebElement First_Element;
 	
 	@FindBy(xpath="(//button[@onclick=\"location.reload();\"])[2]")
-	WebElement Stock_close;
+	private WebElement Stock_close;
 	
 	
 	public AddProductPage() {
@@ -89,6 +86,7 @@ public class AddProductPage extends BaseClass{
 
 	public WebElement Search()
 	{
+		wait.fluentWait(getDriver(), Search, 5);
 		return Search;
 	}
 
@@ -147,6 +145,7 @@ public class AddProductPage extends BaseClass{
 	}
 	public WebElement file_upload()
 	{
+		wait.fluentWait(getDriver(), File_Upload, 5);
 		return File_Upload;
 	}
 	public WebElement product_options()
@@ -162,9 +161,6 @@ public class AddProductPage extends BaseClass{
 	{
 		return Close_btn;
 	}
-	public void fluentwait(WebElement element, int i)
-	{
-		act.fluentWait(getDriver(), element,i);
-	}
+	
 	
 }

@@ -11,7 +11,9 @@ import org.apache.poi.ss.util.NumberToTextConverter;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
-public class ExcelRead {
+import com.Base.BaseClass.BaseClass;
+
+public class ExcelRead extends BaseClass {
 
 	public ArrayList<String> getData(String Testcase) throws Exception {
 		
@@ -19,7 +21,7 @@ public class ExcelRead {
 		
 		// Path of excel sheet
 		FileInputStream fil = new FileInputStream(
-				System.getProperty("user.dir") + "\\ExcelFile\\Student.xlsx");
+				System.getProperty("user.dir") + "\\Files\\Student.xlsx");
 		
 		XSSFWorkbook wb = new XSSFWorkbook(fil);	
 		int sheets = 0;	

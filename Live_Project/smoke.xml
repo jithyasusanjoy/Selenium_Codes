@@ -3,11 +3,12 @@
 <suite name="Suite">
 	<listeners>
 		<listener class-name="com.project.Utilities.Listeners"></listener>
+		<listener class-name="com.project.Utilities.RetryAnalyzer"></listener>
 	</listeners>
-	<test thread-count="5" name="Test">
+	<test thread-count="6" name="SmokeTest">
 	<parameter name="Browser" value="Edge"></parameter>
 		<classes>			
-			<class name="com.TestCases.VerifyAddProductTest"/>					
+			<class name="com.TestCases.VerifyStoreManageTest"/>					
 		</classes>	
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

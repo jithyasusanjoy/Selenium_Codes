@@ -10,25 +10,25 @@ public class AddSupplier extends BaseClass {
 
 	
 	@FindBy(xpath="//button[@data-target='#AddSupplier']")
-	WebElement Add_Supplier;
+	private WebElement Add_Supplier;
 	
 	@FindBy(xpath="//input[@id='SupplierName']")
-	WebElement Supplier_Name;
+	private WebElement Supplier_Name;
 	
 	@FindBy(xpath="//input[@id='SupplierPhone']")
-	WebElement Supplier_Phone;
+	private WebElement Supplier_Phone;
 	
 	@FindBy(xpath="//input[@id='SupplierEmail']")
-	WebElement Supplier_Email;
+	private WebElement Supplier_Email;
 	
 	@FindBy(xpath="//div[@class='note-editable panel-body']")
-	WebElement Note;
+	private WebElement Note;
 	
 	@FindBy(xpath="(//button[@type='submit'])[1]")
-	WebElement Submit_btn1;
+	private WebElement Submit_btn1;
 	
 	@FindBy(xpath="(//button[text()='Close'])[1]")
-	WebElement Close_btn1;
+	private WebElement Close_btn1;
 	
 	
 	public AddSupplier() {

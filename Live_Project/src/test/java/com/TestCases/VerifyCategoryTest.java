@@ -19,8 +19,7 @@ public class VerifyCategoryTest extends BaseClass {
 		Log.info("Clicked  product sub menu");
 		act.click1(ac1.add_Category(), "Clicked");
 		Log.info("Clicked add category button");
-		ArrayList<String> exceldata = data.getData("AddProductCategory");
-		act.type(ac1.category_Name(), exceldata.get(0));
+		act.type(ac1.category_Name(), "Prod_Cat"+ran.nextInt());
 		Log.info("Entered category name");
 		act.click1(ac1.Submit_btn(), "Submitted");
 		Assert.assertTrue(ac1.add_Category().isDisplayed());
@@ -38,8 +37,7 @@ public class VerifyCategoryTest extends BaseClass {
 		Log.info("Clicked  product sub menu");
 		act.click1(ac1.add_Category(), "Clicked");
 		Log.info("Clicked add category button");
-		ArrayList<String> exceldata = data.getData("AddExpenseCategory");
-		act.type(ac1.category_Name(), exceldata.get(0));
+		act.type(ac1.category_Name(), "Exp_Cat"+ran.nextInt());
 		Log.info("Entered category name");
 		act.click1(ac1.Submit_btn(), "Submitted");
 		Assert.assertTrue(ac1.add_Category().isDisplayed());

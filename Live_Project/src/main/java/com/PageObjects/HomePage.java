@@ -11,58 +11,58 @@ public class HomePage extends BaseClass{
 	
 	
 	@FindBy(xpath="//h1[@class='text-center choose_store']")
-	WebElement Heading;
+	private WebElement Heading;
 	
 	@FindBy(xpath="//span[@class='hidden-xs']")
-	WebElement user_name;
+	private WebElement user_name;
 	
 	@FindBy(xpath="//a[@data-toggle='dropdown']//img[@src='https://qalegend.com/restaurant/assets/img/flags/en.png']")
-	WebElement Language_dropdown;
+	private WebElement Language_dropdown;
 	
 	@FindBy(xpath="//a[@href='https://qalegend.com/restaurant/dashboard/change/english']")
-	WebElement Language;
+	private WebElement Language;
 		
 	@FindBy(xpath="//img[@src='https://qalegend.com/restaurant/assets/img/flags/en.png']")
-	WebElement Language_displayed;
+	private WebElement Language_displayed;
 	
 	@FindBy(xpath="//a[@href='https://qalegend.com/restaurant/products']")
-	WebElement Products;
+	private WebElement Products;
 	
 	@FindBy(xpath="//a[@href='https://qalegend.com/restaurant/stores']")
-	WebElement Stores;
+	private WebElement Stores;
 	
 	@FindBy(xpath="//span[text()='People']")
-	WebElement People ;
+	private WebElement People ;
 	
 	@FindBy(xpath="//a[@href='https://qalegend.com/restaurant/waiters']")
-	WebElement Waiters;
+	private WebElement Waiters;
 	
 	@FindBy(xpath="//a[@href='https://qalegend.com/restaurant/customers']")
-	WebElement Customers;
+	private WebElement Customers;
 	
 	@FindBy(xpath="//a[@href='https://qalegend.com/restaurant/suppliers']")
-	WebElement Suppliers;
+	private WebElement Suppliers;
 	
 	@FindBy(xpath="//span[text()='Categories ']")
-	WebElement Categories;
+	private WebElement Categories;
 	
 	@FindBy(xpath="//a[@href='https://qalegend.com/restaurant/categories']")
-	WebElement Product_Category;
+	private WebElement Product_Category;
 	
 	@FindBy(xpath="//a[@href='https://qalegend.com/restaurant/categorie_expences']")
-	WebElement Expense_Category;
+	private WebElement Expense_Category;
 	
 	@FindBy(xpath="//a[@href='https://qalegend.com/restaurant/expences']")
-	WebElement Expenses;
+	private WebElement Expenses;
 	
 	@FindBy(xpath="//a[@href='https://qalegend.com/restaurant/settings?tab=setting']")
-	WebElement Settings;
+	private WebElement Settings;
 	
 	@FindBy(xpath="//a[@href='https://qalegend.com/restaurant/logout']")
-	WebElement Logout;
+	private WebElement Logout;
 	
 	@FindBy(xpath="//ul[@class='nav navbar-nav']/li")
-	List<WebElement> menu;
+	private List<WebElement> menu;
 	
 	
 	public HomePage() {
@@ -145,6 +145,7 @@ public class HomePage extends BaseClass{
 	
 	public void logoff()
 	{
+		wait.explicitWait_elementClickable(getDriver(), Logout,Duration.ofSeconds(5));
 		act.click1(hp.logout(), "Logout button click ");
 	}
 

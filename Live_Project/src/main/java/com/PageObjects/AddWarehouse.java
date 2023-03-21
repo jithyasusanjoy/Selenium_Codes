@@ -10,28 +10,28 @@ public class AddWarehouse extends BaseClass{
 
 	
 	@FindBy(xpath="//a[@href='#warehouses']")
-	WebElement Warehouse_tab;
+	private WebElement Warehouse_tab;
 	
 	@FindBy(xpath="//button[@data-target='#AddWarehouse']")
-	WebElement Add_Warehouse;
+	private WebElement Add_Warehouse;
 	
 	@FindBy(xpath="//input[@id='WarehouseName']")
-	WebElement WarehouseName;
+	private WebElement WarehouseName;
 	
 	@FindBy(xpath="//input[@id='WarehousePhone']")
-	WebElement Warehouse_Phone;
+	private WebElement Warehouse_Phone;
 	
 	@FindBy(xpath="(//input[@id='email'])[2]")
-	WebElement email;
+	private WebElement email;
 	
 	@FindBy(xpath="//input[@id='Adresse']")
-	WebElement Address;
+	private WebElement Address;
 	
 	@FindBy(xpath="(//button[@type='submit'])[3]")
-	WebElement Submit_btn3;
+	private WebElement Submit_btn3;
 	
 	@FindBy(xpath="(//button[text()='Close'])[2]")
-	WebElement Close_btn2;
+	private WebElement Close_btn2;
 	
 	
 	

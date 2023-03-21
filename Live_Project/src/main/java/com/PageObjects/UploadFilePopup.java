@@ -11,13 +11,13 @@ public class UploadFilePopup extends BaseClass{
 
 	
 	@FindBy(xpath="(//input[@id='ImageInput'])[2]")
-	WebElement File;
+	private WebElement File;
 	
 	@FindBy(xpath="(//button[@type='submit'])[3]")
-	WebElement Submit_btn;
+	private WebElement Submit_btn;
 	
 	@FindBy(xpath="(//button[@class='btn btn-default'])[4]")
-	WebElement Close_btn;
+	private WebElement Close_btn;
 	
 	
 	public UploadFilePopup(WebDriver driver) {

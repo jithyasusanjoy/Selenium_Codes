@@ -10,16 +10,16 @@ public class AddCategory extends BaseClass{
 
 	
 	@FindBy(xpath="//button[@data-target='#Addcategory']")
-	WebElement Add_Category;
+	private WebElement Add_Category;
 	
 	@FindBy(xpath="//input[@id='CategoryName']")
-	WebElement Category_Name;
+	private WebElement Category_Name;
 	
 	@FindBy(xpath="(//button[@type='submit'])[1]")
-	WebElement Submit_btn1;
+	private WebElement Submit_btn1;
 	
 	@FindBy(xpath="(//button[text()='Close'])[1]")
-	WebElement Close_btn1;
+	private WebElement Close_btn1;
 	
 	
 	

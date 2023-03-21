@@ -12,62 +12,62 @@ public class StoreManage extends BaseClass {
 
 	
 	@FindBy(xpath="//i[@class='fa fa-plus']")
-	WebElement Add_Zone;
+	private WebElement Add_Zone;
 	
 	@FindBy(xpath="//input[@id='ZonesName']")
-	WebElement Add_Zone_Name;
+	private WebElement Add_Zone_Name;
 	
 	@FindBy(xpath="(//button[@type='submit'])[2]")
-	WebElement Add_Zone_Submit_btn;
+	private WebElement Add_Zone_Submit_btn;
 	
 	@FindBy(xpath="(//button[text()='Close'])[2]")
-	WebElement Add_Zone_Close_btn;
+	private WebElement Add_Zone_Close_btn;
 	
 	@FindBy(xpath="//i[@class='fa fa-pencil editzone']")
-	WebElement Edit_Zone;
+	private WebElement Edit_Zone;
 	
 	@FindBy(xpath="//input[@id='ZoneName']")
-	WebElement Edit_Zone_Name;
+	private WebElement Edit_Zone_Name;
 	
 	@FindBy(xpath="(//button[@type='submit'])[3]")
-	WebElement Edit_Zone_Submit_btn;
+	private WebElement Edit_Zone_Submit_btn;
 	
 	@FindBy(xpath="(//button[@type='submit'])[1]")
-	WebElement Edit_table_Submit_btn;
+	private WebElement Edit_table_Submit_btn;
 	
 	
 	@FindBy(xpath="(//button[text()='Close'])[3]")
-	WebElement Edit_Zone_Close_btn;
+	private WebElement Edit_Zone_Close_btn;
 	
 	@FindBy(xpath="(//i[@class='fa fa-times deletezone'])[1]")
-	WebElement Delete_Zone;
+	private WebElement Delete_Zone;
 	
 	@FindBy(xpath="//button[@class='confirm']")
-	WebElement Delete_Zone_confirm;
+	private WebElement Delete_Zone_confirm;
 	
 	@FindBy(xpath="//button[@data-target='#Addtable']")
-	WebElement Add_table;
+	private WebElement Add_table;
 	
 	@FindBy(xpath="//input[@id='TableName']")
-	WebElement Table_Name;
+	private WebElement Table_Name;
 	
 	@FindBy(xpath="//select[@id='Zones']")
-	WebElement Choose_Zone;
+	private WebElement Choose_Zone;
 	
 	@FindBy(xpath="(//button[@type='submit'])[1]")
-	WebElement Submit_btn1;
+	private WebElement Submit_btn1;
 	
 	@FindBy(xpath="(//button[text()='Close'])[1]")
-	WebElement Close_btn1;
+	private WebElement Close_btn1;
 	
 	@FindBy(xpath="//h2[text()='Store Zones']")
-	WebElement Zone_heading;
+	private WebElement Zone_heading;
 	
 	@FindBy(xpath="(//a[@data-original-title='Delete'])[1]")
-	WebElement Table_delete;
+	private WebElement Table_delete;
 	
 	@FindBy(xpath="(//a[@data-original-title='Edit'])[1]")
-	WebElement Table_edit;
+	private WebElement Table_edit;
 	
 	
 	public StoreManage() {

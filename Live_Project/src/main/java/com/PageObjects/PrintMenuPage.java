@@ -1,5 +1,7 @@
 package com.PageObjects;
 
+import java.time.Duration;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -11,13 +13,13 @@ public class PrintMenuPage extends BaseClass{
 	
 
 	@FindBy(xpath = "//h1[text()='Menu']")
-	WebElement label;
+	private WebElement label;
 
 	@FindBy(xpath = "//button[@onclick='PrintTicket()']")
-	WebElement Print;
+	private WebElement Print;
 
 	@FindBy(xpath = "(//button[text()='Close'])[9]")
-	WebElement Close_btn;
+	private WebElement Close_btn;
 
 	public PrintMenuPage() {
 	
@@ -33,6 +35,7 @@ public class PrintMenuPage extends BaseClass{
 	}
 
 	public WebElement Close_btn() {
+		wait.explicitWait_elementClickable(getDriver(), Close_btn, Duration.ofSeconds(5));
 		return Close_btn;
 	}
 

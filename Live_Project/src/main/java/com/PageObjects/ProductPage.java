@@ -12,22 +12,22 @@ public class ProductPage extends BaseClass{
 
 	
 	@FindBy(xpath="//button[@data-target='#Addproduct']")
-	WebElement Add_Product;
+	private WebElement Add_Product;
 	
 	@FindBy(xpath="//a[@data-target='#ImportProducts']")
-	WebElement Upload_CSV;
+	private WebElement Upload_CSV;
 	
 	@FindBy(xpath="//a[@href='products/csv']")
-	WebElement Download_CSV;
+	private WebElement Download_CSV;
 	
 	@FindBy(xpath="//a[@data-target='#PrintMenu']")
-	WebElement Print_Menu;
+	private WebElement Print_Menu;
 	
 	@FindBy(xpath="(//input[@id='ImageInput'])[2]")
-	WebElement File_Upload;
+	private WebElement File_Upload;
 	
 	@FindBy(xpath="(//button[@type='submit'])[3]")
-	WebElement Submit_btn;
+	private WebElement Submit_btn;
 	
 	
 
@@ -59,8 +59,5 @@ public class ProductPage extends BaseClass{
 	{
 		return Print_Menu;
 	}
-	public void explicitwait(WebElement element, Duration i)
-	{
-		act.explicitWait(getDriver(), element, i);
-	}
+	
 }

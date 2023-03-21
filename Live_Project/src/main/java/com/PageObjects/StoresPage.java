@@ -10,46 +10,46 @@ public class StoresPage extends BaseClass{
 
 	
 	@FindBy(xpath="//select[@name='Table_length']")
-	WebElement Show_Drop;
+	private WebElement Show_Drop;
 	
 	@FindBy(xpath="//input[@type='search']")
-	WebElement Search;
+	private WebElement Search;
 	
 	@FindBy(xpath="(//a[@data-original-title='Delete'])[1]")
-	WebElement Delete_Row;
+	private WebElement Delete_Row;
 	
 	@FindBy(xpath="(//a[@data-original-title='Edit'])[1]")
-	WebElement Edit_Row;
+	private WebElement Edit_Row;
 	
 	@FindBy(xpath="(//a[@data-original-title='manage Tables'])[1]")
-	WebElement Manage_Table;
+	private WebElement Manage_Table;
 	
 	@FindBy(xpath="//th[@aria-sort='ascending']")
-	WebElement Sort_Ascending;
+	private WebElement Sort_Ascending;
 	
 	@FindBy(xpath="//th[@aria-sort='descending']")
-	WebElement Sort_Descending;
+	private WebElement Sort_Descending;
 	
 	@FindBy(xpath="//button[@data-target='#AddStore']")
-	WebElement Add_Store;
+	private WebElement Add_Store;
 	
 	@FindBy(xpath="//a[@data-dt-idx='3']")
-	WebElement Pagination;
+	private WebElement Pagination;
 	
 	@FindBy(xpath="(//td[@class='sorting_1'])[1]")
-	WebElement First_Element;
+	private WebElement First_Element;
 	
 	@FindBy(xpath="//td[@class='dataTables_empty']")
-	WebElement No_Element;
+	private WebElement No_Element;
 	
 	@FindBy(xpath="//table[@id='Table']//thead/tr/th")
-	List<WebElement> table_headings;
+	private List<WebElement> table_headings;
 	
 	@FindBy(xpath="//table[@id='Table']//tbody/tr/td[1]")
-	List<WebElement> table_rows;
+	private List<WebElement> table_rows;
 	
 	@FindBy(xpath="//div[contains(text(),'Showing 21 to 30')]")
-	WebElement validate_Page;
+	private WebElement validate_Page;
 	
 	 
 
@@ -87,6 +87,7 @@ public class StoresPage extends BaseClass{
 	}
 	public WebElement search()
 	{
+		wait.fluentWait(getDriver(), Search, 5);
 		return Search;
 	}
 	public WebElement delete_row()

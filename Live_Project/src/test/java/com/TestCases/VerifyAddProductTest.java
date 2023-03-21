@@ -8,10 +8,8 @@ import org.testng.annotations.AfterGroups;
 import org.testng.annotations.BeforeGroups;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
-
 import com.Base.BaseClass.BaseClass;
 import com.project.Utilities.Log;
-import com.project.Utilities.RetryAnalyzer;
 
 public class VerifyAddProductTest extends BaseClass {
 
@@ -20,7 +18,7 @@ public class VerifyAddProductTest extends BaseClass {
 		System.out.println("--------Before group----------");
 	}
 
-	@Test(groups = { "Regression" }, priority = 1, retryAnalyzer = RetryAnalyzer.class)
+	@Test(groups = { "Regression" }, priority = 1)
 	public void verify_add_product() throws Exception {
 		Log.startTestCase("verify_add_product");
 		lp.LoginFn();
@@ -46,17 +44,15 @@ public class VerifyAddProductTest extends BaseClass {
 		Log.info("Entered product options");
 		act.type(ap.product_description(), exceldata.get(8));
 		Log.info("Entered product description");
-		ap.fluentwait(ap.file_upload(), 5);
-		act.type(ap.file_upload(), "C:\\Users\\jithya susan\\git\\Selenium_Codes\\Live_Project\\ExcelFile\\a2.png");
+		act.type(ap.file_upload(),System.getProperty("user.dir")+exceldata.get(9));
 		Log.info("File selected");
 		act.click1(ap.color_selection(), "color selected");
 		act.click1(ap.Submit_btn(), "Submitted");
-		ap.fluentwait(ap.Search(), 5);
 		act.click1(ap.Stock_close(), "Closed stock popup");
 		act.type(ap.Search(), "A1234");
 		Log.info("Entered search text");
 		SoftAssert softAssert = new SoftAssert();
-		softAssert.assertEquals(ap.First_Element().getText(), "A124");
+		softAssert.assertEquals(ap.First_Element().getText(), "A1234");
 		Log.info("Product added");
 		hp.logoff();
 		softAssert.assertAll();
@@ -81,7 +77,8 @@ public class VerifyAddProductTest extends BaseClass {
 		lp.LoginFn();
 		act.click1(hp.products(), "Clicked product menu");
 		act.click1(pp.upload_CSV(), "Clicked file upload button");
-		act.type(pp.file_upload(), "C:\\Users\\jithya susan\\git\\Selenium_Codes\\Live_Project\\ExcelFile\\a2.png");
+		ArrayList<String> exceldata = data.getData("AddProduct");
+		act.type(pp.file_upload(), System.getProperty("user.dir")+exceldata.get(9));
 		Log.info("File selected");
 		act.click1(pp.Submit_btn(), "Submitted");
 		Assert.assertEquals(pp.add_product().getText(), "Add Product");
@@ -89,19 +86,20 @@ public class VerifyAddProductTest extends BaseClass {
 		Log.endTestCase("verify_file_upload");
 	}
 	
-	@Test(priority = 4, retryAnalyzer = RetryAnalyzer.class)
+	@Test(priority = 4)
 	public void verify_print_menu() throws Exception {
 		Log.startTestCase("verify_print_menu");
 		lp.LoginFn();		
 		act.click1(hp.products(), "Clicked product menu");		
 		act.click1(pp.print_Menu(), "Clicked print menu button");		
 		act.click1(pmp.print(), "Clicked print button");	
+		Thread.sleep(3000);
 		Robot rb =new Robot();
 		rb.keyPress(KeyEvent.VK_ENTER);
 		rb.keyRelease(KeyEvent.VK_ENTER);
 		Log.info("printed");
+		act.switchToOldWindow(getDriver());
 		Assert.assertTrue(pmp.label().isDisplayed());
-		act.switchToOldWindow(getDriver());	
 		act.click1(pmp.Close_btn(), "Closed");
 		hp.logoff();
 		Log.endTestCase("verify_print_menu");

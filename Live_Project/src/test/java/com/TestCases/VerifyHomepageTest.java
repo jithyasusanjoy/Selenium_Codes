@@ -6,12 +6,11 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import com.Base.BaseClass.BaseClass;
 import com.project.Utilities.Log;
-import com.project.Utilities.RetryAnalyzer;
 
 public class VerifyHomepageTest extends BaseClass {
 
 	
-	@Test(priority = 3,groups = { "Regression" }, retryAnalyzer = RetryAnalyzer.class)
+	@Test(priority = 3,groups = { "Regression" })
 	public void verify_language_selection() {
 		Log.startTestCase("verify_language_selection");
 		lp.LoginFn();

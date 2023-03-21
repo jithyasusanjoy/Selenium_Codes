@@ -1,5 +1,7 @@
 package com.PageObjects;
 
+import java.time.Duration;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -9,25 +11,26 @@ public class LoginPage extends BaseClass {
 
 
 	@FindBy(xpath="//input[@name='username']")
-	WebElement username;
+	private WebElement username;
 	
 	@FindBy(xpath="//input[@name='password']")
-	WebElement password;
+	private WebElement password;
 	
 	@FindBy(xpath="//input[@name='submit']")
-	WebElement login;
+	private WebElement login;
 	
 	@FindBy(xpath="//h1[text()='Login']")
-	WebElement login_label;
+	private WebElement login_label;
 	
 	@FindBy(xpath="//img[@alt='logo']")
-	WebElement logo;
+	private WebElement logo;
 	
 	
 	public LoginPage() {
 		
 		PageFactory.initElements(getDriver(), this);
 	}
+	
 	public WebElement uname()
 	{
 		return username;
@@ -42,10 +45,11 @@ public class LoginPage extends BaseClass {
 	}
 	public WebElement login_label()
 	{
+		wait.explicitWait_elementVisibility(getDriver(), login_label, Duration.ofSeconds(10));
 		return login_label;
 	}
 	public Boolean IsLogoPresent() {
-		//return DispLogo().isDisplayed();
+		
 		return act.isDisplayed(getDriver(), logo);
 	}
 	public void LoginFn()
@@ -54,9 +58,6 @@ public class LoginPage extends BaseClass {
 		act.type(password,prop.getProperty("Password"));
 		act.click1(login,"Clicking On Login Button");
 	}
-	public void explicitwait(WebElement element, int i)
-	{
-		act.fluentWait(getDriver(), element,i);
-	}
+	
 	
 }

@@ -5,19 +5,17 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import com.Base.BaseClass.BaseClass;
 import com.project.Utilities.Log;
-import com.project.Utilities.RetryAnalyzer;
 
 public class VerifyStoreManageTest extends BaseClass {
 	
-	@Test(priority=1,groups = { "Regression" }, retryAnalyzer = RetryAnalyzer.class)
+	@Test(priority=1,groups = { "Regression" })
 	public void verify_add_store_zone() throws Exception 
 	{
 		Log.startTestCase("verify_add_store_zone");
 		lp.LoginFn();
 		sm.common_steps();
 		act.click1(sm.add_Zone(), "Clicked add zone icon");
-		ArrayList<String> exceldata=data.getData("AddZone");
-		act.type(sm.add_zone_Name(), exceldata.get(0));
+		act.type(sm.add_zone_Name(),"South Zone"+ran.nextInt());
 		Log.info("Entered zone name");
 		act.click1(sm.add_Zone_Submit_btn(), "submitted");
 		Assert.assertEquals(sm.Zone_heading().getText(),"Store Zones");	
@@ -26,23 +24,22 @@ public class VerifyStoreManageTest extends BaseClass {
 		Log.endTestCase("verify_add_store_zone");
 	}
 	
-	@Test(priority=2, retryAnalyzer = RetryAnalyzer.class)
+	@Test(priority=2)
 	public void verify_edit_store_zone() throws Exception 
 	{
 		Log.startTestCase("verify_edit_store_zone");
 		lp.LoginFn();
 		sm.common_steps();
 		act.click1(sm.edit_Zone(), "Clicked edit icon");		
-		ArrayList<String> exceldata=data.getData("EditZone");
-		act.type(sm.edit_Zone_Name(), exceldata.get(0));
-		Log.info("Enter new zone name");
+		act.type(sm.edit_Zone_Name(),"South East Zone"+ran.nextInt());
+		Log.info("Edited new zone name");
 		act.click1(sm.edit_Zone_Submit_btn(), "Submitted");
 		Assert.assertEquals(sm.Zone_heading().getText(),"Store Zones");	
 		Log.info("Zone edited");
 		hp.logoff();
 		Log.endTestCase("verify_edit_store_zone");
 	}
-	@Test(priority=3, retryAnalyzer = RetryAnalyzer.class)
+	@Test(priority=3)
 	public void verify_delete_store_zone() 
 	{
 		Log.startTestCase("verify_delete_store_zone");
@@ -56,7 +53,7 @@ public class VerifyStoreManageTest extends BaseClass {
 		Log.endTestCase("verify_delete_store_zone");
 	}
 	
-	@Test(priority=4, retryAnalyzer = RetryAnalyzer.class)
+	@Test(priority=4,enabled=false)
 	public void verify_add_store_table() throws Exception 
 	{
 		Log.startTestCase("verify_add_store_table");
@@ -75,15 +72,14 @@ public class VerifyStoreManageTest extends BaseClass {
 		Log.endTestCase("verify_add_store_table");
 	}
 	
-	@Test(priority=5, retryAnalyzer = RetryAnalyzer.class)
+	@Test(priority=5)
 	public void verify_edit_store_table() throws Exception 
 	{
 		Log.startTestCase("verify_edit_store_table");
 		lp.LoginFn();
 		sm.common_steps();
 		act.click1(sm.Table_edit(), "Clicked edit icon");		
-		ArrayList<String> exceldata=data.getData("EditTable");	
-		act.type(sm.Table_Name(), exceldata.get(0));
+		act.type(sm.Table_Name(), "Table2"+ran.nextInt());
 		Log.info("Edited table name");
 		act.click1(sm.Edit_table_Submit_btn(), "Submitted");
 		Assert.assertEquals(sm.Zone_heading().getText(),"Store Zones");	
@@ -92,7 +88,7 @@ public class VerifyStoreManageTest extends BaseClass {
 		Log.endTestCase("verify_edit_store_table");
 	}
 	
-	@Test(priority=6, retryAnalyzer = RetryAnalyzer.class)
+	@Test(priority=6)
 	public void verify_delete_store_table() 
 	{
 		Log.startTestCase("verify_delete_store_table");

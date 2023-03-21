@@ -10,25 +10,25 @@ public class AddCustomer extends BaseClass {
 
 	
 	@FindBy(xpath="//button[@data-target='#AddCustomer']")
-	WebElement Add_Customer;
+	private WebElement Add_Customer;
 	
 	@FindBy(xpath="//input[@id='CustomerName']")
-	WebElement Customer_Name;
+	private WebElement Customer_Name;
 	
 	@FindBy(xpath="//input[@id='CustomerPhone']")
-	WebElement Customer_Phone;
+	private WebElement Customer_Phone;
 	
 	@FindBy(xpath="//input[@id='CustomerEmail']")
-	WebElement Customer_Email;
+	private WebElement Customer_Email;
 	
 	@FindBy(xpath="//input[@id='CustomerDiscount']")
-	WebElement Customer_Discount;
+	private WebElement Customer_Discount;
 	
 	@FindBy(xpath="(//button[@type='submit'])[1]")
-	WebElement Submit_btn1;
+	private WebElement Submit_btn1;
 	
 	@FindBy(xpath="(//button[text()='Close'])[1]")
-	WebElement Close_btn1;
+	private WebElement Close_btn1;
 	
 	
 	public AddCustomer() {

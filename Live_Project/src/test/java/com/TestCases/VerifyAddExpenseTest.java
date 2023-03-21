@@ -5,12 +5,11 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import com.Base.BaseClass.BaseClass;
 import com.project.Utilities.Log;
-import com.project.Utilities.RetryAnalyzer;
 
 public class VerifyAddExpenseTest extends BaseClass {
 	
 	
-	@Test(groups = { "Regression" }, retryAnalyzer = RetryAnalyzer.class)
+	@Test(groups = { "Regression" })
 	public void verify_expense_addition() throws Exception {
 		Log.startTestCase("verify_expense_addition");
 		lp.LoginFn();
@@ -27,7 +26,7 @@ public class VerifyAddExpenseTest extends BaseClass {
 		Log.info("Selected store");
 		act.type(ae.amount(), exceldata.get(4));
 		Log.info("Entered amount");
-		act.type(ae.attachment(), "C:\\Users\\jithya susan\\git\\Selenium_Codes\\Live_Project\\ExcelFile\\a2.png");
+		act.type(ae.attachment(), System.getProperty("user.dir")+exceldata.get(5));
 		Log.info("Selected file");
 		act.type(ae.note(), exceldata.get(6));
 		Log.info("Entered note");

@@ -9,34 +9,34 @@ import com.Base.BaseClass.BaseClass;
 public class AddExpense extends BaseClass{
 
 	@FindBy(xpath="//button[@data-target='#AddExpence']")
-	WebElement Add_Expense;
+	private WebElement Add_Expense;
 	
 	@FindBy(xpath="//input[@id='Date']")
-	WebElement Date;
+	private WebElement Date;
 	
 	@FindBy(xpath="//input[@id='Reference']")
-	WebElement Reference;
+	private WebElement Reference;
 	
 	@FindBy(xpath="//input[@id='Amount']")
-	WebElement Amount;
+	private WebElement Amount;
 	
 	@FindBy(xpath="//div[@class='note-editable panel-body']")
-	WebElement Note;
+	private WebElement Note;
 	
 	@FindBy(xpath="(//button[@type='submit'])[1]")
-	WebElement Submit_btn1;
+	private WebElement Submit_btn1;
 	
 	@FindBy(xpath="(//button[text()='Close'])[1]")
-	WebElement Close_btn1;
+	private WebElement Close_btn1;
 	
 	@FindBy(xpath="//select[@id='Category']")
-	WebElement Category;
+	private WebElement Category;
 	
 	@FindBy(xpath="//select[@id='store_id']")
-	WebElement Store;
+	private WebElement Store;
 	
 	@FindBy(xpath="//input[@id='attachment']")
-	WebElement Attachment;
+	private WebElement Attachment;
 	
 	
 	

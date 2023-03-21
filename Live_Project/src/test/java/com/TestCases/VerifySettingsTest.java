@@ -1,6 +1,8 @@
 package com.TestCases;
 
 import java.util.ArrayList;
+
+import org.openqa.selenium.JavascriptExecutor;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import com.Base.BaseClass.BaseClass;
@@ -25,14 +27,16 @@ public class VerifySettingsTest extends BaseClass {
 		Log.info("Entered first name");
 		act.type(au.lastname(), exceldata.get(2));
 		Log.info("Entered last name");
-		act.click1(au.rbtn_sales(), "Selected sales staff");
+		JavascriptExecutor jscript=(JavascriptExecutor)getDriver();
+		jscript.executeScript("arguments[0].click()", au.rbtn_sales());
+		Log.info("Selected sales staff");
 		act.type(au.email(), exceldata.get(3));
 		Log.info("Entered user email");
 		act.type(au.password(), exceldata.get(4));
 		Log.info("Entered password");
 		act.type(au.confirm_password(), exceldata.get(5));
 		Log.info("Entered confirm password");
-		act.type(au.file(), "C:\\Users\\jithya susan\\git\\Selenium_Codes\\Live_Project\\ExcelFile\\a2.png");
+		act.type(au.file(), System.getProperty("user.dir")+exceldata.get(6));
 		Log.info("Entered file");
 		act.click1(au.Submit_btn(), "Submitted");
 		Assert.assertTrue(au.add_User().isDisplayed());

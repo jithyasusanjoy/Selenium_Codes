@@ -7,10 +7,11 @@
         <methods>
           <include name="Teardown"/>
           <include name="verify_print_menu"/>
+          <include name="before_it"/>
           <include name="loadConfig"/>
           <include name="launch"/>
-          <include name="verify_add_product"/>
           <include name="after_it"/>
+          <include name="verify_add_product"/>
           <include name="verify_file_download"/>
           <include name="loadingfiles"/>
           <include name="user_logout"/>

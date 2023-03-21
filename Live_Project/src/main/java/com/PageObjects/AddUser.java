@@ -10,49 +10,49 @@ public class AddUser extends BaseClass {
 
 	
 	@FindBy(xpath="//a[@href='#users']")
-	WebElement User_tab;
+	private WebElement User_tab;
 	
 	@FindBy(xpath="//button[@data-target='#AddUser']")
-	WebElement Add_User;
+	private WebElement Add_User;
 	
 	@FindBy(xpath="//input[@id='username']")
-	WebElement Username;
+	private WebElement Username;
 	
 	@FindBy(xpath="//input[@id='firstname']")
-	WebElement firstname;
+	private WebElement firstname;
 	
 	@FindBy(xpath="//input[@id='lastname']")
-	WebElement lastname;
+	private WebElement lastname;
 	
 	@FindBy(xpath="//input[@id='email']")
-	WebElement email;
+	private WebElement email;
 	
 	@FindBy(xpath="//input[@id='password']")
-	WebElement password;
+	private WebElement password;
 	
 	@FindBy(xpath="//input[@id='confirm_password']")
-	WebElement confirm_password;
+	private WebElement confirm_password;
 	
 	@FindBy(xpath="//input[@value='admin']")
-	WebElement rbtn_admin;
+	private WebElement rbtn_admin;
 	
 	@FindBy(xpath="//input[@value='sales']")
-	WebElement rbtn_sales;
+	private WebElement rbtn_sales;
 	
 	@FindBy(xpath="//input[@value='waiter']")
-	WebElement rbtn_waiter;
+	private WebElement rbtn_waiter;
 	
 	@FindBy(xpath="//input[@value='kitchen']")
-	WebElement rbtn_kitchen;
+	private WebElement rbtn_kitchen;
 	
 	@FindBy(xpath="//input[@id='Avatar']")
-	WebElement file;
+	private WebElement file;
 	
 	@FindBy(xpath="(//button[@type='submit'])[2]")
-	WebElement Submit_btn2;
+	private WebElement Submit_btn2;
 	
 	@FindBy(xpath="(//button[text()='Close'])[1]")
-	WebElement Close_btn1;
+	private WebElement Close_btn1;
 	
 
 	

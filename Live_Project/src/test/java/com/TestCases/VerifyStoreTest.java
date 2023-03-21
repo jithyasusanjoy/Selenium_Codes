@@ -8,11 +8,9 @@ import org.testng.annotations.Test;
 import com.Base.BaseClass.BaseClass;
 import com.project.Utilities.Log;
 
-import com.project.Utilities.RetryAnalyzer;
-
 public class VerifyStoreTest extends BaseClass {
 
-	@Test(priority = 1, retryAnalyzer = RetryAnalyzer.class)
+	@Test(priority = 1)
 	public void verify_sort_store_name_descending_order() {
 		Log.startTestCase("verify_sort_store_name_descending_order"); 
 		lp.LoginFn();
@@ -24,7 +22,7 @@ public class VerifyStoreTest extends BaseClass {
 		Log.endTestCase("verify_sort_store_name_descending_order");
 
 	}
-	@Test(priority = 2, retryAnalyzer = RetryAnalyzer.class)
+	@Test(priority = 2)
 	public void verify_sort_store_name_ascending_order() {
 	
 		Log.startTestCase("verify_sort_store_name_ascending_order");
@@ -38,7 +36,7 @@ public class VerifyStoreTest extends BaseClass {
 		Log.endTestCase("verify_sort_store_name_ascending_order");
 	}
 
-	@Test(priority = 3,groups = { "Regression" }, retryAnalyzer = RetryAnalyzer.class)
+	@Test(priority = 3,groups = { "Regression" })
 	public void verify_add_store() throws Exception {
 		Log.startTestCase("verify_add_store");
 		lp.LoginFn();
@@ -61,7 +59,6 @@ public class VerifyStoreTest extends BaseClass {
 		act.type(asp.customerfooter(), exceldata.get(6));
 		Log.info("entered customerfooter");
 		act.click1(asp.Submit_btn(), "Submitted");
-		asp.fluentwait(sp.search(), 5);
 		act.type(sp.search(), "Bun");
 		Log.info("entered search text");
 		Assert.assertEquals(sp.First_Element().getText(), "BunCafe");
@@ -87,7 +84,7 @@ public class VerifyStoreTest extends BaseClass {
 		Log.endTestCase("verify_delete_store");
 	}
 
-	@Test(priority = 4, retryAnalyzer = RetryAnalyzer.class,groups = { "Regression" })
+	@Test(priority = 4,groups = { "Regression" })
 	public void verify_edit_store() {
 		Log.startTestCase("verify_edit_store");
 		lp.LoginFn();
@@ -99,7 +96,6 @@ public class VerifyStoreTest extends BaseClass {
 		act.type(asp.storename(), "BunCafe1");
 		Log.info("entered storename");
 		act.click1(asp.Submit_btn(), "Submitted");
-		asp.fluentwait(sp.search(), 5);
 		act.type(sp.search(), "Bun");
 		Log.info("entered search text");
 		Assert.assertEquals(sp.First_Element().getText(), "BunCafe1");

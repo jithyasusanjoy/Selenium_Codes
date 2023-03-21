@@ -10,31 +10,31 @@ public class AddStorePage extends BaseClass{
 
 	
 	@FindBy(xpath="//input[@id='StoreName']")
-	WebElement StoreName;
+	private WebElement StoreName;
 	
 	@FindBy(xpath="//input[@id='email']")
-	WebElement Email;
+	private WebElement Email;
 	
 	@FindBy(xpath="//input[@id='StorePhone']")
-	WebElement StorePhone;
+	private WebElement StorePhone;
 	
 	@FindBy(xpath="//input[@id='Country']")
-	WebElement Country;
+	private WebElement Country;
 	
 	@FindBy(xpath="//input[@id='City']")
-	WebElement City;
+	private WebElement City;
 	
 	@FindBy(xpath="//input[@id='Adresse']")
-	WebElement Address;
+	private WebElement Address;
 	
 	@FindBy(xpath="//input[@id='CustomeFooter']")
-	WebElement CustomerFooter;
+	private WebElement CustomerFooter;
 	
 	@FindBy(xpath="//button[@type='submit']")
-	WebElement Submit_btn;
+	private WebElement Submit_btn;
 	
 	@FindBy(xpath="//button[@class='btn btn-default']")
-	WebElement Close_btn;
+	private WebElement Close_btn;
 	
 	
 
@@ -81,8 +81,5 @@ public class AddStorePage extends BaseClass{
 	{
 		return Close_btn;
 	}
-	public void fluentwait(WebElement element, int i)
-	{
-		act.fluentWait(getDriver(), element,i);
-	}
+	
 }

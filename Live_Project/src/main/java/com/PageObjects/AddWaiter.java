@@ -10,25 +10,25 @@ public class AddWaiter extends BaseClass{
 
 	
 	@FindBy(xpath="//button[@data-target='#AddWaiter']")
-	WebElement Add_Waiter;
+	private WebElement Add_Waiter;
 	
 	@FindBy(xpath="//input[@id='WaiterName']")
-	WebElement Waiter_Name;
+	private WebElement Waiter_Name;
 	
 	@FindBy(xpath="//input[@id='WaiterPhone']")
-	WebElement Waiter_Phone;
+	private WebElement Waiter_Phone;
 	
 	@FindBy(xpath="//input[@id='WaiterEmail']")
-	WebElement Waiter_Email;
+	private WebElement Waiter_Email;
 	
 	@FindBy(xpath="//select[@id='WaiterStore']")
-	WebElement Waiter_Store;
+	private WebElement Waiter_Store;
 	
 	@FindBy(xpath="(//button[@type='submit'])[1]")
-	WebElement Submit_btn1;
+	private WebElement Submit_btn1;
 	
 	@FindBy(xpath="(//button[text()='Close'])[1]")
-	WebElement Close_btn1;
+	private WebElement Close_btn1;
 	
 	
 	public AddWaiter() {

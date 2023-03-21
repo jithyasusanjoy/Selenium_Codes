@@ -3,8 +3,9 @@
 <suite name="Suite">
 	<listeners>
 		<listener class-name="com.project.Utilities.Listeners"></listener>
+		<listener class-name="com.project.Utilities.RetryAnalyzer"></listener>
 	</listeners>
-	<test thread-count="5" name="Test">
+	<test thread-count="5" name="RegressionTest">
 	<parameter name="Browser" value="Edge"></parameter>
 		<groups>
 			<run>

@@ -5,6 +5,8 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
+import java.util.Random;
+
 import org.apache.log4j.xml.DOMConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -35,6 +37,7 @@ import com.PageObjects.StoreManage;
 import com.PageObjects.StoresPage;
 import com.project.Utilities.ExcelRead;
 import com.project.Utilities.ExtentReport;
+import com.project.Utilities.Waits;
 
 public class BaseClass {
 
@@ -57,6 +60,8 @@ public class BaseClass {
 	public static AddUser au ;
 	public static AddWarehouse awh;
 	public static PrintMenuPage pmp;
+	public static Random ran;
+	public static Waits wait;
 	
 	//Thread local driver
 	public static ThreadLocal<RemoteWebDriver> driver=new ThreadLocal<RemoteWebDriver>();
@@ -69,7 +74,7 @@ public class BaseClass {
     @Parameters("Browser")
 	@BeforeMethod(groups = {"Regression"})
 	public void launch(String Browser) {
-		launchApp(Browser);
+    	launchApp(Browser);
 		hp = new HomePage();
 		lp = new LoginPage();
 		ae = new AddExpense();
@@ -86,6 +91,9 @@ public class BaseClass {
 		pp= new ProductPage(); 
 		ap= new AddProductPage();
 		pmp = new PrintMenuPage();
+		ran= new Random();
+		wait=new Waits();
+		
 	}
 
 	@BeforeTest(groups = {"Regression"})
@@ -124,7 +132,8 @@ public class BaseClass {
 
 		getDriver().manage().window().maximize();
 		act = new ActionClass();
-		act.implicitWait(getDriver(), 15);
+		Waits wait=new Waits();
+		wait.implicitWait(getDriver(), 15);
 		act.pageLoadTimeOut(getDriver(), 30);
 		getDriver().get(prop.getProperty("url"));
 
