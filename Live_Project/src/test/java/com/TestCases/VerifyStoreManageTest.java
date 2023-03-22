@@ -94,7 +94,7 @@ public class VerifyStoreManageTest extends BaseClass {
 		if((hp.menu_icon().isDisplayed())) {
 		act.click1(hp.menu_icon(), "clicked icon");	
 		}
-		Thread.sleep(3000);
+		Thread.sleep(5000);
 		act.click1(hp.stores(), "Store menu Clicked");
 		
 //		act.click1(sp.Manage_Table(), "Clicked manage store icon ");

@@ -90,7 +90,6 @@ public class HomePage extends BaseClass{
 	}
 	public WebElement stores()
 	{
-		wait.explicitWait_elementClickable(getDriver(), Stores, Duration.ofSeconds(15));
 		return Stores;
 	}
 	public WebElement people()

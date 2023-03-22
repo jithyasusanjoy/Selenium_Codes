@@ -130,7 +130,7 @@ public class BaseClass {
 
 		}
 		
-		getDriver().manage().window().maximize();
+		//getDriver().manage().window().maximize();
 		
 		act = new ActionClass();		
 		wait.implicitWait(getDriver(), 15);
