@@ -1,5 +1,6 @@
 package com.PageObjects;
 
+import java.time.Duration;
 import java.util.List;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -117,6 +118,7 @@ public class StoresPage extends BaseClass{
 	}
 	public WebElement Manage_Table()
 	{
+		wait.explicitWait_elementClickable(getDriver(), Manage_Table,Duration.ofSeconds(15) );
 		return Manage_Table;
 	}
 	
