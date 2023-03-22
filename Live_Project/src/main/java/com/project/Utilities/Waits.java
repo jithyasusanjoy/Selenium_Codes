@@ -16,7 +16,7 @@ public class Waits extends BaseClass {
 	    Wait<WebDriver> wait = null;
 	    try {
 	        wait = new FluentWait<WebDriver>((WebDriver) driver)
-	        		.withTimeout(Duration.ofSeconds(20))
+	        		.withTimeout(Duration.ofSeconds(30))
 	        	    .pollingEvery(Duration.ofSeconds(2))
 	        	    .ignoring(Exception.class);
 	        wait.until(ExpectedConditions.visibilityOf(element));

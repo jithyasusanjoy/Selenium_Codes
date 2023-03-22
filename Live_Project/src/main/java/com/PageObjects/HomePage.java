@@ -73,6 +73,9 @@ public class HomePage extends BaseClass{
 	}
 	public WebElement menu_icon()
 	{
+		
+		//wait.explicitWait_elementClickable(getDriver(), menu_icon, Duration.ofSeconds(15));
+		//wait.fluentWait(getDriver(), menu_icon, 15);
 		return menu_icon;
 	}
 	

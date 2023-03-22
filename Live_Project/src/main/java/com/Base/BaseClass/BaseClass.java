@@ -61,7 +61,7 @@ public class BaseClass {
 	public static AddWarehouse awh;
 	public static PrintMenuPage pmp;
 	public static Random ran;
-	public static Waits wait=new Waits();;
+	public static Waits wait=new Waits();
 	
 	//Thread local driver
 	public static ThreadLocal<RemoteWebDriver> driver=new ThreadLocal<RemoteWebDriver>();
