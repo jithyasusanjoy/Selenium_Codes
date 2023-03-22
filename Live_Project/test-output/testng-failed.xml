@@ -5,49 +5,23 @@
     <listener class-name="com.project.Utilities.Listeners"/>
     <listener class-name="com.project.Utilities.RetryAnalyzer"/>
   </listeners>
-  <test thread-count="5" name="TestAll(failed)">
-    <parameter name="Browser" value="Edge"/>
+  <test thread-count="5" name="SmokeTest(failed)">
+    <parameter name="Browser" value="F"/>
     <classes>
-      <class name="com.TestCases.VerifyAddExpenseTest">
-        <methods>
-          <include name="Teardown"/>
-          <include name="loadConfig"/>
-          <include name="verify_expense_addition"/>
-          <include name="launch"/>
-          <include name="loadingfiles"/>
-          <include name="user_logout"/>
-        </methods>
-      </class> <!-- com.TestCases.VerifyAddExpenseTest -->
       <class name="com.TestCases.VerifyStoreManageTest">
         <methods>
+          <include name="verify_delete_store_zone"/>
           <include name="Teardown"/>
+          <include name="verify_add_store_zone"/>
           <include name="verify_edit_store_table"/>
           <include name="loadConfig"/>
           <include name="launch"/>
+          <include name="verify_edit_store_zone"/>
+          <include name="verify_delete_store_table"/>
           <include name="loadingfiles"/>
           <include name="user_logout"/>
         </methods>
       </class> <!-- com.TestCases.VerifyStoreManageTest -->
-      <class name="com.TestCases.VerifyAddProductTest">
-        <methods>
-          <include name="Teardown"/>
-          <include name="verify_print_menu"/>
-          <include name="loadConfig"/>
-          <include name="launch"/>
-          <include name="loadingfiles"/>
-          <include name="user_logout"/>
-        </methods>
-      </class> <!-- com.TestCases.VerifyAddProductTest -->
-      <class name="com.TestCases.VerifyUserLoginTest">
-        <methods>
-          <include name="Teardown"/>
-          <include name="verify_invalid_User_valid_password_login"/>
-          <include name="loadConfig"/>
-          <include name="launch"/>
-          <include name="loadingfiles"/>
-          <include name="user_logout"/>
-        </methods>
-      </class> <!-- com.TestCases.VerifyUserLoginTest -->
     </classes>
-  </test> <!-- TestAll(failed) -->
+  </test> <!-- SmokeTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->
