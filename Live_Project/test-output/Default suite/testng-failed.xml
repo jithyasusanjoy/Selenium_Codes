@@ -3,21 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.TestCases.VerifyAddProductTest">
+      <class name="com.TestCases.VerifyStoreManageTest">
         <methods>
           <include name="Teardown"/>
-          <include name="verify_print_menu"/>
-          <include name="before_it"/>
           <include name="loadConfig"/>
           <include name="launch"/>
-          <include name="after_it"/>
-          <include name="verify_add_product"/>
-          <include name="verify_file_download"/>
+          <include name="verify_delete_store_table"/>
           <include name="loadingfiles"/>
           <include name="user_logout"/>
-          <include name="verify_file_upload"/>
         </methods>
-      </class> <!-- com.TestCases.VerifyAddProductTest -->
+      </class> <!-- com.TestCases.VerifyStoreManageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

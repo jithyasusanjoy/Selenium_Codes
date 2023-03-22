@@ -6,17 +6,13 @@
     <listener class-name="com.project.Utilities.RetryAnalyzer"/>
   </listeners>
   <test thread-count="5" name="SmokeTest(failed)">
-    <parameter name="Browser" value="F"/>
+    <parameter name="Browser" value="FireFox"/>
     <classes>
       <class name="com.TestCases.VerifyStoreManageTest">
         <methods>
-          <include name="verify_delete_store_zone"/>
           <include name="Teardown"/>
-          <include name="verify_add_store_zone"/>
-          <include name="verify_edit_store_table"/>
           <include name="loadConfig"/>
           <include name="launch"/>
-          <include name="verify_edit_store_zone"/>
           <include name="verify_delete_store_table"/>
           <include name="loadingfiles"/>
           <include name="user_logout"/>
