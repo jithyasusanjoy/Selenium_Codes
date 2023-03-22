@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="5" total="6" passed="1" failed="0" skipped="0">
+<testng-results retried="1" ignored="5" total="7" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-23T02:18:37 IST" name="Suite" finished-at="2023-03-23T02:18:52 IST" duration-ms="15433">
+  <suite started-at="2023-03-23T02:56:29 IST" name="Suite" finished-at="2023-03-23T02:57:33 IST" duration-ms="64652">
     <groups>
     </groups>
-    <test started-at="2023-03-23T02:18:37 IST" name="SmokeTest" finished-at="2023-03-23T02:18:52 IST" duration-ms="15433">
+    <test started-at="2023-03-23T02:56:29 IST" name="SmokeTest" finished-at="2023-03-23T02:57:33 IST" duration-ms="64652">
       <class name="com.TestCases.VerifyStoreManageTest">
-        <test-method is-config="true" signature="loadingfiles()[pri:0, instance:com.TestCases.VerifyStoreManageTest@49e53c76]" started-at="2023-03-23T02:18:36 IST" name="loadingfiles" finished-at="2023-03-23T02:18:37 IST" duration-ms="167" status="PASS">
+        <test-method is-config="true" signature="loadingfiles()[pri:0, instance:com.TestCases.VerifyStoreManageTest@49e53c76]" started-at="2023-03-23T02:56:29 IST" name="loadingfiles" finished-at="2023-03-23T02:56:29 IST" duration-ms="167" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadingfiles -->
-        <test-method is-config="true" signature="loadConfig()[pri:0, instance:com.TestCases.VerifyStoreManageTest@49e53c76]" started-at="2023-03-23T02:18:37 IST" name="loadConfig" finished-at="2023-03-23T02:18:37 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="loadConfig()[pri:0, instance:com.TestCases.VerifyStoreManageTest@49e53c76]" started-at="2023-03-23T02:56:29 IST" name="loadConfig" finished-at="2023-03-23T02:56:29 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadConfig -->
-        <test-method is-config="true" signature="launch(java.lang.String)[pri:0, instance:com.TestCases.VerifyStoreManageTest@49e53c76]" started-at="2023-03-23T02:18:37 IST" name="launch" finished-at="2023-03-23T02:18:41 IST" duration-ms="4275" status="PASS">
+        <test-method is-config="true" signature="launch(java.lang.String)[pri:0, instance:com.TestCases.VerifyStoreManageTest@49e53c76]" started-at="2023-03-23T02:56:29 IST" name="launch" finished-at="2023-03-23T02:56:33 IST" duration-ms="4093" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -26,15 +26,176 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launch -->
-        <test-method signature="verify_delete_store_table()[pri:6, instance:com.TestCases.VerifyStoreManageTest@49e53c76]" started-at="2023-03-23T02:18:41 IST" name="verify_delete_store_table" finished-at="2023-03-23T02:18:51 IST" duration-ms="10059" status="PASS">
+        <test-method retried="true" signature="verify_delete_store_table()[pri:6, instance:com.TestCases.VerifyStoreManageTest@49e53c76]" started-at="2023-03-23T02:56:33 IST" name="verify_delete_store_table" finished-at="2023-03-23T02:57:00 IST" duration-ms="27403" status="SKIP">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: //h2[text()='Store Zones']
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [b9a01052-0a18-42c4-9ac2-3a1874a831e3, findElement {using=xpath, value=//h2[text()='Store Zones']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 111.0, moz:accessibilityChecks: false, moz:buildID: 20230309232128, moz:debuggerAddress: 127.0.0.1:37620, moz:geckodriverVersion: 0.32.2, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 8724, moz:profile: C:\Users\JITHYA~1\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:37620/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: b9a01052-0a18-42c4-9ac2-3a1874a831e3]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: //h2[text()='Store Zones']
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [b9a01052-0a18-42c4-9ac2-3a1874a831e3, findElement {using=xpath, value=//h2[text()='Store Zones']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 111.0, moz:accessibilityChecks: false, moz:buildID: 20230309232128, moz:debuggerAddress: 127.0.0.1:37620, moz:geckodriverVersion: 0.32.2, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 8724, moz:profile: C:\Users\JITHYA~1\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:37620/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: b9a01052-0a18-42c4-9ac2-3a1874a831e3
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy20.getText(Unknown Source)
+at com.TestCases.VerifyStoreManageTest.verify_delete_store_table(VerifyStoreManageTest.java:102)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_delete_store_table -->
-        <test-method is-config="true" signature="user_logout()[pri:0, instance:com.TestCases.VerifyStoreManageTest@49e53c76]" started-at="2023-03-23T02:18:51 IST" name="user_logout" finished-at="2023-03-23T02:18:52 IST" duration-ms="1065" status="PASS">
+        <test-method is-config="true" signature="user_logout()[pri:0, instance:com.TestCases.VerifyStoreManageTest@49e53c76]" started-at="2023-03-23T02:57:00 IST" name="user_logout" finished-at="2023-03-23T02:57:01 IST" duration-ms="846" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- user_logout -->
-        <test-method is-config="true" signature="Teardown()[pri:0, instance:com.TestCases.VerifyStoreManageTest@49e53c76]" started-at="2023-03-23T02:18:52 IST" name="Teardown" finished-at="2023-03-23T02:18:52 IST" duration-ms="319" status="PASS">
+        <test-method is-config="true" signature="launch(java.lang.String)[pri:0, instance:com.TestCases.VerifyStoreManageTest@49e53c76]" started-at="2023-03-23T02:57:01 IST" name="launch" finished-at="2023-03-23T02:57:04 IST" duration-ms="3170" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[FireFox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch -->
+        <test-method signature="verify_delete_store_table()[pri:6, instance:com.TestCases.VerifyStoreManageTest@49e53c76]" started-at="2023-03-23T02:57:04 IST" name="verify_delete_store_table" finished-at="2023-03-23T02:57:32 IST" duration-ms="28233" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: //h2[text()='Store Zones']
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [6a8e40ce-24bf-4861-833c-83e23756078c, findElement {using=xpath, value=//h2[text()='Store Zones']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 111.0, moz:accessibilityChecks: false, moz:buildID: 20230309232128, moz:debuggerAddress: 127.0.0.1:46956, moz:geckodriverVersion: 0.32.2, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 12816, moz:profile: C:\Users\JITHYA~1\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:46956/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 6a8e40ce-24bf-4861-833c-83e23756078c]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: //h2[text()='Store Zones']
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [6a8e40ce-24bf-4861-833c-83e23756078c, findElement {using=xpath, value=//h2[text()='Store Zones']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 111.0, moz:accessibilityChecks: false, moz:buildID: 20230309232128, moz:debuggerAddress: 127.0.0.1:46956, moz:geckodriverVersion: 0.32.2, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 12816, moz:profile: C:\Users\JITHYA~1\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:46956/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 6a8e40ce-24bf-4861-833c-83e23756078c
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy20.getText(Unknown Source)
+at com.TestCases.VerifyStoreManageTest.verify_delete_store_table(VerifyStoreManageTest.java:102)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:262)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_delete_store_table -->
+        <test-method is-config="true" signature="user_logout()[pri:0, instance:com.TestCases.VerifyStoreManageTest@49e53c76]" started-at="2023-03-23T02:57:33 IST" name="user_logout" finished-at="2023-03-23T02:57:33 IST" duration-ms="775" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user_logout -->
+        <test-method is-config="true" signature="Teardown()[pri:0, instance:com.TestCases.VerifyStoreManageTest@49e53c76]" started-at="2023-03-23T02:57:33 IST" name="Teardown" finished-at="2023-03-23T02:57:34 IST" duration-ms="257" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Teardown -->
