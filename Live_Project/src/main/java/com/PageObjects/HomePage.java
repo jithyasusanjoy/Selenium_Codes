@@ -155,7 +155,7 @@ public class HomePage extends BaseClass{
 	
 	public void logoff()
 	{
-		wait.explicitWait_elementClickable(getDriver(), Logout,Duration.ofSeconds(5));
+		//wait.explicitWait_elementClickable(getDriver(), Logout,Duration.ofSeconds(5));
 		act.click1(hp.logout(), "Logout button click ");
 	}
 
