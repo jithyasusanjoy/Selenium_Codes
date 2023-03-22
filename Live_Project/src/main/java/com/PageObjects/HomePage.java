@@ -64,11 +64,18 @@ public class HomePage extends BaseClass{
 	@FindBy(xpath="//ul[@class='nav navbar-nav']/li")
 	private List<WebElement> menu;
 	
+	@FindBy(xpath="//button[@class='navbar-toggle collapsed']")
+	private WebElement menu_icon;
 	
 	public HomePage() {
 		
 		PageFactory.initElements(getDriver(), this);
 	}
+	public WebElement menu_icon()
+	{
+		return menu_icon;
+	}
+	
 	public List<WebElement> menu()
 	{
 		return menu;
@@ -83,6 +90,7 @@ public class HomePage extends BaseClass{
 	}
 	public WebElement stores()
 	{
+		wait.explicitWait_elementClickable(getDriver(), Stores, Duration.ofSeconds(15));
 		return Stores;
 	}
 	public WebElement people()

@@ -61,7 +61,7 @@ public class BaseClass {
 	public static AddWarehouse awh;
 	public static PrintMenuPage pmp;
 	public static Random ran;
-	public static Waits wait;
+	public static Waits wait=new Waits();;
 	
 	//Thread local driver
 	public static ThreadLocal<RemoteWebDriver> driver=new ThreadLocal<RemoteWebDriver>();
@@ -129,10 +129,10 @@ public class BaseClass {
 			driver.set(new EdgeDriver());
 
 		}
-
+		
 		getDriver().manage().window().maximize();
-		act = new ActionClass();
-		Waits wait=new Waits();
+		
+		act = new ActionClass();		
 		wait.implicitWait(getDriver(), 15);
 		act.pageLoadTimeOut(getDriver(), 30);
 		getDriver().get(prop.getProperty("url"));
