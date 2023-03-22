@@ -90,7 +90,6 @@ public class VerifyStoreManageTest extends BaseClass {
 	public void verify_delete_store_table() throws InterruptedException {
 		Log.startTestCase("verify_delete_store_table");
 		lp.LoginFn();
-		Thread.sleep(5000);
 		if((hp.menu_icon().isDisplayed())) {
 		act.click1(hp.menu_icon(), "clicked icon");	
 		}
