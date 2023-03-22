@@ -118,7 +118,7 @@ public class StoresPage extends BaseClass{
 	}
 	public WebElement Manage_Table()
 	{
-		wait.explicitWait_elementSelected(getDriver(), Manage_Table,Duration.ofSeconds(15));
+		//wait.explicitWait_elementSelected(getDriver(), Manage_Table,Duration.ofSeconds(15));
 		return Manage_Table;
 	}
 	

@@ -96,11 +96,14 @@ public class VerifyStoreManageTest extends BaseClass {
 		}
 		Thread.sleep(5000);
 		act.click1(hp.stores(), "Store menu Clicked");	
+		Thread.sleep(3000);
 		act.click1(sp.Manage_Table(), "Clicked manage store icon ");
+		Thread.sleep(3000);
 		act.click1(sm.Table_delete(), "Clicked close icon");
 		Log.info("Deleted table");
 		Assert.assertEquals(sm.Zone_heading().getText(),"Store Zones");	
 		System.out.println("Table deleted");
+		Thread.sleep(3000);
 		hp.logoff();
 		Log.endTestCase("verify_delete_store_table");
 	}
