@@ -103,7 +103,7 @@ public class VerifyStoreManageTest extends BaseClass {
 		Log.info("Deleted table");
 		Assert.assertEquals(sm.Zone_heading().getText(),"Store Zones");	
 		System.out.println("Table deleted");
-		Thread.sleep(3000);
+		Thread.sleep(5000);
 		hp.logoff();
 		Log.endTestCase("verify_delete_store_table");
 	}
