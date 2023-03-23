@@ -8,7 +8,7 @@ import com.project.Utilities.Log;
 
 public class VerifyStoreManageTest extends BaseClass {
 
-	@Test(priority = 1, groups = { "Regression" }, enabled = false)
+	@Test(priority = 1, groups = { "Regression" })
 	public void verify_add_store_zone() throws Exception {
 		Log.startTestCase("verify_add_store_zone");
 		lp.LoginFn();
@@ -23,7 +23,7 @@ public class VerifyStoreManageTest extends BaseClass {
 		Log.endTestCase("verify_add_store_zone");
 	}
 
-	@Test(priority = 2, enabled = false)
+	@Test(priority = 2)
 	public void verify_edit_store_zone() throws Exception {
 		Log.startTestCase("verify_edit_store_zone");
 		lp.LoginFn();
@@ -38,7 +38,7 @@ public class VerifyStoreManageTest extends BaseClass {
 		Log.endTestCase("verify_edit_store_zone");
 	}
 
-	@Test(priority = 3, enabled = false)
+	@Test(priority = 3)
 	public void verify_delete_store_zone() {
 		Log.startTestCase("verify_delete_store_zone");
 		lp.LoginFn();
@@ -51,7 +51,7 @@ public class VerifyStoreManageTest extends BaseClass {
 		Log.endTestCase("verify_delete_store_zone");
 	}
 
-	@Test(priority = 4, enabled = false)
+	@Test(priority = 4)
 	public void verify_add_store_table() throws Exception {
 		Log.startTestCase("verify_add_store_table");
 		lp.LoginFn();
@@ -69,7 +69,7 @@ public class VerifyStoreManageTest extends BaseClass {
 		Log.endTestCase("verify_add_store_table");
 	}
 
-	@Test(priority = 5, enabled = false)
+	@Test(priority = 5)
 	public void verify_edit_store_table() throws Exception {
 		Log.startTestCase("verify_edit_store_table");
 		lp.LoginFn();

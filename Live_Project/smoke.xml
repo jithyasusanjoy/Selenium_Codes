@@ -6,9 +6,9 @@
 		<listener class-name="com.project.Utilities.RetryAnalyzer"></listener>
 	</listeners>
 	<test thread-count="6" name="SmokeTest">
-	<parameter name="Browser" value="FireFox"></parameter>
+	<parameter name="Browser" value="Edge"></parameter>
 		<classes>			
-			<class name="com.TestCases.VerifyStoreManageTest"/>					
+			<class name="com.TestCases.VerifyAddExpenseTest"/>					
 		</classes>	
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -5,19 +5,29 @@
     <listener class-name="com.project.Utilities.Listeners"/>
     <listener class-name="com.project.Utilities.RetryAnalyzer"/>
   </listeners>
-  <test thread-count="5" name="SmokeTest(failed)">
-    <parameter name="Browser" value="FireFox"/>
+  <test thread-count="5" name="TestAll(failed)">
+    <parameter name="Browser" value="Edge"/>
     <classes>
-      <class name="com.TestCases.VerifyStoreManageTest">
+      <class name="com.TestCases.VerifyStoreTest">
         <methods>
           <include name="Teardown"/>
           <include name="loadConfig"/>
           <include name="launch"/>
-          <include name="verify_delete_store_table"/>
+          <include name="loadingfiles"/>
+          <include name="user_logout"/>
+          <include name="verify_edit_store"/>
+        </methods>
+      </class> <!-- com.TestCases.VerifyStoreTest -->
+      <class name="com.TestCases.VerifyHomepageTest">
+        <methods>
+          <include name="Teardown"/>
+          <include name="loadConfig"/>
+          <include name="launch"/>
+          <include name="verify_language_selection"/>
           <include name="loadingfiles"/>
           <include name="user_logout"/>
         </methods>
-      </class> <!-- com.TestCases.VerifyStoreManageTest -->
+      </class> <!-- com.TestCases.VerifyHomepageTest -->
     </classes>
-  </test> <!-- SmokeTest(failed) -->
+  </test> <!-- TestAll(failed) -->
 </suite> <!-- Failed suite [Suite] -->

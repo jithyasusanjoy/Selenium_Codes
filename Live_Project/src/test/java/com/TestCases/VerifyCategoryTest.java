@@ -1,6 +1,5 @@
 package com.TestCases;
 
-import java.util.ArrayList;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import com.Base.BaseClass.BaseClass;

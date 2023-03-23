@@ -10,7 +10,7 @@ import com.project.Utilities.ExcelRead;
 public class VerifyUserLoginTest extends BaseClass {
 
 
-	@Test(priority = 4,groups = { "Regression" },enabled=false)
+	@Test(priority = 4,groups = { "Regression" })
 	public void verify_valid_User_Login() {
 		Log.startTestCase("validUserLogin");
 		lp.LoginFn();
@@ -21,7 +21,7 @@ public class VerifyUserLoginTest extends BaseClass {
 		
 	}
 
-	@Test(dataProvider = "getlogin", priority = 3,enabled=false)
+	@Test(dataProvider = "getlogin", priority = 3)
 	public void verify_valid_User_invalid_Password_login(String username, String password) {
 
 		Log.startTestCase("valid_User_invalid_Pass");
