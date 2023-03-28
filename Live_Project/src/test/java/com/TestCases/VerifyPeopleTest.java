@@ -17,7 +17,7 @@ public class VerifyPeopleTest extends BaseClass{
 		act.click1(hp.people(), "Clicked");	
 		Log.info("Clicked  people menu");
 		act.click1(hp.suppliers(), "Clicked");	
-		Log.info("Clicked  suppliers sub menu");
+		//Log.info("Clicked  suppliers sub menu");
 		act.click1(as.add_Supplier(), "Clicked");	
 		Log.info("Clicked add suppliers button");
 		ArrayList<String> exceldata=data.getData("AddSupplier");
