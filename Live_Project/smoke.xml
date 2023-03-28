@@ -8,7 +8,12 @@
 	<test thread-count="6" name="SmokeTest">
 	<parameter name="Browser" value="Edge"></parameter>
 		<classes>			
-			<class name="com.TestCases.VerifyAddExpenseTest"/>					
+			<class name="com.TestCases.VerifyUserLoginTest">
+			<methods>
+				<include name="verify_valid_User_invalid_Password_login"/>
+				<include name="verify_valid_User_Login"/>
+				</methods>
+			</class>			
 		</classes>	
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

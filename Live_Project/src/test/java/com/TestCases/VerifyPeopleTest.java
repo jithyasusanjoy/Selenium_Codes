@@ -21,7 +21,8 @@ public class VerifyPeopleTest extends BaseClass {
 		act.click1(as.add_Supplier(), "Clicked");	
 		Log.info("Clicked add suppliers button");
 		ArrayList<String> exceldata=data.getData("AddSupplier");
-		act.type(as.supplier_Name(), exceldata.get(0)+ran.nextInt());
+		act.type(as.supplier_Name(),exceldata.get(0)+ran.nextInt());
+		Thread.sleep(5000);
 		Log.info("Entered suppliers name");
 		act.type(as.supplier_Email(), ran.nextInt()+exceldata.get(1));
 		Log.info("Entered suppliers emailid");
