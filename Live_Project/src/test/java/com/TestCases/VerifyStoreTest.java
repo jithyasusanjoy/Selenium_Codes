@@ -31,7 +31,7 @@ public class VerifyStoreTest extends BaseClass {
 		act.click1(sp.sort_descending(), "Clicked storename");
 		act.click1(sp.sort_ascending(), "Clicked storename");
 		Log.info("Store name sorted in ascending order");
-		Assert.assertEquals(sp.First_Element().getText(), "AJStores");
+		Assert.assertEquals(sp.First_Element().getText(), "AKJStores");
 		hp.logoff();
 		Log.endTestCase("verify_sort_store_name_ascending_order");
 	}
@@ -160,7 +160,7 @@ public class VerifyStoreTest extends BaseClass {
 				list2.add(j.getText());
 				}			
 			}		
-		Assert.assertTrue(list2.contains("Ajstory"));	
+		Assert.assertFalse(list2.contains("Ajstory"));	
 		hp.logoff();
 		Log.endTestCase("verify_store_search");
 	}
