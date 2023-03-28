@@ -15,7 +15,8 @@ public class VerifyAddExpenseTest extends BaseClass {
 		lp.LoginFn();
 		act.click1(hp.expenses(), "clicked  expenses menu");
 		act.click1(ae.add_Expense(), "clicked add Expense button");
-		ArrayList<String> exceldata = data.getData("AddExpense");		
+		ArrayList<String> exceldata = data.getData("AddExpense");	
+		System.out.println("new");
 		act.type(ae.Date(), exceldata.get(0));
 	    Log.info("Entered date");
 		act.type(ae.reference(), exceldata.get(1));
