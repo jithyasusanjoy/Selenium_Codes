@@ -90,20 +90,14 @@ public class VerifyStoreManageTest extends BaseClass {
 	public void verify_delete_store_table() throws InterruptedException {
 		Log.startTestCase("verify_delete_store_table");
 		lp.LoginFn();
-		Thread.sleep(5000);
 		if((hp.menu_icon().isDisplayed())) {
 		act.click1(hp.menu_icon(), "clicked icon");	
 		}
-		Thread.sleep(5000);
 		act.click1(hp.stores(), "Store menu Clicked");	
-		Thread.sleep(3000);
 		act.click1(sp.Manage_Table(), "Clicked manage store icon ");
-		Thread.sleep(3000);
 		act.click1(sm.Table_delete(), "Clicked close icon");
-		Log.info("Deleted table");
 		Assert.assertEquals(sm.Zone_heading().getText(),"Store Zones");	
 		System.out.println("Table deleted");
-		Thread.sleep(5000);
 		hp.logoff();
 		Log.endTestCase("verify_delete_store_table");
 	}

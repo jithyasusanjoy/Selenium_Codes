@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 import com.Base.BaseClass.BaseClass;
 import com.project.Utilities.Log;
 
-public class VerifyPeopleTest extends BaseClass {
+public class VerifyPeopleTest extends BaseClass{
 	
 	
 	@Test(priority=1,groups = { "Regression" })
@@ -22,7 +22,6 @@ public class VerifyPeopleTest extends BaseClass {
 		Log.info("Clicked add suppliers button");
 		ArrayList<String> exceldata=data.getData("AddSupplier");
 		act.type(as.supplier_Name(),exceldata.get(0)+ran.nextInt());
-		Thread.sleep(5000);
 		Log.info("Entered suppliers name");
 		act.type(as.supplier_Email(), ran.nextInt()+exceldata.get(1));
 		Log.info("Entered suppliers emailid");
