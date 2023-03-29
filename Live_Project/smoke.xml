@@ -8,10 +8,9 @@
 	<test thread-count="6" name="SmokeTest">
 	<parameter name="Browser" value="Edge"></parameter>
 		<classes>			
-			<class name="com.TestCases.VerifyUserLoginTest">
+			<class name="com.TestCases.VerifySettingsTest">
 			<methods>
-				<include name="verify_valid_User_invalid_Password_login"/>
-				<include name="verify_valid_User_Login"/>
+				<include name="verify_add_new_user"/>
 				</methods>
 			</class>			
 		</classes>	
