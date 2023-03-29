@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results retried="1" ignored="0" total="9" passed="8" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-03-28T18:53:30 IST" name="Suite" finished-at="2023-03-28T18:54:36 IST" duration-ms="66222">
+    <groups>
+      <group name="Regression">
+        <method signature="VerifyUserLoginTest.verify_valid_User_Login()[pri:4, instance:com.TestCases.VerifyUserLoginTest@4135c3b]" name="verify_valid_User_Login" class="com.TestCases.VerifyUserLoginTest"/>
+        <method signature="VerifyHomepageTest.verify_home_menu_elements()[pri:2, instance:com.TestCases.VerifyHomepageTest@54d9d12d]" name="verify_home_menu_elements" class="com.TestCases.VerifyHomepageTest"/>
+        <method signature="VerifyHomepageTest.verify_language_selection()[pri:3, instance:com.TestCases.VerifyHomepageTest@54d9d12d]" name="verify_language_selection" class="com.TestCases.VerifyHomepageTest"/>
+      </group> <!-- Regression -->
+    </groups>
+    <test started-at="2023-03-28T18:53:30 IST" name="EdgeTest1" finished-at="2023-03-28T18:53:57 IST" duration-ms="27718">
+      <class name="com.TestCases.VerifyUserLoginTest">
+        <test-method is-config="true" signature="loadConfig()[pri:0, instance:com.TestCases.VerifyUserLoginTest@4135c3b]" started-at="2023-03-28T18:53:30 IST" name="loadConfig" finished-at="2023-03-28T18:53:30 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loadConfig -->
+        <test-method is-config="true" signature="launch(java.lang.String)[pri:0, instance:com.TestCases.VerifyUserLoginTest@4135c3b]" started-at="2023-03-28T18:53:30 IST" name="launch" finished-at="2023-03-28T18:53:34 IST" duration-ms="4859" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch -->
+        <test-method signature="verify_invalid_User_invalid_password_login()[pri:1, instance:com.TestCases.VerifyUserLoginTest@4135c3b]" started-at="2023-03-28T18:53:34 IST" name="verify_invalid_User_invalid_password_login" finished-at="2023-03-28T18:53:36 IST" duration-ms="1572" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_invalid_User_invalid_password_login -->
+        <test-method is-config="true" signature="user_logout()[pri:0, instance:com.TestCases.VerifyUserLoginTest@4135c3b]" started-at="2023-03-28T18:53:36 IST" name="user_logout" finished-at="2023-03-28T18:53:36 IST" duration-ms="299" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user_logout -->
+        <test-method is-config="true" signature="launch(java.lang.String)[pri:0, instance:com.TestCases.VerifyUserLoginTest@4135c3b]" started-at="2023-03-28T18:53:36 IST" name="launch" finished-at="2023-03-28T18:53:40 IST" duration-ms="3729" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch -->
+        <test-method signature="verify_invalid_User_valid_password_login()[pri:2, instance:com.TestCases.VerifyUserLoginTest@4135c3b]" started-at="2023-03-28T18:53:40 IST" name="verify_invalid_User_valid_password_login" finished-at="2023-03-28T18:53:41 IST" duration-ms="1185" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_invalid_User_valid_password_login -->
+        <test-method is-config="true" signature="user_logout()[pri:0, instance:com.TestCases.VerifyUserLoginTest@4135c3b]" started-at="2023-03-28T18:53:41 IST" name="user_logout" finished-at="2023-03-28T18:53:42 IST" duration-ms="366" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user_logout -->
+        <test-method is-config="true" signature="launch(java.lang.String)[pri:0, instance:com.TestCases.VerifyUserLoginTest@4135c3b]" started-at="2023-03-28T18:53:42 IST" name="launch" finished-at="2023-03-28T18:53:45 IST" duration-ms="3643" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch -->
+        <test-method signature="verify_valid_User_invalid_Password_login(java.lang.String,java.lang.String)[pri:3, instance:com.TestCases.VerifyUserLoginTest@4135c3b]" started-at="2023-03-28T18:53:45 IST" name="verify_valid_User_invalid_Password_login" data-provider="getlogin" finished-at="2023-03-28T18:53:46 IST" duration-ms="409" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_valid_User_invalid_Password_login -->
+        <test-method is-config="true" signature="user_logout()[pri:0, instance:com.TestCases.VerifyUserLoginTest@4135c3b]" started-at="2023-03-28T18:53:46 IST" name="user_logout" finished-at="2023-03-28T18:53:46 IST" duration-ms="453" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user_logout -->
+        <test-method is-config="true" signature="launch(java.lang.String)[pri:0, instance:com.TestCases.VerifyUserLoginTest@4135c3b]" started-at="2023-03-28T18:53:46 IST" name="launch" finished-at="2023-03-28T18:53:50 IST" duration-ms="3550" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch -->
+        <test-method signature="verify_valid_User_invalid_Password_login(java.lang.String,java.lang.String)[pri:3, instance:com.TestCases.VerifyUserLoginTest@4135c3b]" started-at="2023-03-28T18:53:50 IST" name="verify_valid_User_invalid_Password_login" data-provider="getlogin" finished-at="2023-03-28T18:53:51 IST" duration-ms="1203" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password12]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_valid_User_invalid_Password_login -->
+        <test-method is-config="true" signature="user_logout()[pri:0, instance:com.TestCases.VerifyUserLoginTest@4135c3b]" started-at="2023-03-28T18:53:51 IST" name="user_logout" finished-at="2023-03-28T18:53:51 IST" duration-ms="264" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user_logout -->
+        <test-method is-config="true" signature="launch(java.lang.String)[pri:0, instance:com.TestCases.VerifyUserLoginTest@4135c3b]" started-at="2023-03-28T18:53:51 IST" name="launch" finished-at="2023-03-28T18:53:55 IST" duration-ms="3652" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch -->
+        <test-method signature="verify_valid_User_Login()[pri:4, instance:com.TestCases.VerifyUserLoginTest@4135c3b]" started-at="2023-03-28T18:53:55 IST" name="verify_valid_User_Login" finished-at="2023-03-28T18:53:57 IST" duration-ms="2068" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_valid_User_Login -->
+        <test-method is-config="true" signature="user_logout()[pri:0, instance:com.TestCases.VerifyUserLoginTest@4135c3b]" started-at="2023-03-28T18:53:57 IST" name="user_logout" finished-at="2023-03-28T18:53:57 IST" duration-ms="346" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user_logout -->
+      </class> <!-- com.TestCases.VerifyUserLoginTest -->
+    </test> <!-- EdgeTest1 -->
+    <test started-at="2023-03-28T18:53:57 IST" name="EdgeTest2" finished-at="2023-03-28T18:54:36 IST" duration-ms="38472">
+      <class name="com.TestCases.VerifyHomepageTest">
+        <test-method is-config="true" signature="loadingfiles()[pri:0, instance:com.TestCases.VerifyHomepageTest@54d9d12d]" started-at="2023-03-28T18:53:29 IST" name="loadingfiles" finished-at="2023-03-28T18:53:30 IST" duration-ms="253" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loadingfiles -->
+        <test-method is-config="true" signature="loadConfig()[pri:0, instance:com.TestCases.VerifyHomepageTest@54d9d12d]" started-at="2023-03-28T18:53:57 IST" name="loadConfig" finished-at="2023-03-28T18:53:57 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loadConfig -->
+        <test-method is-config="true" signature="launch(java.lang.String)[pri:0, instance:com.TestCases.VerifyHomepageTest@54d9d12d]" started-at="2023-03-28T18:53:57 IST" name="launch" finished-at="2023-03-28T18:54:01 IST" duration-ms="3565" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch -->
+        <test-method signature="verify_logged_user_name()[pri:1, instance:com.TestCases.VerifyHomepageTest@54d9d12d]" started-at="2023-03-28T18:54:01 IST" name="verify_logged_user_name" finished-at="2023-03-28T18:54:03 IST" duration-ms="2021" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_logged_user_name -->
+        <test-method is-config="true" signature="user_logout()[pri:0, instance:com.TestCases.VerifyHomepageTest@54d9d12d]" started-at="2023-03-28T18:54:03 IST" name="user_logout" finished-at="2023-03-28T18:54:03 IST" duration-ms="344" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user_logout -->
+        <test-method is-config="true" signature="launch(java.lang.String)[pri:0, instance:com.TestCases.VerifyHomepageTest@54d9d12d]" started-at="2023-03-28T18:54:03 IST" name="launch" finished-at="2023-03-28T18:54:07 IST" duration-ms="3507" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch -->
+        <test-method signature="verify_home_menu_elements()[pri:2, instance:com.TestCases.VerifyHomepageTest@54d9d12d]" started-at="2023-03-28T18:54:07 IST" name="verify_home_menu_elements" finished-at="2023-03-28T18:54:09 IST" duration-ms="2058" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_home_menu_elements -->
+        <test-method is-config="true" signature="user_logout()[pri:0, instance:com.TestCases.VerifyHomepageTest@54d9d12d]" started-at="2023-03-28T18:54:09 IST" name="user_logout" finished-at="2023-03-28T18:54:09 IST" duration-ms="280" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user_logout -->
+        <test-method is-config="true" signature="launch(java.lang.String)[pri:0, instance:com.TestCases.VerifyHomepageTest@54d9d12d]" started-at="2023-03-28T18:54:09 IST" name="launch" finished-at="2023-03-28T18:54:13 IST" duration-ms="3643" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch -->
+        <test-method retried="true" signature="verify_language_selection()[pri:3, instance:com.TestCases.VerifyHomepageTest@54d9d12d]" started-at="2023-03-28T18:54:13 IST" name="verify_language_selection" finished-at="2023-03-28T18:54:28 IST" duration-ms="15432" status="SKIP">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//h1[@class='text-center choose_store']"}
+  (Session info: MicrosoftEdge=111.0.1661.54)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [4ef1bb1df55b6b42079f7c3d7ce44f9f, findElement {using=xpath, value=//h1[@class='text-center choose_store']}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 111.0.1661.54, ms:edgeOptions: {debuggerAddress: localhost:58790}, msedge: {msedgedriverVersion: 111.0.1661.54 (9e410ec23a36..., userDataDir: C:\Users\JITHYA~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58790/devtoo..., se:cdpVersion: 111.0.1661.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4ef1bb1df55b6b42079f7c3d7ce44f9f]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//h1[@class='text-center choose_store']"}
+  (Session info: MicrosoftEdge=111.0.1661.54)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [4ef1bb1df55b6b42079f7c3d7ce44f9f, findElement {using=xpath, value=//h1[@class='text-center choose_store']}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 111.0.1661.54, ms:edgeOptions: {debuggerAddress: localhost:58790}, msedge: {msedgedriverVersion: 111.0.1661.54 (9e410ec23a36..., userDataDir: C:\Users\JITHYA~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58790/devtoo..., se:cdpVersion: 111.0.1661.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4ef1bb1df55b6b42079f7c3d7ce44f9f
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy22.getText(Unknown Source)
+at com.TestCases.VerifyHomepageTest.verify_language_selection(VerifyHomepageTest.java:18)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_language_selection -->
+        <test-method is-config="true" signature="user_logout()[pri:0, instance:com.TestCases.VerifyHomepageTest@54d9d12d]" started-at="2023-03-28T18:54:28 IST" name="user_logout" finished-at="2023-03-28T18:54:29 IST" duration-ms="382" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user_logout -->
+        <test-method is-config="true" signature="launch(java.lang.String)[pri:0, instance:com.TestCases.VerifyHomepageTest@54d9d12d]" started-at="2023-03-28T18:54:29 IST" name="launch" finished-at="2023-03-28T18:54:32 IST" duration-ms="3661" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch -->
+        <test-method signature="verify_language_selection()[pri:3, instance:com.TestCases.VerifyHomepageTest@54d9d12d]" started-at="2023-03-28T18:54:32 IST" name="verify_language_selection" finished-at="2023-03-28T18:54:35 IST" duration-ms="3249" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_language_selection -->
+        <test-method is-config="true" signature="user_logout()[pri:0, instance:com.TestCases.VerifyHomepageTest@54d9d12d]" started-at="2023-03-28T18:54:36 IST" name="user_logout" finished-at="2023-03-28T18:54:36 IST" duration-ms="309" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user_logout -->
+        <test-method is-config="true" signature="Teardown()[pri:0, instance:com.TestCases.VerifyHomepageTest@54d9d12d]" started-at="2023-03-28T18:54:36 IST" name="Teardown" finished-at="2023-03-28T18:54:37 IST" duration-ms="665" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Teardown -->
+      </class> <!-- com.TestCases.VerifyHomepageTest -->
+    </test> <!-- EdgeTest2 -->
+  </suite> <!-- Suite -->
+</testng-results>
