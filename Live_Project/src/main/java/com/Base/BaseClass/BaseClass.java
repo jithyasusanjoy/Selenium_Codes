@@ -93,7 +93,7 @@ public class BaseClass {
 		pmp = new PrintMenuPage();
 		ran= new Random();
 		wait=new Waits();
-		
+	
 	}
 
 	@BeforeTest(groups = {"Regression"})

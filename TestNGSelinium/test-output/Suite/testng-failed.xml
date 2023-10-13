@@ -14,17 +14,14 @@
       </run>
     </groups>
     <classes>
-      <class name="Testcases.AlertInSelenium">
-        <methods>
-          <include name="browserload"/>
-          <include name="windowhandle"/>
-        </methods>
-      </class> <!-- Testcases.AlertInSelenium -->
       <class name="Testcases.ActionClassInSelenium">
         <methods>
           <include name="IntialSetup"/>
+          <include name="mousehover"/>
           <include name="draganddrop"/>
+          <include name="mousedoubleclick"/>
           <include name="browserclose"/>
+          <include name="mouseclick"/>
         </methods>
       </class> <!-- Testcases.ActionClassInSelenium -->
     </classes>

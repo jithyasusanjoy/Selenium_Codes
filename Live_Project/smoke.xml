@@ -5,8 +5,8 @@
 		<listener class-name="com.project.Utilities.Listeners"></listener>
 		<listener class-name="com.project.Utilities.RetryAnalyzer"></listener>
 	</listeners>
-	<test thread-count="6" name="SmokeTest">
-	<parameter name="Browser" value="Edge"></parameter>
+	<test thread-count="5" name="SmokeTest">
+	<parameter name="Browser" value="FireFox"></parameter>
 		<classes>			
 			<class name="com.TestCases.VerifySettingsTest">
 			<methods>

@@ -1,23 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite parallel="classes" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <listeners>
     <listener class-name="com.project.Utilities.Listeners"/>
     <listener class-name="com.project.Utilities.RetryAnalyzer"/>
   </listeners>
-  <test thread-count="5" parallel="classes" name="EdgeTest2(failed)">
-    <parameter name="Browser" value="Edge"/>
+  <test thread-count="5" name="SmokeTest(failed)">
     <classes>
-      <class name="com.TestCases.VerifyHomepageTest">
+      <class name="com.TestCases.VerifySettingsTest">
         <methods>
           <include name="Teardown"/>
           <include name="loadConfig"/>
+          <include name="verify_add_new_user"/>
           <include name="launch"/>
           <include name="loadingfiles"/>
-          <include name="verify_language_selection"/>
           <include name="user_logout"/>
         </methods>
-      </class> <!-- com.TestCases.VerifyHomepageTest -->
+      </class> <!-- com.TestCases.VerifySettingsTest -->
     </classes>
-  </test> <!-- EdgeTest2(failed) -->
+  </test> <!-- SmokeTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->
